@@ -7,14 +7,37 @@
 - Lichii build-93 was used for testing. Other emulator versions and hardware have not been qualified.
 - For a playable patched NUP copy, allow space for another complete game copy plus about 1 GB. The source is never edited.
 
-## Windows: guided build
+## What the release ZIP contains
 
-1. Download a named release ZIP and extract it completely.
-2. Run `Install-Windows.cmd`. It installs the listed Python dependencies, opens a file picker for your original NUP, and asks where to create a new patched game copy.
-3. Wait for `Built and verified` and the NUP read-back verification. Launch the NEW NUP in Lichii.
-4. Configure your controller normally as a Switch Pro Controller. No emulator controller configuration is overwritten.
+The downloadable ZIP is a **patch builder**, not an import-ready Lichii add-on. Lichii can extract ready-made `exefs/`/`romfs/` add-ons, but it does not run the Python builder or apply this bundle's binary deltas. First generate the files from your matching game source.
 
-The script creates a generated mod folder beside the new NUP. Keep it if you want to inspect or use the overrides separately. Do not launch the original NUP expecting mod-folder overrides: the tested Lichii NUP path bypasses those overrides.
+## Manual Shield: install through Add-ons
+
+1. Extract the Manual Shield release ZIP and run `Install-Windows.cmd`.
+2. Select your original NUP, then choose a filename for the generated **Add-on ZIP**. This creates the checked ExeFS overrides and an importable ZIP; it does not copy the complete NUP.
+3. In Lichii, right-click the game > **Configure Game > Add-ons > Import Mod from ZIP**.
+4. Select the **generated Add-on ZIP**, enable the mod, click **Apply/OK**, and launch the original game.
+
+You can also use **Import Mod from Folder** and choose the generated folder containing `exefs/`. To build that folder from the command line:
+
+```powershell
+py -3 -m pip install -r requirements.txt
+py -3 install.py --source "D:/Games/original.nup" --output "D:/Mods/Manual-Shield"
+```
+
+Add `--variant manual-shield` when using the full source checkout instead of the single-mod release ZIP.
+
+## Hero Mode: NUP-copy fallback on build-93
+
+1. Extract either Hero Mode release ZIP and run `Install-Windows.cmd`.
+2. Select your original NUP and a NEW patched NUP path.
+3. Wait for file/hash/read-back verification and launch the NEW NUP.
+
+Build-93 applies ExeFS replacement mods to NUP games, so the standalone shield can use Add-ons. However, its NUP RomFS path still bypasses the normal RomFS patching step. Hero Mode needs those RomFS changes for the HUD/wheel layouts and enemy resources; appearing in the Add-ons list alone does not prove all those changes are loaded. The NUP-copy path keeps the complete Hero Mode working on this tested build. On a loader with verified NUP RomFS override support, the generated Hero Mode folder can be imported instead.
+
+This distinction is visible in the exact build-93 source: [NUP loader](https://github.com/zortos293/Lichii/blob/09b78bd2dfdd279cc81caed2a794ed85062725c9/src/core/loader/nup.cpp), [ExeFS loading](https://github.com/zortos293/Lichii/blob/09b78bd2dfdd279cc81caed2a794ed85062725c9/src/core/loader/deconstructed_rom_directory.cpp), and [RomFS factory](https://github.com/zortos293/Lichii/blob/09b78bd2dfdd279cc81caed2a794ed85062725c9/src/core/file_sys/romfs_factory.cpp).
+
+Configure your controller normally as a Switch Pro Controller. No controller configuration is overwritten.
 
 ## Command line
 
