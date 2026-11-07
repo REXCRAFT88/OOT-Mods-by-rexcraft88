@@ -1,0 +1,31 @@
+[
+  {
+    "log": "eden_log.txt.old.txt",
+    "patch_messages": [
+      "[   0.505973] Loader <Info> core\\file_sys\\patch_manager.cpp:511:PatchNSO:     - Applying IPS patch from mod \"Combat-Test\"",
+      "[   0.541666] Loader <Info> core\\file_sys\\patch_manager.cpp:511:PatchNSO:     - Applying IPS patch from mod \"Ultrawide 21x9 (3440x1440)\"",
+      "[   0.580864] Loader <Info> core\\file_sys\\patch_manager.cpp:615:PatchNSO:     - Applying built-in patch \"Max Resolution (built-in)\" (1 records) to main",
+      "[   0.581052] Loader <Info> core\\file_sys\\patch_manager.cpp:615:PatchNSO:     - Applying built-in patch \"Dynamic FPS by Dark (built-in)\" (2 records) to main"
+    ]
+  },
+  {
+    "log": "eden_log.txt",
+    "patch_messages": [
+      "[   0.512490] Loader <Info> core\\file_sys\\patch_manager.cpp:511:PatchNSO:     - Applying IPS patch from mod \"Combat-Test\"",
+      "[   0.548687] Loader <Info> core\\file_sys\\patch_manager.cpp:511:PatchNSO:     - Applying IPS patch from mod \"Dynamic-fps\"",
+      "[   0.588909] Loader <Info> core\\file_sys\\patch_manager.cpp:511:PatchNSO:     - Applying IPS patch from mod \"Ultrawide 21x9 (3440x1440)\"",
+      "[   0.625462] Loader <Info> core\\file_sys\\patch_manager.cpp:615:PatchNSO:     - Applying built-in patch \"Max Resolution (built-in)\" (1 records) to main",
+      "[   0.625644] Loader <Info> core\\file_sys\\patch_manager.cpp:602:PatchNSO:     - Skipping \"Dynamic FPS by Dark (built-in)\": a user mod already patched main+0x6e6cc4"
+    ]
+  },
+  {
+    "configuration": "no-stamina Hero + external FPS + ultrawide",
+    "patch_messages": [
+      "[   0.512490] Loader <Info> core\\file_sys\\patch_manager.cpp:511:PatchNSO:     - Applying IPS patch from mod \"Combat-Test\"",
+      "[   0.548687] Loader <Info> core\\file_sys\\patch_manager.cpp:511:PatchNSO:     - Applying IPS patch from mod \"Dynamic-fps\"",
+      "[   0.588909] Loader <Info> core\\file_sys\\patch_manager.cpp:511:PatchNSO:     - Applying IPS patch from mod \"Ultrawide 21x9 (3440x1440)\"",
+      "[   0.625462] Loader <Info> core\\file_sys\\patch_manager.cpp:615:PatchNSO:     - Applying built-in patch \"Max Resolution (built-in)\" (1 records) to main",
+      "[   0.625644] Loader <Info> core\\file_sys\\patch_manager.cpp:602:PatchNSO:     - Skipping \"Dynamic FPS by Dark (built-in)\": a user mod already patched main+0x6e6cc4"
+    ]
+  }
+]

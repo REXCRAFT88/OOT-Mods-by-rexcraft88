@@ -1,17 +1,17 @@
 {
   "errors": [],
-  "generated_at": "2026-11-07T18:54:42Z",
+  "generated_at": "2026-11-07T22:24:50Z",
   "metrics": {
     "_totals": {
-      "CONFIDENCE.HIGH": 137,
+      "CONFIDENCE.HIGH": 149,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
       "CONFIDENCE.UNDEFINED": 0,
       "SEVERITY.HIGH": 0,
-      "SEVERITY.LOW": 137,
+      "SEVERITY.LOW": 149,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 1248,
+      "loc": 1292,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -24,7 +24,7 @@
       "SEVERITY.LOW": 0,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 106,
+      "loc": 114,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -37,7 +37,7 @@
       "SEVERITY.LOW": 2,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 51,
+      "loc": 41,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -50,7 +50,7 @@
       "SEVERITY.LOW": 1,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 46,
+      "loc": 51,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -81,15 +81,15 @@
       "skipped_tests": 0
     },
     "native/compatibility/build_compatibility.py": {
-      "CONFIDENCE.HIGH": 11,
+      "CONFIDENCE.HIGH": 12,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
       "CONFIDENCE.UNDEFINED": 0,
       "SEVERITY.HIGH": 0,
-      "SEVERITY.LOW": 11,
+      "SEVERITY.LOW": 12,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 144,
+      "loc": 150,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -103,6 +103,19 @@
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
       "loc": 43,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/compatibility/check_fps_loader.py": {
+      "CONFIDENCE.HIGH": 11,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 11,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 35,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -285,7 +298,7 @@
       "test_name": "blacklist"
     },
     {
-      "code": "43         args += ['--patched-nup', out]\n44     result = subprocess.run(args, cwd=base)\n45     if result.returncode:\n",
+      "code": "36     args = [sys.executable, str(base / 'install.py'), '--source', source, '--output', str(folder)]\n37     result = subprocess.run(args, cwd=base)\n38     if result.returncode:\n",
       "col_offset": 13,
       "end_col_offset": 43,
       "filename": "install_gui.py",
@@ -296,16 +309,16 @@
       },
       "issue_severity": "LOW",
       "issue_text": "subprocess call - check for execution of untrusted input.",
-      "line_number": 44,
+      "line_number": 37,
       "line_range": [
-        44
+        37
       ],
       "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
       "test_id": "B603",
       "test_name": "subprocess_without_shell_equals_true"
     },
     {
-      "code": "42    if len(t)>64*1024*1024:kind='zstd-blocks'\n43    else:assert bsdiff4.patch(o,patch)==t\n44    entry={'path':path,'kind':kind,'source_sha256':sh,'target_sha256':th,'dictionary':ident,'patch':patchname}\n",
+      "code": "47    if len(t)>64*1024*1024:kind='zstd-blocks'\n48    else:assert bsdiff4.patch(o,patch)==t\n49    entry={'path':path,'kind':kind,'source_sha256':sh,'target_sha256':th,'dictionary':ident,'patch':patchname}\n",
       "col_offset": 8,
       "end_col_offset": 40,
       "filename": "native/build_public_bundles.py",
@@ -316,9 +329,9 @@
       },
       "issue_severity": "LOW",
       "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
-      "line_number": 43,
+      "line_number": 48,
       "line_range": [
-        43
+        48
       ],
       "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
       "test_id": "B101",
@@ -865,6 +878,26 @@
       "test_name": "assert_used"
     },
     {
+      "code": "158     cave=bytes(texts['main'][original_extent:])\n159     assert texts['main'][original_extent:0x3c46600]==b'\\0'*(0x3c46600-original_extent)\n160     ips=b'IPS32'+struct.pack('>IH',0x3c46600+0x100,len(texts['main'])-0x3c46600)+bytes(texts['main'][0x3c46600:])+b'EEOF'\n",
+      "col_offset": 4,
+      "end_col_offset": 86,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 159,
+      "line_range": [
+        159
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
       "code": "24         u.emu_start(base+sy[name],stop,count=2000)\n25         assert u.reg_read(UC_ARM64_REG_PC)==stop\n26     def raw(sample,bits):\n",
       "col_offset": 8,
       "end_col_offset": 48,
@@ -999,6 +1032,226 @@
       "line_number": 41,
       "line_range": [
         41
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "9 stock=install.nso_text(original)\n10 assert len(stock)==0x3c461d0\n11 rows=[]\n",
+      "col_offset": 0,
+      "end_col_offset": 28,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 10,
+      "line_range": [
+        10
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "14     main=(root/'exefs/main').read_bytes();t=install.nso_text(main)\n15     assert len(t)==len(stock),key\n16     memory=bytearray(t+b'\\0'*(0x4ea5000-len(t)))\n",
+      "col_offset": 4,
+      "end_col_offset": 33,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 15,
+      "line_range": [
+        15
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "17     ips=(root/'exefs/E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348.ips').read_bytes()\n18     assert ips[:5]==b'IPS32' and ips[-4:]==b'EEOF'\n19     off=5;written=[]\n",
+      "col_offset": 4,
+      "end_col_offset": 50,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 18,
+      "line_range": [
+        18
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "21         address,size=struct.unpack_from('>IH',ips,off);off+=6;address-=0x100\n22         assert size>0 and address>=0x3c46600 and address+size<=0x3c47000\n23         memory[address:address+size]=ips[off:off+size];off+=size;written.append([hex(address),size])\n",
+      "col_offset": 8,
+      "end_col_offset": 72,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 22,
+      "line_range": [
+        22
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "26     cave=0x3c46200;size=120\n27     assert cave>=len(t) and cave+size<=(len(t)+4095)&~4095\n28     assert cave+size<=struct.unpack_from('<I',main,0x24)[0]\n",
+      "col_offset": 4,
+      "end_col_offset": 58,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 27,
+      "line_range": [
+        27
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "27     assert cave>=len(t) and cave+size<=(len(t)+4095)&~4095\n28     assert cave+size<=struct.unpack_from('<I',main,0x24)[0]\n29     assert memory[cave:cave+size]==b'\\0'*size\n",
+      "col_offset": 4,
+      "end_col_offset": 59,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 28,
+      "line_range": [
+        28
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "28     assert cave+size<=struct.unpack_from('<I',main,0x24)[0]\n29     assert memory[cave:cave+size]==b'\\0'*size\n30     assert t[0x6e6cc4:0x6e6cc8]==stock[0x6e6cc4:0x6e6cc8]==bytes.fromhex('2818201e')\n",
+      "col_offset": 4,
+      "end_col_offset": 45,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 29,
+      "line_range": [
+        29
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "29     assert memory[cave:cave+size]==b'\\0'*size\n30     assert t[0x6e6cc4:0x6e6cc8]==stock[0x6e6cc4:0x6e6cc8]==bytes.fromhex('2818201e')\n31     assert memory[0x4e9fe00:0x4e9fe10]==b'\\0'*16\n",
+      "col_offset": 4,
+      "end_col_offset": 84,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 30,
+      "line_range": [
+        30
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "30     assert t[0x6e6cc4:0x6e6cc8]==stock[0x6e6cc4:0x6e6cc8]==bytes.fromhex('2818201e')\n31     assert memory[0x4e9fe00:0x4e9fe10]==b'\\0'*16\n32     data_at,data_size=struct.unpack_from('<II',main,0x34);bss=struct.unpack_from('<I',main,60)[0]\n",
+      "col_offset": 4,
+      "end_col_offset": 48,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 31,
+      "line_range": [
+        31
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "32     data_at,data_size=struct.unpack_from('<II',main,0x34);bss=struct.unpack_from('<I',main,60)[0]\n33     assert data_at+data_size<=0x4e9fe00 and 0x4e9fe10<=data_at+data_size+bss\n34     assert memory[0x3c46400:0x3c465e4]==b'\\0'*0x1e4\n",
+      "col_offset": 4,
+      "end_col_offset": 76,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 33,
+      "line_range": [
+        33
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "33     assert data_at+data_size<=0x4e9fe00 and 0x4e9fe10<=data_at+data_size+bss\n34     assert memory[0x3c46400:0x3c465e4]==b'\\0'*0x1e4\n35     rows.append({'variant':key,'original_text_extent':hex(len(t)),'built_in_fps_eligible':True,'fps_hook_unchanged':True,'fps_state_untouched':True,'ultrawide_cave_untouched':True,'sidecar_writes':written})\n",
+      "col_offset": 4,
+      "end_col_offset": 51,
+      "filename": "native/compatibility/check_fps_loader.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 34,
+      "line_range": [
+        34
       ],
       "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
       "test_id": "B101",

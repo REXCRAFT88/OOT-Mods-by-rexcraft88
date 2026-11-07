@@ -15,8 +15,12 @@ for key,name,folder in variants:
   if not f.is_file():continue
   path=f.relative_to(root).as_posix()
   if not path.startswith(('exefs/','romfs/')):continue
-  old=original(path);target=f.read_bytes();kind='nso' if path.startswith('exefs/') else 'zstd';number=len(files);patchname=f'{number:03d}.patch'
-  if kind=='nso':
+  target=f.read_bytes();number=len(files);patchname=f'{number:03d}.patch'
+  kind='raw' if path.endswith('.ips') else 'nso' if path.startswith('exefs/') else 'zstd'
+  if kind=='raw':
+   patch=target;entry={'path':path,'kind':kind,'target_sha256':install.sha(target),'patch':patchname}
+  elif kind=='nso':
+   old=original(path)
    ot=install.nso_text(old);tt=install.nso_text(target);bss=struct.unpack_from('<I',target,60)[0];target=install.emit_nso(old,tt,bss)
    blocks=[]
    for off in range(0,len(tt),4096):
@@ -24,6 +28,7 @@ for key,name,folder in variants:
     if block!=ot[off:off+4096]:blocks.append([off,base64.b64encode(block).decode()])
    patch=zlib.compress(json.dumps({'length':len(tt),'bss':bss,'blocks':blocks},separators=(',',':')).encode(),9);entry={'path':path,'kind':kind,'source_sha256':install.sha(old),'target_sha256':install.sha(target),'patch':patchname};f.write_bytes(target)
   else:
+   old=original(path)
    ident=zs.get_frame_parameters(target).dict_id;o=source.decompress(old);t=source.decompress(target);sh,th=install.sha(o),install.sha(t)
    if sh==th:continue
    pair=(sh,th)
@@ -43,4 +48,4 @@ for key,name,folder in variants:
    else:assert bsdiff4.patch(o,patch)==t
    entry={'path':path,'kind':kind,'source_sha256':sh,'target_sha256':th,'dictionary':ident,'patch':patchname}
   (out/patchname).write_bytes(patch);files.append(entry)
- m={'name':name,'version':{'hero-with-stamina':'0.1.0-beta.4','hero-without-stamina':'0.1.0-beta.3','item-wheel':'0.1.2','manual-shield':'0.1.1'}[key],'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};(out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)
+ m={'name':name,'version':{'hero-with-stamina':'0.1.0-beta.5','hero-without-stamina':'0.1.0-beta.4','item-wheel':'0.1.3','manual-shield':'0.1.2'}[key],'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};(out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)

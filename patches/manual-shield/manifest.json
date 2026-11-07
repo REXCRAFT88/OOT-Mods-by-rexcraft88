@@ -1,23 +1,29 @@
 {
   "name": "Manual Shield",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
   "files": [
     {
+      "path": "exefs/E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348.ips",
+      "kind": "raw",
+      "target_sha256": "6139c6fd55587e4cca28feffa430f4b4ce2d9a6c22d141f3aa140b4245a509ce",
+      "patch": "000.patch"
+    },
+    {
       "path": "exefs/main",
       "kind": "nso",
       "source_sha256": "7db9ddfda088c22d219ef13496decd7077c68cd67d4b37f53f4ac46a082768f2",
-      "target_sha256": "da3dc5543403d5173acfbfb1fe261ed3f8db2c7bea849ba37aa740b16943b34f",
-      "patch": "000.patch"
+      "target_sha256": "3e961efe2ff599bdf9c4f570058fdb3062375e2cc02af2cfba30723d4779bef9",
+      "patch": "001.patch"
     },
     {
       "path": "exefs/subsdk0",
       "kind": "nso",
       "source_sha256": "0d32c4bdbcfcfa1c4110c37eff18eaf70061a55090b7fedc741a2e37224065ba",
       "target_sha256": "ce36aafdb7508ec95e5a236dfccfe9d6b67a7851403eb993f837c14528cb5a76",
-      "patch": "001.patch"
+      "patch": "002.patch"
     }
   ]
 }

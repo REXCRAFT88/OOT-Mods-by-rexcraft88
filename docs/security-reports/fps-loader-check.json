@@ -1,0 +1,58 @@
+[
+  {
+    "variant": "hero-with-stamina",
+    "original_text_extent": "0x3c461d0",
+    "built_in_fps_eligible": true,
+    "fps_hook_unchanged": true,
+    "fps_state_untouched": true,
+    "ultrawide_cave_untouched": true,
+    "sidecar_writes": [
+      [
+        "0x3c46600",
+        2224
+      ]
+    ]
+  },
+  {
+    "variant": "hero-without-stamina",
+    "original_text_extent": "0x3c461d0",
+    "built_in_fps_eligible": true,
+    "fps_hook_unchanged": true,
+    "fps_state_untouched": true,
+    "ultrawide_cave_untouched": true,
+    "sidecar_writes": [
+      [
+        "0x3c46600",
+        420
+      ]
+    ]
+  },
+  {
+    "variant": "manual-shield",
+    "original_text_extent": "0x3c461d0",
+    "built_in_fps_eligible": true,
+    "fps_hook_unchanged": true,
+    "fps_state_untouched": true,
+    "ultrawide_cave_untouched": true,
+    "sidecar_writes": [
+      [
+        "0x3c46600",
+        420
+      ]
+    ]
+  },
+  {
+    "variant": "item-wheel",
+    "original_text_extent": "0x3c461d0",
+    "built_in_fps_eligible": true,
+    "fps_hook_unchanged": true,
+    "fps_state_untouched": true,
+    "ultrawide_cave_untouched": true,
+    "sidecar_writes": [
+      [
+        "0x3c46600",
+        400
+      ]
+    ]
+  }
+]

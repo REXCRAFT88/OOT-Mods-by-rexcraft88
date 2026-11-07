@@ -1,0 +1,26 @@
+[
+  {
+    "release": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.4-Prepared-Addon.zip",
+    "text_size": "0x3c46eb0",
+    "built_in_fps_cave": "0x3c46200",
+    "fails_padding_check": true
+  },
+  {
+    "release": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.3-Prepared-Addon.zip",
+    "text_size": "0x3c467a4",
+    "built_in_fps_cave": "0x3c46200",
+    "fails_padding_check": true
+  },
+  {
+    "release": "OOT-Item-Wheel-v0.1.2-Prepared-Addon.zip",
+    "text_size": "0x3c46790",
+    "built_in_fps_cave": "0x3c46200",
+    "fails_padding_check": true
+  },
+  {
+    "release": "OOT-Manual-Shield-v0.1.1-Prepared-Addon.zip",
+    "text_size": "0x3c467a4",
+    "built_in_fps_cave": "0x3c46200",
+    "fails_padding_check": true
+  }
+]

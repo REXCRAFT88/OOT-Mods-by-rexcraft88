@@ -22,15 +22,10 @@ def main():
     root = tk.Tk()
     root.withdraw()
     base = pathlib.Path(__file__).resolve().parent
-    manifests = list((base / 'patches').glob('*/manifest.json'))
-    shield_only = len(manifests) == 1 and manifests[0].parent.name == 'manual-shield'
     source = filedialog.askopenfilename(title='Select your ORIGINAL matching Eglantine NUP', filetypes=[('NUP games', '*.nup')])
     if not source:
         return 0
-    if shield_only:
-        out = filedialog.asksaveasfilename(title='Save a NEW shield Add-on ZIP', initialfile='OOT-Manual-Shield-Addon.zip', defaultextension='.zip', filetypes=[('Add-on ZIP', '*.zip')])
-    else:
-        out = filedialog.asksaveasfilename(title='Choose a NEW patched NUP path', defaultextension='.nup', filetypes=[('NUP games', '*.nup')])
+    out = filedialog.asksaveasfilename(title='Save a NEW Add-on ZIP', initialfile='OOT-Mod-Addon.zip', defaultextension='.zip', filetypes=[('Add-on ZIP', '*.zip')])
     if not out:
         return 0
     path = pathlib.Path(out)
@@ -39,17 +34,12 @@ def main():
         return 1
     folder = path.with_suffix('').with_name(path.stem + '-Mod')
     args = [sys.executable, str(base / 'install.py'), '--source', source, '--output', str(folder)]
-    if not shield_only:
-        args += ['--patched-nup', out]
     result = subprocess.run(args, cwd=base)
     if result.returncode:
         messagebox.showerror('Build failed', 'Read the console error. The original game was not edited.')
         return result.returncode
-    if shield_only:
-        pack_addon(folder, path)
-        messagebox.showinfo('Shield Add-on ready', 'In Lichii: right-click the game > Configure Game > Add-ons > Import Mod from ZIP.\nSelect:\n' + out + '\nEnable it, Apply, and launch your original game.')
-    else:
-        messagebox.showinfo('Patched game ready - installation complete', 'The mod is already applied to this game copy.\n\nIn Lichii use File > Load File and select:\n' + out + '\n\nDo NOT import a ZIP as a second step. Your original NUP is unchanged.\nThe -Mod folder and JSON receipts are not games to launch.\nRefresh the library to see the new mod-specific title.')
+    pack_addon(folder, path)
+    messagebox.showinfo('Add-on ready', 'In Lichii build95: right-click the ORIGINAL game > Configure Game > Add-ons > Import Mod from ZIP.\nSelect:\n' + out + '\nEnable the mod and the built-in Dynamic FPS fix, Apply, and launch your original game.')
     return 0
 
 

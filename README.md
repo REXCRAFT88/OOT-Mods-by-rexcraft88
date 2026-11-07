@@ -4,7 +4,7 @@ Mods for Project Eglantine / Ocarina of Time, title **0400486024DEC000**, update
 
 Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases), then use **Configure Game > Add-ons > Import Mod from ZIP**. No commands or builder step are needed. Use Lichii build95 (release tag `build-94`) for full NUP RomFS support.
 
-**Already made `heromode.nup`? Launch that patched game directly. Do not also import a ZIP.** The illustrated [guide](docs/INSTALLATION.md) separates both methods.
+**Upgrading from an older `heromode.nup`? Use your original unmodified NUP with the new Prepared Add-on.** Current releases keep Lichii’s built-in FPS timing fix working through an IPS sidecar; do not stack them onto a previously patched game. See the [illustrated guide](docs/INSTALLATION.md).
 
 | Download | Included |
 | --- | --- |
@@ -15,7 +15,7 @@ Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT8
 
 **Choose one complete mod.** Hero Mode already includes the wheel and shield. Do not stack its native files with separate wheel/shield/stamina mods. Both Hero Mode variants are early-access betas.
 
-Prepared Add-ons contain ready-to-load mod overrides. Optional small patch builders remain available for older loaders and rebuilding from your matching game files.
+Prepared Add-ons contain ready-to-load mod overrides. Optional small patch builders rebuild an Add-on ZIP from your matching game files. Current versions require the Add-ons route rather than a patched-NUP copy.
 
 Read [Installation](docs/INSTALLATION.md), [Changes and controls](docs/FEATURES.md), and [Modder resources](docs/MODDER-RESOURCES.md).
 

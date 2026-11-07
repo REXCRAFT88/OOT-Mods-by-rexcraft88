@@ -58,8 +58,13 @@ def build(source,manifest_path,destination):
         raise ValueError('Choose an output folder outside the source game folder')
     staged=[]
     for entry in m['files']:
-        path=entry['path']; original=source.read(path)
+        path=entry['path']
         patch=(manifest_path.parent/entry['patch']).read_bytes()
+        if entry['kind']=='raw':
+            if sha(patch)!=entry['target_sha256']:raise ValueError('Patch validation failed: '+path)
+            staged.append((path,patch))
+            continue
+        original=source.read(path)
         if entry['kind']=='nso':
             if sha(original)!=entry['source_sha256']:raise ValueError('Wrong game version: '+path)
             p=json.loads(zlib.decompress(patch)); old=nso_text(original)
@@ -95,6 +100,9 @@ def main():
     else:p.error('--variant is required when more than one patch is present')
     source=Source(a.source)
     if a.patched_nup:
+        info=json.loads(manifest.read_text())
+        if any(e['path'].endswith('.ips') for e in info['files']):
+            p.error('This version uses Add-ons to preserve the built-in FPS fix. Build/import an Add-on ZIP instead of a patched NUP.')
         target=pathlib.Path(a.patched_nup).resolve()
         if not source.nup:p.error('--patched-nup requires a NUP source')
         if target==source.path or target.exists():p.error('--patched-nup must name a NEW file, never the source')

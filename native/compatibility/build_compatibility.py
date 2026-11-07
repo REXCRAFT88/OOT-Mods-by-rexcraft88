@@ -151,6 +151,15 @@ wheel_heartbeat:
         off=control-0x4ea5000
         assert int.from_bytes(texts['subsdk0'][off:off+4],'little')&0xff00001f==0xb4000000
         texts['subsdk0'][off:off+4]=branch(control,sy['controls_context'])
+    # Keep main's ORIGINAL text extent. Lichii's built-in FPS routine checks
+    # that its cave is outside that extent, not merely that the bytes are zero.
+    # IPS32 fills our separate, already executable alignment padding after load.
+    original_extent=len(install.nso_text(original['main']))
+    cave=bytes(texts['main'][original_extent:])
+    assert texts['main'][original_extent:0x3c46600]==b'\0'*(0x3c46600-original_extent)
+    ips=b'IPS32'+struct.pack('>IH',0x3c46600+0x100,len(texts['main'])-0x3c46600)+bytes(texts['main'][0x3c46600:])+b'EEOF'
+    (root/'exefs/E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348.ips').write_bytes(ips)
+    texts['main']=texts['main'][:original_extent]
     for name,txt in texts.items():(root/'exefs'/name).write_bytes(emit(blobs[name],txt))
     (root/'compatibility.json').write_text(json.dumps({'variant':variant,'main_code_start':'0x3c46600','main_code_bytes':len(code),'sdk_code_bytes':len(sc) if stamina else 0,'symbols':sy},indent=2))
     print(variant,'built',len(code),'main bytes',len(sc) if stamina else 0,'SDK bytes',flush=True)
