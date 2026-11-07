@@ -1,6 +1,6 @@
 {
   "name": "Hero Mode without Stamina",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
@@ -1433,22 +1433,6 @@
       "target_sha256": "0e489c6f0268cf63509ff3047c9c63221e501e14b3387acb78eae6c58f16d8da",
       "dictionary": 0,
       "patch": "178.patch"
-    },
-    {
-      "path": "romfs/Tex/Rock_ShadowTemple_Floor_A_Alb.bntx.zs",
-      "kind": "zstd",
-      "source_sha256": "e0068283ddd3695d9428e59bad6a6c65df6a30fe9569bbe25f5e7ebe7ba5389f",
-      "target_sha256": "62b8f8faf05c95debd501b31a93d7e65a3bccb327c8d027f43e9615d902d76b7",
-      "dictionary": 1,
-      "patch": "179.patch"
-    },
-    {
-      "path": "romfs/Tex/Rock_Well_RoomFloor_A_Alb.bntx.zs",
-      "kind": "zstd",
-      "source_sha256": "ce5913544f175f87db77e2ca9578df8461639cb053ac0f37223ddd42ef145ada",
-      "target_sha256": "1f0b414b8c2b2d2d600eca02ea1dd6626bc3b55dc9dbf0f0863ef5e085994713",
-      "dictionary": 1,
-      "patch": "180.patch"
     },
     {
       "path": "romfs/UI/Layout2Archive/Common.Product.100.Nin_Ounce_NVN2.blarc.zs",

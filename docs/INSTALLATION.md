@@ -46,4 +46,4 @@ Fast GPU accuracy and asynchronous shaders were used for testing. These are sugg
 
 Build each version from the original matching source into a new folder/copy. Do not use an already modded NUP as the source. To uninstall, launch the original game or disable the complete mod folder in a loader that supports it. Do not delete saves. The installer does not edit saves or emulator profiles.
 
-Install only one Hero Mode variant. Do not combine it with standalone wheel, shield, stamina, AI balance, floor blood or PS5 Common-UI replacement files. Their executable/UI/resource paths overlap. A selective manual merge requires rebuilding and validation, not choosing an overwrite order.
+Install only one Hero Mode variant. Do not combine it with standalone wheel, shield, stamina, AI balance or PS5 Common-UI replacement files. Their executable/UI/resource paths overlap. A selective manual merge requires rebuilding and validation, not choosing an overwrite order.

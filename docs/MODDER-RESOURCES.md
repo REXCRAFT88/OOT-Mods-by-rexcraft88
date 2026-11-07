@@ -76,13 +76,13 @@ Layout2 authored pane position is+0x6c/+0x70; scale+0x60/+0x64, dirty flags OR0x
 
 The yellow stamina gauge is a separate cloned PlayerStatus part and PaStaminaGauge asset. Green magic remains stock. A BNTX view reuses a copied magic gauge image with channel swizzle for yellow; it must be placed under `romfs/UI/Layout2Archive/`, not next to romfs. Missing that file produced a visually empty gauge despite240/240 runtime stamina. Common UI resource allocations must cover the expanded uncompressed layouts and texture archive. The public builds restore original controller/font/guide members instead of redistributing the PS5 profile/art.
 
-## Enemy and floor resources
+## Enemy resources
 
 Enemy packs are compressed SARC archives containing parameter/AI resources. Patch positive HP with ceiling1.5x and positive attack scalars2x, preserve zero/special cases, and ensure shared named resources have identical edited content in all owners. Include dedicated enemy projectile packs; exclude player arrows/reflected-player actors. The balance report records exact paths and values.
 
 Wolfos edits retain first attack speed, accelerate follow-ups and bypass rear-exposure control flow. Stalfos retains counter/interval edits. Reparse the complete graph, verify exact-length resource edits and compression round trips; branch names alone are not behavior evidence.
 
-Blood textures: `Tex/Rock_Well_RoomFloor_A_Alb.bntx.zs` and `Tex/Rock_ShadowTemple_Floor_A_Alb.bntx.zs`. They are albedo material replacements with mip chains, not decals. Geometry/tiling were preserved; edited art was generated from each original floor reference. Inspect every mip and swizzle/ASTC round trip before replacing a texture.
+
 
 ## Test workflow and boundaries
 

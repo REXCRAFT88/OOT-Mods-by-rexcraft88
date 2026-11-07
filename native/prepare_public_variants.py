@@ -27,7 +27,7 @@ def clean_common(candidate,stamina):
  for r in records:out.extend(struct.pack('<4I',*r))
  out.extend(b'SFNT\x08\0\0\0');out.extend(names);out.extend(b'\0'*((-len(out))%4096));off=len(out);out.extend(data);struct.pack_into('<II',out,8,len(out),off);return out
 for name,src,stamina in [('hero-with-stamina','work/hero-wheel-trial',True),('hero-without-stamina','work/wheel-standalone-trial',False)]:
- root=base/name;shutil.copytree(Path(src)/'exefs',root/'exefs',dirs_exist_ok=True);shutil.copytree('outputs/OOT-Hero-Mode-AI-v0.4/romfs',root/'romfs',dirs_exist_ok=True);shutil.copytree('outputs/OOT-Dungeon-Blood-v0.1/romfs',root/'romfs',dirs_exist_ok=True)
+ root=base/name;shutil.copytree(Path(src)/'exefs',root/'exefs',dirs_exist_ok=True);shutil.copytree('outputs/OOT-Hero-Mode-AI-v0.4/romfs',root/'romfs',dirs_exist_ok=True)
  b=clean_common(Path(src)/'romfs'/common,stamina);p=root/'romfs'/common;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(b));budgets={common.removesuffix('.zs'):len(b)+131072}
  if stamina:
   tex=bytearray(a.decompress(n.read(pkg['index'],'romfs/'+texrel)))

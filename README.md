@@ -6,8 +6,8 @@ Download the ZIP assets from [Releases](https://github.com/REXCRAFT88/OOT-Mods-b
 
 | Download | Included |
 | --- | --- |
-| Hero Mode with Stamina — Beta / Early Access | Item wheel, manual shield and toggle targeting, enemy balance/behavior changes, Well/Shadow Temple blood floor textures, combat stamina and HUD |
-| Hero Mode without Stamina — Beta / Early Access | The same wheel, shield, enemy and floor changes, with no stamina system or stamina HUD |
+| Hero Mode with Stamina — Beta / Early Access | Item wheel, manual shield and toggle targeting, enemy balance/behavior changes, combat stamina and HUD |
+| Hero Mode without Stamina — Beta / Early Access | The same wheel, shield, enemy changes, with no stamina system or stamina HUD |
 | Manual Shield | Only manual guard and associated target/input policy; no wheel, stamina, enemy or texture changes |
 | Existing Item Wheel release | Standalone wheel; its source and current patch manifest are now in this repository too |
 

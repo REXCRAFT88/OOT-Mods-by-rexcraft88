@@ -22,7 +22,6 @@ The standalone shield was confirmed working by the tester on the running DualSen
 - **Manual guard:** hold ZL, release to lower. L toggles targeting; right-stick click cancels it. Target toggle alone is routed through the guard-off policy; guard uses stock locomotion/animation execution rather than swapping walking animation names.
 - **Enemy balance:** positive enemy maximum HP becomes `ceil(stock * 1.5)`; enemy damage fields become 2x stock. Examples: 9 HP -> 14, 18 HP -> 27. Includes 174 packs / 188 distinct stat resources, boss variants and dedicated projectile actors where positive stats exist. Zero damage and special invulnerability rules stay intact. Environmental damage is not globally doubled. Per-boss/projectile runtime coverage is incomplete.
 - **Wolfos tuning:** first slash wind-up remains stock speed; follow-up attacks use 2x animation speed. The rear-exposure branch is bypassed and the slip branch no longer requests its original turn. Existing Wolfos/Stalfos counter and interval tuning is retained. These changes are not a guarantee that every turn animation disappears.
-- **Blood floors:** aged dark blood stains on Bottom of the Well and Shadow Temple floor materials. These are two repeating material replacements, not individually placed decals. Other materials/walls are unchanged; use outside those dungeons is not exhaustively traced.
 
 The requested extra save slots, random double/flaming scrub/Octorok seeds, guaranteed first-hit Wolfos guard break, complete enemy redesign and in-game settings switches are not implemented in these releases.
 
@@ -47,8 +46,8 @@ Regeneration waits 1.25 seconds after exertion/guard, then restores 24 units/sec
 
 ## Without Stamina
 
-Includes the same wheel, manual-shield/targeting policy, enemy balance/behavior tuning and blood floors. It installs no stamina HUD, attack costs, fatigue, regeneration or stamina-based action limits.
+Includes the same wheel, manual-shield/targeting policy, enemy balance/behavior tuning. It installs no stamina HUD, attack costs, fatigue, regeneration or stamina-based action limits.
 
 ## Manual Shield standalone
 
-Installs only executable hooks for held guard, target toggle/cancel, scoped guard animation/state policy and the native shield-slot draw request. It contains no item wheel, stamina HUD/system, enemy stat/AI pack, floor texture, PS5 artwork or controller profile. Use it by itself; Hero Mode already contains the corresponding shield implementation.
+Installs only executable hooks for held guard, target toggle/cancel, scoped guard animation/state policy and the native shield-slot draw request. It contains no item wheel, stamina HUD/system, enemy stat/AI pack, PS5 artwork or controller profile. Use it by itself; Hero Mode already contains the corresponding shield implementation.
