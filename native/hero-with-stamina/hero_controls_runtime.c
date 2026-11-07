@@ -11,6 +11,25 @@ typedef void (*set_native_bool)(void *, u32, u32);
 extern void native_draw_equipment(void *, u32);
 extern void wheel_raw(u64 *, u32);
 extern void native_request_as_original(void *,u32,void *,u32,u32);
+extern void *resolve_player(void *);
+
+/* ExecutePlayerReactionGuard Enter: native code has accepted a real block.
+   Never charge merely for raising the shield or for a different actor. */
+void hero_guard_impact(void *action) {
+    if((u64)resolve_player(action)!=hero_cache[0]||!hero_control_state[4])return;
+    if(!*(u32 *)(hero_runtime+20)||!*(u32 *)(hero_runtime+32)||
+       !*(u32 *)(hero_runtime+36))return;
+    float stamina=*(float *)hero_runtime;
+    float cost=(*(float *)(hero_runtime+64)) * (*(float *)(hero_runtime+16));
+    if(stamina<=0.0f||cost<=0.0f)return;
+    float spent=cost<stamina?cost:stamina;
+    *(float *)hero_runtime=stamina-spent;
+    *(float *)(hero_runtime+12)=0.0f;
+    *(float *)(hero_runtime+168)=spent;
+    u32 token=++*(u32 *)(hero_control_state+64);
+    *(u32 *)(hero_runtime+28)=token;
+    *(float *)(hero_control_state+68)=spent;
+}
 
 void hero_controls_raw(u64 *records, u32 count) {
     if (!records || count == 0 || count > 64) return;
@@ -76,7 +95,7 @@ void hero_guard_frame(void) {
     u32 in_combat = *(u32 *)(hero_runtime + 36);
     u32 allowed = held && initialized && alive && cap > 0.0f && (!in_combat || stamina > 0.0f);
     hero_control_state[4] = (u8)allowed;
-    /* Apply held guard policy; native input handles locomotion and camera. */
+    /* Match the native mobile guard flag without requesting target/camera. */
     u32 *state_flags=(u32 *)(player_state+0xe50);
     if(allowed)*state_flags|=0x80100u;
     else *state_flags&=~0x80000u;

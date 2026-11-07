@@ -1,0 +1,15 @@
+{
+  "confirmed_block_cost_scoped_combat_and_clamp": true,
+  "relocated_base": "0x80000000",
+  "input_toggle_and_R2_preservation": true,
+  "64_state_input_batch": true,
+  "pause_passthrough": true,
+  "scoped_AS_setter": true,
+  "guard_AS_request_and_StringRef_ABI": true,
+  "guard_frame_request_bit": true,
+  "one_draw_per_guard_entry": true,
+  "combat_exhaustion_disallows_guard": true,
+  "outside_combat_zero_stamina_allows_guard": true,
+  "dead_player_disallows_guard": true,
+  "native_collision_and_visible_pose": "Not established by emulation; require live qualification"
+}

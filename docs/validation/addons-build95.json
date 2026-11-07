@@ -1,0 +1,11 @@
+{
+  "emulator_build": 95,
+  "emulator_release_tag": "build-94",
+  "original_nup_used": true,
+  "prepared_exefs_hooks_verified_in_memory": true,
+  "romfs_arena_load_verified_by_12_heart_240_stamina_state": true,
+  "stalfos_actor_verified_live": true,
+  "stalfos_double_health_and_damage_are_test_overrides_only": true,
+  "save_slot_menu_added": false,
+  "user_confirmed_manual_shield_and_block_cost_behavior": true
+}

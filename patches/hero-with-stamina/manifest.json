@@ -1,6 +1,6 @@
 {
   "name": "Hero Mode with Stamina",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.3",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
@@ -9,21 +9,21 @@
       "path": "exefs/main",
       "kind": "nso",
       "source_sha256": "7db9ddfda088c22d219ef13496decd7077c68cd67d4b37f53f4ac46a082768f2",
-      "target_sha256": "612ffafc9f86bbaf87d9700570454ed047a011c77dd7c53e9ac24c53b5acb005",
+      "target_sha256": "405af06662d977d3e03b1730eb8836afcc0189d035e6aa0a7fbf270dc5f2f844",
       "patch": "000.patch"
     },
     {
       "path": "exefs/rtld",
       "kind": "nso",
       "source_sha256": "219f25ef4a64a704e86dacfeb25d9e8977045f2145e629268b94baf34d5e0bbe",
-      "target_sha256": "2bae3e8823a1bfa78ee3f4d70015423f74672d010979fe453c732b5b36b78604",
+      "target_sha256": "e37076bd19f2d853ca9377a0665dee8aa3d607dd240ddb296a74dac017f19d2f",
       "patch": "001.patch"
     },
     {
       "path": "exefs/subsdk0",
       "kind": "nso",
       "source_sha256": "0d32c4bdbcfcfa1c4110c37eff18eaf70061a55090b7fedc741a2e37224065ba",
-      "target_sha256": "837dd28c579023bd4d39ebd0e602ed9b2e7c63325236172ddc82caa9eba5699b",
+      "target_sha256": "3d4a5de317d3c70785d00847cc0a29f0c997334be48f9b3b7ef957937641d698",
       "patch": "002.patch"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_sha256": "500635f34cb1c044407fd9fca7fad5ea4f4a43b4dac8455f50fbe243bbaa7788",
       "target_sha256": "1d52a3c9db59ca32cb9d7578fc12aa92f191aef227254c34cfdb0c40b99457f0",
       "dictionary": 1,
-      "patch": "181.patch"
+      "patch": "179.patch"
     },
     {
       "path": "romfs/UI/Layout2Archive/Common.Product.100.Nin_Ounce_NVN2.bntx.zs",
@@ -1448,7 +1448,7 @@
       "source_sha256": "814cebde1c7609ccfcd00a1185a37a4c96a0f1d16dea971ff166c49a103e0585",
       "target_sha256": "45d9a772b09baa1daa22021ed4d8472f11b452be57bff79613227b31b1404e55",
       "dictionary": 1,
-      "patch": "182.patch"
+      "patch": "180.patch"
     }
   ]
 }

@@ -41,4 +41,4 @@ for key,name,folder in variants:
    else:assert bsdiff4.patch(o,patch)==t
    entry={'path':path,'kind':kind,'source_sha256':sh,'target_sha256':th,'dictionary':ident,'patch':patchname}
   (out/patchname).write_bytes(patch);files.append(entry)
- m={'name':name,'version':'0.1.0-beta.2' if key.startswith('hero') else '0.1.0','title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};(out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)
+ m={'name':name,'version':{'hero-with-stamina':'0.1.0-beta.3','hero-without-stamina':'0.1.0-beta.2','item-wheel':'0.1.1','manual-shield':'0.1.0'}[key],'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};(out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)

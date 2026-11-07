@@ -18,5 +18,5 @@ full_hid_return = 0x3489670;
 
 hero_controls_raw = 0x4f4c770;
 
-hero_all_input = 0x4f498a0;
-hero_guard_frame = 0x4f498cc;
+hero_all_input = 0x4f49940;
+hero_guard_frame = 0x4f4996c;

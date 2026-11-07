@@ -1,4 +1,20 @@
 .text
+.global hero_guard_impact_entry
+hero_guard_impact_entry:
+ sub sp,sp,#80
+ stp x0,x1,[sp]
+ stp x2,x3,[sp,#16]
+ str x30,[sp,#32]
+ stp q0,q1,[sp,#48]
+ bl hero_guard_impact
+ ldp q0,q1,[sp,#48]
+ ldr x30,[sp,#32]
+ ldp x2,x3,[sp,#16]
+ ldp x0,x1,[sp]
+ add sp,sp,#80
+ pacibsp
+ b original_guard_impact_body
+
 .global hero_setter_hook
 hero_setter_hook:
  /* Preserve the original high-bit early return exactly. */

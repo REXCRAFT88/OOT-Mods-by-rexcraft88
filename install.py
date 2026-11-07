@@ -98,12 +98,15 @@ def main():
         target=pathlib.Path(a.patched_nup).resolve()
         if not source.nup:p.error('--patched-nup requires a NUP source')
         if target==source.path or target.exists():p.error('--patched-nup must name a NEW file, never the source')
-    build(source,manifest,a.output)
+    manifest_info=build(source,manifest,a.output)
     if a.patched_nup:
-        from nup_reader import apply_copy
+        from nup_reader import apply_copy, set_display_title
         overrides={f.relative_to(a.output).as_posix():f.read_bytes() for f in pathlib.Path(a.output).rglob('*') if f.is_file() and f.relative_to(a.output).parts[0] in ('exefs','romfs')}
         apply_copy(source.path,target,overrides)
+        title='The Legend of Zelda: Ocarina of Time ['+manifest_info['name']+']'
+        set_display_title(target,title)
         print('Launch this NUP in Lichii:',target)
+        print('Library display name:',title)
 if __name__=='__main__':
     try:main()
     except Exception as e:print('ERROR:',e,file=sys.stderr);sys.exit(1)

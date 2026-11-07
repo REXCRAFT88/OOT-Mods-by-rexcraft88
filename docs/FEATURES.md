@@ -39,10 +39,11 @@ Permanent maximum hearts increase capacity (20 units per heart). Lower current h
 | Roll or ordinary jump | 12 |
 | Backflip / sidestep | 10 / 8 |
 | Held shield | 2 units per second |
+| Successful native shield-block reaction | 8 before injury scaling |
 
 Regeneration waits 1.25 seconds after exertion/guard, then restores 24 units/second. Exhausted melee stays available at half damage and a requested 0.75 animation rate; actual slower attack duration was measured in earlier stamina validation. Roll/jump/dodge/dash input is restricted when exhausted. The shared contextual jump/dodge input currently requires the 12-unit threshold even though accepted backflips/sidesteps cost 10/8. Manual guard is disabled by the stamina policy at zero in combat.
 
-**Per-impact shield stamina cost and native guard-break/stagger are not connected yet.** Do not interpret the held drain or guard-pose policy as proof of a finished guard-break mechanic. Child Link, unusual equipment, bosses and transitions need more gameplay coverage. These limits are why Hero Mode is labeled Beta / Early Access.
+**Successful native shield-block reactions cost 8 stamina before injury scaling.** One deduction occurs on the native guard-reaction entry, separately from the 2/second held drain. No impact cost is charged outside combat. Native zero-stamina guard-break/stagger is still not connected. Do not interpret the held drain or guard-pose policy as proof of a finished guard-break mechanic. Child Link, unusual equipment, bosses and transitions need more gameplay coverage. These limits are why Hero Mode is labeled Beta / Early Access.
 
 ## Without Stamina
 
@@ -58,4 +59,4 @@ Hold R/R1 to open the wheel, choose with the left stick and release to equip. Ta
 
 This variant keeps the game's normal targeting, shielding, item-use and face-button behavior; it does not install Hero Mode's L/L1 target toggle or ZL/L2 manual-shield policy. It contains no stamina or enemy balance changes. Do not combine its executable/UI replacements with Hero Mode, which already includes the wheel.
 
-On Lichii build-93, use the generated patched NUP to ensure the wheel's RomFS layout loads. The generated Add-on ZIP is for a loader with verified NUP RomFS override support. Seeing the mod in Add-ons does not establish that its layout was applied.
+Use the prepared Add-on ZIP on Lichii build95 (release tag build-94), which fixes NUP RomFS overrides. Build93 needs the optional patched-NUP fallback for the complete wheel layout.

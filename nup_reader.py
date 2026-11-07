@@ -80,3 +80,89 @@ def apply_copy(source,destination,overrides):
     if source.stat().st_mtime_ns!=source_stat.st_mtime_ns or source.stat().st_size!=source_stat.st_size:raise ValueError('Source changed during test-copy build')
     print('Verified',len(patches),'resource overrides in',destination,flush=True)
     return destination
+
+def set_display_title(path, title):
+    """Label a patched copy without changing its title ID, saves or game members."""
+    if not title or len(title.encode('utf-8')) > 1024 or '\0' in title:
+        raise ValueError('Invalid display title')
+    n = Nup(path)
+    edits = []
+    with n.path.open('rb') as f:
+        for package in n.packages:
+            if package['kind'] not in (0, 1):
+                continue
+            record = 48 + package['index'] * 64
+            offset, size = struct.unpack_from('<QI', n.toc, record + 32)
+            f.seek(offset)
+            block = f.read(size) if offset else b''
+            pos = 0
+            fields = []
+            found = False
+            while pos < len(block):
+                if pos + 8 > len(block):
+                    raise ValueError('Truncated NUP metadata header')
+                kind, reserved, length = struct.unpack_from('<HHI', block, pos)
+                pos += 8
+                if pos + length > len(block):
+                    raise ValueError('Truncated NUP metadata value')
+                value = block[pos:pos + length]
+                pos += length
+                if kind == 5:
+                    value = title.encode('utf-8')
+                    found = True
+                elif kind == 9:
+                    # Preserve each language key while making every library label distinct.
+                    cursor = 0
+                    localized = bytearray()
+                    while cursor < len(value):
+                        lang_len = value[cursor]
+                        cursor += 1
+                        if cursor + lang_len + 4 > len(value):
+                            raise ValueError('Invalid localized NUP title')
+                        lang = value[cursor:cursor + lang_len]
+                        cursor += lang_len
+                        old_len = struct.unpack_from('<I', value, cursor)[0]
+                        cursor += 4
+                        if cursor + old_len > len(value):
+                            raise ValueError('Invalid localized NUP title length')
+                        cursor += old_len
+                        text = title.encode('utf-8')
+                        localized.extend(bytes([lang_len]) + lang + struct.pack('<I', len(text)) + text)
+                    value = bytes(localized)
+                fields.append(struct.pack('<HHI', kind, reserved, len(value)) + value)
+            if not found:
+                value = title.encode('utf-8')
+                fields.append(struct.pack('<HHI', 5, 0, len(value)) + value)
+            edits.append((record, b''.join(fields)))
+    if not edits:
+        raise ValueError('No program metadata to label')
+    # A tiny receipt permits restoration of the original header and metadata pointers.
+    import base64
+    backup = n.path.with_suffix('.title-backup.json')
+    if not backup.exists():
+        backup.write_text(json.dumps({'size':n.path.stat().st_size,
+            'header':base64.b64encode(n.header).decode(),
+            'toc':base64.b64encode(n.toc).decode()}, indent=2))
+    with n.path.open('r+b') as f:
+        f.seek(0, 2)
+        for record, block in edits:
+            f.write(b'\0' * ((-f.tell()) % 16))
+            offset = f.tell()
+            f.write(block)
+            struct.pack_into('<QI', n.toc, record + 32, offset, len(block))
+        struct.pack_into('<Q', n.header, 64, f.tell())
+        n.header[24:56] = hashlib.sha256(n.toc).digest()
+        f.seek(n.toc_offset)
+        f.write(n.toc)
+        f.seek(0)
+        f.write(n.header)
+        f.flush()
+        os.fsync(f.fileno())
+    checked = Nup(path)  # Recheck TOC integrity after the metadata-only update.
+    with checked.path.open('rb') as f:
+        for record, expected in edits:
+            offset, length = struct.unpack_from('<QI', checked.toc, record + 32)
+            f.seek(offset)
+            if f.read(length) != expected:
+                raise ValueError('Display title read-back failed')
+    return title

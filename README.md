@@ -2,18 +2,20 @@
 
 Mods for Project Eglantine / Ocarina of Time, title **0400486024DEC000**, update **131072**, executable build **E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348**.
 
-Download the ZIP assets from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases). GitHub's automatic source ZIP is the source repository; the named release ZIP contains the installer and selected patch.
+Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases), then use **Configure Game > Add-ons > Import Mod from ZIP**. No commands or builder step are needed. Use Lichii build95 (release tag `build-94`) for full NUP RomFS support.
+
+**Already made `heromode.nup`? Launch that patched game directly. Do not also import a ZIP.** The illustrated [guide](docs/INSTALLATION.md) separates both methods.
 
 | Download | Included |
 | --- | --- |
-| Hero Mode with Stamina — Beta / Early Access | Item wheel, manual shield and toggle targeting, enemy balance/behavior changes, combat stamina and HUD |
-| Hero Mode without Stamina — Beta / Early Access | The same wheel, shield, enemy changes, with no stamina system or stamina HUD |
+| Hero Mode with Stamina â€” Beta / Early Access | Item wheel, manual shield and toggle targeting, enemy balance/behavior changes, combat stamina and HUD |
+| Hero Mode without Stamina â€” Beta / Early Access | The same wheel, shield, enemy changes, with no stamina system or stamina HUD |
 | Manual Shield | Only manual guard and associated target/input policy; no wheel, stamina, enemy or texture changes |
 | Item Wheel | Standalone wheel with hold selection, tap variant cycling, outline/glow, installer and source |
 
 **Choose one complete mod.** Hero Mode already includes the wheel and shield. Do not stack its native files with separate wheel/shield/stamina mods. Both Hero Mode variants are early-access betas.
 
-No PS5 controller profile, PS5 artwork, game executable or complete game asset is distributed here. Patch bundles reconstruct the changed files from your own matching NUP or extracted game folder.
+Prepared Add-ons contain ready-to-load mod overrides. Optional small patch builders remain available for older loaders and rebuilding from your matching game files.
 
 Read [Installation](docs/INSTALLATION.md), [Changes and controls](docs/FEATURES.md), and [Modder resources](docs/MODDER-RESOURCES.md).
 
