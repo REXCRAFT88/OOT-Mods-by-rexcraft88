@@ -19,7 +19,8 @@ for key in ['hero-with-stamina','hero-without-stamina','manual-shield','item-whe
     off=5;written=[]
     while ips[off:off+4]!=b'EEOF':
         address,size=struct.unpack_from('>IH',ips,off);off+=6;address-=0x100
-        assert size>0 and address>=0x3c46600 and address+size<=0x3c47000
+        assert size>0 and ((address>=0x3c46600 and address+size<=0x3c47000) or
+                          (key=='hero-with-stamina' and address==0x4ea4000 and size==96))
         memory[address:address+size]=ips[off:off+size];off+=size;written.append([hex(address),size])
     # Build95 requires executable padding OUTSIDE text, inside its aligned page,
     # original zero bytes, unchanged by user patches, and zero/unchanged BSS state.

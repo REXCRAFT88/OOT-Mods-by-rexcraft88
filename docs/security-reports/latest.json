@@ -13,7 +13,7 @@
     "tool": "Bandit",
     "high": 0,
     "medium": 0,
-    "low": 149,
+    "low": 151,
     "interpretation": "Low findings include developer assertions and local subprocess/tool invocations; no high/medium findings remain. Runtime user-facing builders do not use shell=True or exec."
   },
   "dependencies": {
@@ -24,27 +24,62 @@
   "assets": [
     {
       "variant": "hero-with-stamina",
-      "version": "0.1.0-beta.5",
+      "version": "0.1.0-beta.6",
       "files": [
         {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.5-Prepared-Addon.zip",
-          "sha256": "bff27782850fda76a517f7df1241c6cb70e0f93cee9e5e595a4ec7ad103c697f",
-          "bytes": 151305114
+          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.6-Prepared-Addon.zip",
+          "sha256": "8328221ffbdb1215b76f83b1adaa1b1dba81f067dec4a7f382afd112e303fea4",
+          "bytes": 151305675
         },
         {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.5-Prepared-Addon-SHA256.txt",
-          "sha256": "b69099f30d9da7a790091aeba0e2dd444f8d5f6d44d39ee16a03caf744ffc5ec",
+          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.6-Prepared-Addon-SHA256.txt",
+          "sha256": "c2d4912ae83a82e87424512af0d5ab433a6bfad09d764da7b1bfb441c5208501",
           "bytes": 127
         },
         {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.5-Optional-Builder.zip",
-          "sha256": "9bae14599b9d95eff3b64ce0c27831a160e08d66c779bb5d54c473fb11f00475",
-          "bytes": 350174
+          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.6-Optional-Builder.zip",
+          "sha256": "52e457d57c4ce40ded8ede8df4240b0c990e181652229751f325f75d924af0e6",
+          "bytes": 359810
         },
         {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.5-Optional-Builder-SHA256.txt",
-          "sha256": "2c28064895a5116cca546c401452fa6f59fe83e87d90d988ecbc6c1ad0c80d81",
+          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.6-Optional-Builder-SHA256.txt",
+          "sha256": "49f0fd4bf867f285484e6ac0e3d3e07cc38fdc4104498f18ea38bb52451133e8",
           "bytes": 129
+        },
+        {
+          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.6-125pct-Prepared-Addon.zip",
+          "sha256": "2a21f5fc8866ff89b608aeef6943c7a4f119d43d34802d2466b8b7a9c4af22fb",
+          "bytes": 151305681
+        },
+        {
+          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.6-125pct-Prepared-Addon-SHA256.txt",
+          "sha256": "da613dd331fbe18b3df8b403fa5cd5c92f907d161b114039f51b450a236f0a16",
+          "bytes": 134
+        },
+        {
+          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.6-150pct-Prepared-Addon.zip",
+          "sha256": "b94c0f623047085a886d347d3e6a4a18bb09515f071219203849b5885a52c965",
+          "bytes": 151305683
+        },
+        {
+          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.6-150pct-Prepared-Addon-SHA256.txt",
+          "sha256": "611d9ca9af8e8208d226403c30f41d60e5e76f552b6575e4adaff075af011cdf",
+          "bytes": 134
+        },
+        {
+          "name": "stamina_settings.py",
+          "sha256": "11853fae71d0ed9157015f4f4bf1c74bc68383b64ca6629d2aa08ea1c8315b29",
+          "bytes": 8500
+        },
+        {
+          "name": "stamina_settings-SHA256.txt",
+          "sha256": "108f9b9deb85679ed2eaca6a8b835b0c6ef230c2f1331ad748327103e7c81965",
+          "bytes": 87
+        },
+        {
+          "name": "Stamina-Settings-Example.json",
+          "sha256": "c19c51f0d687e70c7dea13bfc025782733e484e224e96a6d059596454e8be222",
+          "bytes": 187
         }
       ]
     },
@@ -135,5 +170,14 @@
     "ocarina": "Compiled native action passthrough checked; normal progressed-save gameplay check pending (synthetic test save cannot activate the instrument)",
     "timing": "Regression reproduced from prior ZIP headers in all four variants. New main text extent equals stock; built-in FPS padding/hook/BSS conditions pass for all four. Live stamina Hero with built-in FPS plus ultrawide and no-stamina Hero with external FPS plus ultrawide reached gameplay. Live game-step samples show variable elapsed-time scaling.",
     "installation": "Current release requires complete Add-on including IPS sidecar on the original NUP; patched-NUP output is rejected."
+  },
+  "stamina_settings_checks": {
+    "default": "Live12-heart capacity240, HUD(-1560,778), config bytes match",
+    "150_percent": "Live capacity360, displayed GaugeMax240, same HUD(-1560,778)",
+    "custom": "Live capacity300, Master Sword cost9, regeneration30/sec with0.5s delay, HUD(-1544,778); memory bytes match custom JSON",
+    "presets": "Only96-byte IPS config, JSON and mod receipt content differ; other file bytes identical",
+    "tool": "Tk layout six inputs/four buttons; invalid values, incompatible formats and overwrites rejected; builder ZIP supports customizer",
+    "native_copy": "Compiled AArch6480-byte copy checked without overwriting adjacent state",
+    "in_game_menu": false
   }
 }

@@ -39,6 +39,16 @@ for variant in ['hero-with-stamina','hero-without-stamina','item-wheel','manual-
     if variant!='item-wheel':run('controls_context')
     word(heartbeat,2)
     assert raw(6,0x80)==0,variant # resume gameplay filtering
+    if variant=='hero-with-stamina':
+        sys.path.insert(0,'work/publish-oot-mods')
+        from stamina_settings import encode_settings,DEFAULTS
+        config=encode_settings(dict(DEFAULTS,capacity_percent=150))
+        source=base+0x4ea4000
+        u.mem_write(source,config)
+        u.mem_write(records,b'\xa5'*96)
+        run('copy_config',records,source)
+        assert bytes(u.mem_read(records,80))==config[:80]
+        assert bytes(u.mem_read(records+80,16))==b'\xa5'*16
     results.append({'variant':variant,'tap':True,'ocarina_passthrough':True,'menu_passthrough':True,'resume':True})
 Path('work/compatibility-candidates/context-check.json').write_text(json.dumps(results,indent=2))
 print('PASS: compiled input checks for all four variants')

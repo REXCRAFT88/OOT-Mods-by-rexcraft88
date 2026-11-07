@@ -103,3 +103,13 @@ ExexutePlayerPlayOcarina (native spelling) has Enter0x2894340 and Leave0x28947f0
 ### Built-in FPS eligibility regression
 
 Leaving the FPS cave's bytes untouched was insufficient: PatchNSO also checks that its executable-padding record lies outside header.segments[0].size. Extending main text beyond0x3c46200 made this check fail. Keep main text at its original0x3c461d0 and apply our code at0x3c46600 via the supplied IPS32 sidecar (IPS offsets include the synthetic0x100-byte NSO header). Loader page alignment already maps this padding executable. Our inline branches and extended BSS remain in the replacement NSO. This retains module placement while allowing built-in FPS eligibility; the previous patch-copy NUP workflow cannot carry a new ExeFS IPS sidecar, so current builders output Add-ons instead.
+
+## Stamina configuration (Beta6)
+
+The IPS sidecar now seeds a 96-byte configuration block at main+0x4ea4000, inside the already reserved BSS. It contains HeroConfig (20 floats, 80 bytes), HUD offset X/Y (two floats), little-endian STM1 magic and schema version1 (two u32s). Frame initialization copies only the first80 bytes into NativeHero.config; game/save files are not parsed for these settings. The optional stamina_settings.py edits this record and the ZIP receipts, preserving executable code and all other resources. Defaults retain20 units/heart and24/sec regeneration; HUD Y offset is+24.
+
+The native C bridge source is native/compatibility/stamina_configurable.c. Its near_enemy helper is linked into main's existing executable alignment padding to leave SDK space for configuration and HUD logic. copy_config is a small AArch64 vector copy preserving the state fields outside the80-byte destination. The main NSO text extent stays original; both code and configuration are installed via IPS. Keep the existing FPS loader regression checks.
+
+HUD coordinates are changed only when the additive stamina pane binds. Capacity scaling is normalized for display, so the visual GaugeMax continues to correspond to permanent hearts at20 display units per heart while the underlying stamina pool can be larger. The visibility scale continues to be combat-only, and the magic gauge resource is unchanged. A real in-game settings frontend remains separate work; JSON in the ZIP is a receipt, not a file automatically loaded by the game.
+
+Edit stamina_settings.py DEFAULTS for user defaults or encode_settings for base costs/percent conversion, then rebuild the sidecar and release manifest. The legacy hero_default_config routine alone no longer supplies native Beta6 defaults.

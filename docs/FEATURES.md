@@ -70,3 +70,7 @@ All four updated variants pass shoulder inputs through in paused menus. Wheel va
 ## Slow-motion timing repair
 
 The earlier compatibility packages extended main's NSO text size into padding. Lichii therefore rejected its built-in Dynamic FPS cave as part of the executable text, even when no byte overlap remained. That could leave a decent presentation FPS with slow game simulation. Current packages preserve the original text size0x3c461d0 and supply only our separate cave at0x3c46600 through a build-ID-matched IPS sidecar. Lichii can then apply its own FPS routine at0x3c46200. The sidecar does not bundle or enable an FPS fix; enable the built-in fix or the checked standalone alternative. Install through Add-ons using the original NUP.
+
+## Configurable stamina (Beta6)
+
+Hero Mode with Stamina now has a configuration block for capacity, regeneration, delay, action/shield costs and HUD offsets. Default balance remains the same, with the yellow gauge moved24 layout units upward toward magic. Ready-to-import125% and150% capacity presets and an optional Python settings tool are available; there is no in-game settings screen yet. The meter's visual length remains tied to permanent hearts when capacity is boosted. See [Stamina settings](STAMINA-SETTINGS.md).

@@ -84,7 +84,11 @@ def build(source,manifest_path,destination):
         staged.append((path,target))
     for path,target in staged:
         p=destination/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(target)
-    (destination/'mod-info.json').write_text(json.dumps({'name':m['name'],'version':m['version'],'title_id':m['title_id'],'build_id':m['build_id'],'files':[{'path':p,'sha256':sha(b)} for p,b in staged]},indent=2))
+    info={'name':m['name'],'version':m['version'],'title_id':m['title_id'],'build_id':m['build_id'],'files':[{'path':p,'sha256':sha(b)} for p,b in staged]}
+    if 'stamina_settings' in m:
+        info['stamina_settings']=m['stamina_settings']
+        (destination/'stamina-settings.json').write_text(json.dumps(m['stamina_settings'],indent=2))
+    (destination/'mod-info.json').write_text(json.dumps(info,indent=2))
     print('Built and verified',m['name'],'in',destination)
     return m
 

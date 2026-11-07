@@ -23,3 +23,5 @@ The published report records Microsoft Defender scan results, signature version,
 No release is uploaded to a third-party scanning service as part of these local checks. Optional dependencies are fetched from the configured Python package index only when someone chooses the builder route.
 
 Latest evidence: [security report](security-reports/latest.json).
+
+The optional `stamina_settings.py` tool uses only the Python standard library and edits a compatible Add-on ZIP into a new ZIP. It changes only the bounded96-byte stamina configuration block, settings receipt and checksum; it does not run code from the ZIP or read/write the game or saves. It rejects incompatible config formats, unsafe archive paths, non-finite/out-of-range values and existing output files. The125%/150% preset archives preserve the same executable code as the default release.

@@ -14,6 +14,9 @@ def pack_addon(folder, destination):
     with zipfile.ZipFile(destination, 'x', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for p in files:
             archive.write(p, folder.name + '/' + p.relative_to(folder).as_posix())
+        for name in ('mod-info.json','stamina-settings.json'):
+            if (folder/name).is_file():
+                archive.write(folder/name,folder.name+'/'+name)
 
 
 def main():

@@ -1,6 +1,6 @@
 {
   "name": "Hero Mode with Stamina",
-  "version": "0.1.0-beta.5",
+  "version": "0.1.0-beta.6",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
@@ -8,14 +8,14 @@
     {
       "path": "exefs/E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348.ips",
       "kind": "raw",
-      "target_sha256": "eb7b740a3bc24e9ba5f2159139029f5ccc42d939290258011b89f7f0bedd8b0a",
+      "target_sha256": "120e659c9c259ac6f858b2482ae0e654b33499d8c307a304e3bc090f1eccb058",
       "patch": "000.patch"
     },
     {
       "path": "exefs/main",
       "kind": "nso",
       "source_sha256": "7db9ddfda088c22d219ef13496decd7077c68cd67d4b37f53f4ac46a082768f2",
-      "target_sha256": "6c5f6a87dbc466ac539b442210c4cfb405d9f69495c82f855b83adf1480ea9ad",
+      "target_sha256": "0776594af6cf6dc3e66e12af64d79b955c6fc9b7791adc3c61d035640a801a58",
       "patch": "001.patch"
     },
     {
@@ -29,14 +29,14 @@
       "path": "exefs/sdk",
       "kind": "nso",
       "source_sha256": "3ae3cd4cf340d72bdaba9e6f66016a74c1eae13737a5f7299375ed6654b9b1c5",
-      "target_sha256": "29afc2d8565cb509929d615f7ddca30c2e56e97d69b0f0c8eeec117f8dea7f0f",
+      "target_sha256": "87b48e59f477050548740f66b74a2b7167809d5db664a2df9b5df6618838643d",
       "patch": "003.patch"
     },
     {
       "path": "exefs/subsdk0",
       "kind": "nso",
       "source_sha256": "0d32c4bdbcfcfa1c4110c37eff18eaf70061a55090b7fedc741a2e37224065ba",
-      "target_sha256": "94fa6aa0daff075d8a7d636cc63318c8c8e9a09a589ba6b659f5f6d61c5f82b3",
+      "target_sha256": "7b5520cc402afd5008ef8f94af30ff16b18fbed6a903889986fecc1f79a4e579",
       "patch": "004.patch"
     },
     {
@@ -1463,5 +1463,14 @@
       "dictionary": 1,
       "patch": "182.patch"
     }
-  ]
+  ],
+  "stamina_settings": {
+    "schema_version": 1,
+    "capacity_percent": 100,
+    "regeneration_percent": 100,
+    "cost_percent": 100,
+    "regeneration_delay": 1.25,
+    "hud_offset_x": 0,
+    "hud_offset_y": 24
+  }
 }

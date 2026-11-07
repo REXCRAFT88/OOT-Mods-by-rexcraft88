@@ -48,4 +48,8 @@ for key,name,folder in variants:
    else:assert bsdiff4.patch(o,patch)==t
    entry={'path':path,'kind':kind,'source_sha256':sh,'target_sha256':th,'dictionary':ident,'patch':patchname}
   (out/patchname).write_bytes(patch);files.append(entry)
- m={'name':name,'version':{'hero-with-stamina':'0.1.0-beta.5','hero-without-stamina':'0.1.0-beta.4','item-wheel':'0.1.3','manual-shield':'0.1.2'}[key],'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};(out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)
+ m={'name':name,'version':{'hero-with-stamina':'0.1.0-beta.6','hero-without-stamina':'0.1.0-beta.4','item-wheel':'0.1.3','manual-shield':'0.1.2'}[key],'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};
+ if key=='hero-with-stamina':
+  from stamina_settings import DEFAULTS
+  m['stamina_settings']=DEFAULTS
+ (out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)

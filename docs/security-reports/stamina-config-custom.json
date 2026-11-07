@@ -1,0 +1,51 @@
+[
+  {
+    "variant": "hero-with-stamina",
+    "scene": "StalfosStage",
+    "mod_version": "0.1.0-beta.6",
+    "flavour": "pgo",
+    "build": "Lichii build-117 ",
+    "revision": "89440b29a90708c0fefc126b2bd8c7a64a996bdd",
+    "fps_mode": "builtin",
+    "ultrawide": true,
+    "main_base": "0x804b9000",
+    "runtime_patch_bytes": {
+      "0x6e6cc4": "4f7dd594",
+      "0x3c46200": "2818201eca9200b0",
+      "0x3c46400": "0084552d",
+      "0x805bd0": "0f020014"
+    },
+    "stamina": {
+      "capacity": 300.0,
+      "spent": 9.0,
+      "frame_delta": 1.3371590375900269,
+      "action_token": 3
+    },
+    "preset_percent": 125,
+    "settings": {
+      "schema_version": 1,
+      "capacity_percent": 125,
+      "regeneration_percent": 125,
+      "cost_percent": 75,
+      "regeneration_delay": 0.5,
+      "hud_offset_x": 16,
+      "hud_offset_y": 24
+    },
+    "hud_xy": [
+      -1544.0,
+      778.0
+    ],
+    "config_hex": "0000c8410000003f0000f041000010410000f0400000c0400000c040000040400000003f0000403f0000c0400000104100005841000070410000803fcdcc8c3f0000c03f6666e63f000000400000c03f000080410000c04153544d3101000000",
+    "wheel_screenshot": "screenshot-1794094800-0001.png",
+    "menu_screenshot": null,
+    "fps_snapshot": 58.39396735816154,
+    "loader_messages": [
+      "[   0.469852] Loader <Info> core\\file_sys\\patch_manager.cpp:513:PatchNSO:     - Applying IPS patch from mod \"Combat-Test\"",
+      "[   0.505786] Loader <Info> core\\file_sys\\patch_manager.cpp:513:PatchNSO:     - Applying IPS patch from mod \"Ultrawide 21x9 (3440x1440)\"",
+      "[   0.541182] Loader <Info> core\\file_sys\\patch_manager.cpp:617:PatchNSO:     - Applying built-in patch \"Max Resolution (built-in)\" (1 records) to main",
+      "[   0.541316] Loader <Info> core\\file_sys\\patch_manager.cpp:617:PatchNSO:     - Applying built-in patch \"Dynamic FPS by Dark (built-in)\" (2 records) to main"
+    ],
+    "run": "20261107-183956-595600",
+    "passed": true
+  }
+]

@@ -22,3 +22,5 @@ Read [Installation](docs/INSTALLATION.md), [Changes and controls](docs/FEATURES.
 See [Download verification and security checks](docs/SECURITY.md) for checksums, scan scope and results.
 
 The game/version above is required. These are Eglantine patches, not N64 ROM patches, Ship of Harkinian mods, or Zelda64Recomp mods. Other executable updates are not supported by these exact offsets.
+
+Hero Mode with Stamina Beta6 includes [stamina/HUD configuration](docs/STAMINA-SETTINGS.md), plus ready-made 125% and 150% capacity presets.

@@ -1,0 +1,43 @@
+[
+  {
+    "variant": "hero-with-stamina",
+    "scene": "StalfosStage",
+    "mod_version": "0.1.0-beta.6",
+    "flavour": "pgo",
+    "build": "Lichii build-117 ",
+    "revision": "89440b29a90708c0fefc126b2bd8c7a64a996bdd",
+    "fps_mode": "builtin",
+    "ultrawide": true,
+    "main_base": "0x809fc000",
+    "runtime_patch_bytes": {
+      "0x6e6cc4": "4f7dd594",
+      "0x3c46200": "2818201eca9200b0",
+      "0x3c46400": "0084552d",
+      "0x805bd0": "0f020014"
+    },
+    "stamina": {
+      "capacity": 360.0,
+      "spent": 12.0,
+      "frame_delta": 1.0,
+      "action_token": 3
+    },
+    "preset_percent": 150,
+    "hud_xy": [
+      -1560.0,
+      778.0
+    ],
+    "config_hex": "0000f0410000a03f0000c04100004041000020410000004100000041000080400000003f0000403f0000004100004041000090410000a0410000803fcdcc8c3f0000c03f6666e63f0000004000000040000000000000c04153544d3101000000",
+    "wheel_screenshot": "screenshot-1794094608-0001.png",
+    "menu_screenshot": null,
+    "fps_snapshot": 60.482942639538045,
+    "loader_messages": [
+      "[   0.506740] Loader <Info> core\\file_sys\\patch_manager.cpp:513:PatchNSO:     - Applying IPS patch from mod \"Combat-Test\"",
+      "[   0.543322] Loader <Info> core\\file_sys\\patch_manager.cpp:513:PatchNSO:     - Applying IPS patch from mod \"Ultrawide 21x9 (3440x1440)\"",
+      "[   0.580144] Loader <Info> core\\file_sys\\patch_manager.cpp:617:PatchNSO:     - Applying built-in patch \"Max Resolution (built-in)\" (1 records) to main",
+      "[   0.580266] Loader <Info> core\\file_sys\\patch_manager.cpp:617:PatchNSO:     - Applying built-in patch \"Dynamic FPS by Dark (built-in)\" (2 records) to main"
+    ],
+    "run": "20261107-183644-604500",
+    "passed": true,
+    "visual_maximum_frame": 240.0
+  }
+]

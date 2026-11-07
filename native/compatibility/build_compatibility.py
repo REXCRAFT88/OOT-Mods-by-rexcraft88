@@ -38,6 +38,18 @@ for variant in ['hero-with-stamina','hero-without-stamina','item-wheel','manual-
     ld='SECTIONS { . = 0x3c46600; .text : { context_s.o(.text*) context_c.o(.text*) context_c.o(.rodata*) '
     objects=[]
     context=(SRC/'ocarina_context.S').read_text()
+    if stamina:
+        context+='''
+.global copy_config
+copy_config:
+ ldp q0,q1,[x1]
+ stp q0,q1,[x0]
+ ldp q0,q1,[x1,#32]
+ stp q0,q1,[x0,#32]
+ ldr q0,[x1,#64]
+ str q0,[x0,#64]
+ ret
+'''
     if variant!='item-wheel':
         control=0x4f29810 if stamina else 0x4f29770
         context+='''
@@ -86,9 +98,9 @@ wheel_heartbeat:
         (root/'stamina.S').write_text(asm)
         compile(root/'stamina.S',root/'stamina_s.o')
         compile('outputs/OOT-Test-Kit/hero_core.c',root/'core.o')
-        compile('work/hero_native_runtime.c',root/'native.o')
+        compile(SRC/'stamina_configurable.c',root/'native.o')
         objects += [root/'stamina_s.o',root/'core.o',root/'native.o']
-        ld+='stamina_s.o(.text*) core.o(.text*) core.o(.rodata*) '
+        ld+='stamina_s.o(.text*) core.o(.text*) core.o(.rodata*) native.o(.text.near_enemy) '
     ld+='} '
     if stamina:
         # SDK text alignment pad is 1968 bytes. Module placement stays unchanged.
@@ -96,6 +108,7 @@ wheel_heartbeat:
     ld+='/DISCARD/ : { *(.comment) *(.note*) *(.eh_frame*) } }\n'
     defs=Path('work/hero_stamina_runtime.ld').read_text().split('\n',1)[1]
     ld+=defs+'\nwheel_cache = 0x4ea1000;\nocarina_enter_resume = 0x2894344;\nocarina_leave_resume = 0x28947f4;\n'
+    ld+='hero_user_options = 0x4ea4000;\n'
     if variant!='item-wheel':ld+=f'controls_resume = {control+4};\n'
     else:ld+='wheel_tick_resume = 0x2ddc - 0x20000 + 4;\n'
     (root/'context.ld').write_text(ld)
@@ -158,6 +171,11 @@ wheel_heartbeat:
     cave=bytes(texts['main'][original_extent:])
     assert texts['main'][original_extent:0x3c46600]==b'\0'*(0x3c46600-original_extent)
     ips=b'IPS32'+struct.pack('>IH',0x3c46600+0x100,len(texts['main'])-0x3c46600)+bytes(texts['main'][0x3c46600:])+b'EEOF'
+    if stamina:
+        from stamina_settings import DEFAULTS,encode_settings
+        options=encode_settings(DEFAULTS)
+        ips=ips[:-4]+struct.pack('>IH',0x4ea4000+0x100,len(options))+options+b'EEOF'
+        (root/'stamina-settings.json').write_text(json.dumps(DEFAULTS,indent=2))
     (root/'exefs/E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348.ips').write_bytes(ips)
     texts['main']=texts['main'][:original_extent]
     for name,txt in texts.items():(root/'exefs'/name).write_bytes(emit(blobs[name],txt))
