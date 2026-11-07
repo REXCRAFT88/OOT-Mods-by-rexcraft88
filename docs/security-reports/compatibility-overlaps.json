@@ -1,0 +1,42 @@
+[
+  {
+    "variant": "hero-with-stamina",
+    "mod": "Ultrawide 21x9 (3440x1440)",
+    "records_without_overlap": 128
+  },
+  {
+    "variant": "hero-with-stamina",
+    "mod": "Dynamic-fps",
+    "records_without_overlap": 2
+  },
+  {
+    "variant": "hero-without-stamina",
+    "mod": "Ultrawide 21x9 (3440x1440)",
+    "records_without_overlap": 128
+  },
+  {
+    "variant": "hero-without-stamina",
+    "mod": "Dynamic-fps",
+    "records_without_overlap": 2
+  },
+  {
+    "variant": "item-wheel",
+    "mod": "Ultrawide 21x9 (3440x1440)",
+    "records_without_overlap": 128
+  },
+  {
+    "variant": "item-wheel",
+    "mod": "Dynamic-fps",
+    "records_without_overlap": 2
+  },
+  {
+    "variant": "manual-shield",
+    "mod": "Ultrawide 21x9 (3440x1440)",
+    "records_without_overlap": 128
+  },
+  {
+    "variant": "manual-shield",
+    "mod": "Dynamic-fps",
+    "records_without_overlap": 2
+  }
+]

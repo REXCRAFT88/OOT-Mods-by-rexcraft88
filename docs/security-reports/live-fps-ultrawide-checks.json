@@ -1,0 +1,22 @@
+[
+  {
+    "offset": "0x6e6cc4",
+    "expected": "4f7dd594",
+    "actual": "4f7dd594"
+  },
+  {
+    "offset": "0x3c46200",
+    "expected": "2818201eca9200b0",
+    "actual": "2818201eca9200b0"
+  },
+  {
+    "offset": "0x3c46400",
+    "expected": "0084552d",
+    "actual": "0084552d"
+  },
+  {
+    "offset": "0x805bd0",
+    "expected": "0f020014",
+    "actual": "0f020014"
+  }
+]

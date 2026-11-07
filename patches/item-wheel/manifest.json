@@ -1,6 +1,6 @@
 {
   "name": "Item Wheel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
@@ -9,14 +9,14 @@
       "path": "exefs/main",
       "kind": "nso",
       "source_sha256": "7db9ddfda088c22d219ef13496decd7077c68cd67d4b37f53f4ac46a082768f2",
-      "target_sha256": "444fd040ceee57bfdaa6d1da4e2cc69209abecd027e8061cf4e590db3fcdc8eb",
+      "target_sha256": "f94df019d8d269f139753f0b274383b46b35cc774df19a1d4b37ffff4883cb30",
       "patch": "000.patch"
     },
     {
       "path": "exefs/rtld",
       "kind": "nso",
       "source_sha256": "219f25ef4a64a704e86dacfeb25d9e8977045f2145e629268b94baf34d5e0bbe",
-      "target_sha256": "853a366da5b3655023385f3cc97b0383c159802f2cf17c8c10b0003bffb5a2a1",
+      "target_sha256": "79b9fa42f807e29256d97d8431080c32005685c908e5004cca67a2259d42c8bb",
       "patch": "001.patch"
     },
     {

@@ -1,6 +1,6 @@
 {
   "name": "Hero Mode without Stamina",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.3",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
@@ -9,21 +9,21 @@
       "path": "exefs/main",
       "kind": "nso",
       "source_sha256": "7db9ddfda088c22d219ef13496decd7077c68cd67d4b37f53f4ac46a082768f2",
-      "target_sha256": "10dd4f958b01a772bb10c20692e121376915508f42ab0313516b4366adb79dee",
+      "target_sha256": "b0e33de41d12d47843b4543eaaacf791078b8a181c0a76a487ca8e19e6b23fdf",
       "patch": "000.patch"
     },
     {
       "path": "exefs/rtld",
       "kind": "nso",
       "source_sha256": "219f25ef4a64a704e86dacfeb25d9e8977045f2145e629268b94baf34d5e0bbe",
-      "target_sha256": "853a366da5b3655023385f3cc97b0383c159802f2cf17c8c10b0003bffb5a2a1",
+      "target_sha256": "ec7f6c1ed48b7c7d0a16b535f24fe81163c7c100b7a8ec116717e5de2ac2c3e8",
       "patch": "001.patch"
     },
     {
       "path": "exefs/subsdk0",
       "kind": "nso",
       "source_sha256": "0d32c4bdbcfcfa1c4110c37eff18eaf70061a55090b7fedc741a2e37224065ba",
-      "target_sha256": "d5cf7b0a5ce13f464b6c30838fbca2b4879ea9fd68eafbea93fba86ccd1055df",
+      "target_sha256": "657a97e41b7d770a2765b5df146ff492da0c3b8b30625cc9cc063d39d09c77e2",
       "patch": "002.patch"
     },
     {

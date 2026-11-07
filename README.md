@@ -19,4 +19,6 @@ Prepared Add-ons contain ready-to-load mod overrides. Optional small patch build
 
 Read [Installation](docs/INSTALLATION.md), [Changes and controls](docs/FEATURES.md), and [Modder resources](docs/MODDER-RESOURCES.md).
 
+See [Download verification and security checks](docs/SECURITY.md) for checksums, scan scope and results.
+
 The game/version above is required. These are Eglantine patches, not N64 ROM patches, Ship of Harkinian mods, or Zelda64Recomp mods. Other executable updates are not supported by these exact offsets.

@@ -1,0 +1,30 @@
+[
+  {
+    "variant": "hero-with-stamina",
+    "tap": true,
+    "ocarina_passthrough": true,
+    "menu_passthrough": true,
+    "resume": true
+  },
+  {
+    "variant": "hero-without-stamina",
+    "tap": true,
+    "ocarina_passthrough": true,
+    "menu_passthrough": true,
+    "resume": true
+  },
+  {
+    "variant": "item-wheel",
+    "tap": true,
+    "ocarina_passthrough": true,
+    "menu_passthrough": true,
+    "resume": true
+  },
+  {
+    "variant": "manual-shield",
+    "tap": true,
+    "ocarina_passthrough": true,
+    "menu_passthrough": true,
+    "resume": true
+  }
+]

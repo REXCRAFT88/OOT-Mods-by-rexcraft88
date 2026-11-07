@@ -31,7 +31,9 @@ for name,src,stamina in [('hero-with-stamina','work/hero-wheel-trial',True),('he
  b=clean_common(Path(src)/'romfs'/common,stamina);p=root/'romfs'/common;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(b));budgets={common.removesuffix('.zs'):len(b)+131072}
  if stamina:
   tex=bytearray(a.decompress(n.read(pkg['index'],'romfs/'+texrel)))
-  code=Path('work/build_stamina_hud_layout.py').read_text();code=code[code.index('textures=json.loads'):code.index('# The texture archive also grows')];exec(code)
+  from resources.stamina_texture import build_texture
+  tex=build_texture(tex,json.loads(Path('work/oot-textures.json').read_text()))
+  target=root/texrel;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(tex))
   (root/'romfs'/texrel).write_bytes((root/texrel).read_bytes())
   (root/texrel).unlink()
   budgets[texrel.removesuffix('.zs')]=len(tex)+131072

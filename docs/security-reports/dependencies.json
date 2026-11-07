@@ -1,0 +1,25 @@
+{
+  "dependencies": [
+    {
+      "name": "bsdiff4",
+      "version": "1.4.2",
+      "vulns": []
+    },
+    {
+      "name": "zstandard",
+      "version": "0.25.0",
+      "vulns": []
+    },
+    {
+      "name": "lz4",
+      "version": "4.4.5",
+      "vulns": []
+    },
+    {
+      "name": "zbic",
+      "version": "1.0.1.post1",
+      "vulns": []
+    }
+  ],
+  "fixes": []
+}

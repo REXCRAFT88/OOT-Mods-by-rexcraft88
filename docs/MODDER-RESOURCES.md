@@ -91,3 +91,11 @@ Use an isolated adult/full-inventory save and a separate game copy. Fresh native
 Test stamina capacity/injury separately, guard held/released, target alone, shield moving diagonally, target+shield with sword sheathed, R1 tap without popup, wheel hold/equip, R2 bombs/bow, green magic/yellow stamina, pause UI and scene transitions. Do not publish the Stalfos test override as global balance: the special test used36 HP (2x), while released global Stalfos HP is27 (1.5x18).
 
 Future work: broader multi-hit impact coverage and native guard break; optional in-game controller settings; broader controller/child/boss coverage; more enemy patterns and extra saves. These are future work, not shipped features.
+
+## Compatibility repair (November 7, 2026)
+
+The previous stamina payload occupied main+0x3c461d0..0x3c46ff0, overlapping Dynamic FPS at0x3c46200 (120 bytes) and the supplied ultrawide routines at0x3c46400..0x3c465e4. The new helper/core assembly starts at main+0x3c46600; its maximum end is0x3c47000, before rodata. The stamina native C bridge uses SDK text alignment padding at sdk+0x87e850 (main+0x5803850) and must fit before sdk+0x87f000. Main still grows BSS by0x5000; module positions remain main+0x4ea5000 for subsdk0 and main+0x4f85000 for SDK. FPS state main+0x4e9fe00 is left alone.
+
+The rtld frame bridge and all stamina entry branches are retargeted to the relocated functions, including the HID tail. Do not merely move bytes: ADRP/BL relocations must be linked again. native/compatibility/build_compatibility.py builds the compatibility layer from the qualified prior variants; its inputs are the workspace's matching game/resources and compiled baseline artifacts. native/compatibility/check_context.py exercises the compiled input routines in Unicorn. The offset layout supports this exact executable build only.
+
+ExexutePlayerPlayOcarina (native spelling) has Enter0x2894340 and Leave0x28947f0, with PACIBSP preserved by each trampoline. wheel_cache+120 tracks the action; +124..136 hold menu heartbeat/bypass state. Input passthrough in paused menus is detected from stopped player ticks (or the wheel scheduler for standalone). The native ocarina action bypass clears pending wheel events; it does not remap notes.

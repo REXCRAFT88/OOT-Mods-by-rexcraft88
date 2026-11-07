@@ -1,0 +1,3008 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-07T18:54:42Z",
+  "metrics": {
+    "_totals": {
+      "CONFIDENCE.HIGH": 137,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 137,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 1248,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "install.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 106,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "install_gui.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 2,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 51,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/build_public_bundles.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 46,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/build_public_manual.py": {
+      "CONFIDENCE.HIGH": 7,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 7,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 82,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/build_public_no_stamina.py": {
+      "CONFIDENCE.HIGH": 9,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 9,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 88,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/compatibility/build_compatibility.py": {
+      "CONFIDENCE.HIGH": 11,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 11,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 144,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/compatibility/check_context.py": {
+      "CONFIDENCE.HIGH": 7,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 7,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 43,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/hero-with-stamina/build_candidate.py": {
+      "CONFIDENCE.HIGH": 14,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 14,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 55,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/hero-with-stamina/review_a64.py": {
+      "CONFIDENCE.HIGH": 32,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 32,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 92,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/hero-with-stamina/update_subsdk_symbols.py": {
+      "CONFIDENCE.HIGH": 3,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 3,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 17,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/prepare_public_variants.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 43,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/resources/build_all_enemy_balance.py": {
+      "CONFIDENCE.HIGH": 7,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 7,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 44,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/resources/build_phased_attack.py": {
+      "CONFIDENCE.HIGH": 4,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 4,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 52,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/resources/stamina_texture.py": {
+      "CONFIDENCE.HIGH": 5,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 5,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 20,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/stamina/build_stamina_hud_layout.py": {
+      "CONFIDENCE.HIGH": 14,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 14,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 92,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/stamina/build_stamina_runtime.py": {
+      "CONFIDENCE.HIGH": 11,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 11,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 22,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/wheel/build_wheel_layout.py": {
+      "CONFIDENCE.HIGH": 2,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 2,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 43,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "native/wheel/build_wheel_standalone.py": {
+      "CONFIDENCE.HIGH": 7,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 7,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 46,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "nup_reader.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 162,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "1 import pathlib\n2 import subprocess\n3 import sys\n",
+      "col_offset": 0,
+      "end_col_offset": 17,
+      "filename": "install_gui.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "43         args += ['--patched-nup', out]\n44     result = subprocess.run(args, cwd=base)\n45     if result.returncode:\n",
+      "col_offset": 13,
+      "end_col_offset": 43,
+      "filename": "install_gui.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 44,
+      "line_range": [
+        44
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "42    if len(t)>64*1024*1024:kind='zstd-blocks'\n43    else:assert bsdiff4.patch(o,patch)==t\n44    entry={'path':path,'kind':kind,'source_sha256':sh,'target_sha256':th,'dictionary':ident,'patch':patchname}\n",
+      "col_offset": 8,
+      "end_col_offset": 40,
+      "filename": "native/build_public_bundles.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 43,
+      "line_range": [
+        43
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "1 from pathlib import Path\n2 import re,subprocess,struct,json,sys,hashlib\n3 sys.path.insert(0,'outputs/OOT-Test-Kit');from nup_overlay import Nup\n",
+      "col_offset": 0,
+      "end_col_offset": 44,
+      "filename": "native/build_public_manual.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "63 ''';(r/'manual_controls.ld').write_text(ld)\n64 def run(args):subprocess.run(args,check=True)\n65 flags=['--target=aarch64-none-elf','-Oz','-ffreestanding','-ffunction-sections','-fdata-sections','-fno-stack-protector']\n",
+      "col_offset": 14,
+      "end_col_offset": 45,
+      "filename": "native/build_public_manual.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 64,
+      "line_range": [
+        64
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "66 run(['clang',*flags,'-c',str(r/'manual_controls.c'),'-o',str(r/'manual_c.o')]);run(['clang','--target=aarch64-none-elf','-c',str(r/'manual_controls.S'),'-o',str(r/'manual_s.o')]);run(['ld.lld.exe','--gc-sections','--undefined=manual_frame_entry','--undefined=manual_hid_entry','--undefined=hero_setter_hook','--undefined=hero_target_guard_flags','--undefined=hero_target_guard_update','-T',str(r/'manual_controls.ld'),str(r/'manual_c.o'),str(r/'manual_s.o'),'-o',str(r/'manual.elf')]);run(['llvm-objcopy','-O','binary','--only-section=.text',str(r/'manual.elf'),str(r/'manual.bin')])\n67 n=Nup(json.load(open('outputs/OOT-Test-Kit/settings.json'))['source_nup']);p=n.best_package();root=Path('work/public-variants/manual-shield');symbols={v[2]:int(v[0],16) for l in subprocess.check_output(['llvm-nm',str(r/'manual.elf')],text=True).splitlines() if len(v:=l.split())==3}\n68 import zbic,lz4.block\n",
+      "col_offset": 178,
+      "end_col_offset": 244,
+      "filename": "native/build_public_manual.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 67,
+      "line_range": [
+        67
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "66 run(['clang',*flags,'-c',str(r/'manual_controls.c'),'-o',str(r/'manual_c.o')]);run(['clang','--target=aarch64-none-elf','-c',str(r/'manual_controls.S'),'-o',str(r/'manual_s.o')]);run(['ld.lld.exe','--gc-sections','--undefined=manual_frame_entry','--undefined=manual_hid_entry','--undefined=hero_setter_hook','--undefined=hero_target_guard_flags','--undefined=hero_target_guard_update','-T',str(r/'manual_controls.ld'),str(r/'manual_c.o'),str(r/'manual_s.o'),'-o',str(r/'manual.elf')]);run(['llvm-objcopy','-O','binary','--only-section=.text',str(r/'manual.elf'),str(r/'manual.bin')])\n67 n=Nup(json.load(open('outputs/OOT-Test-Kit/settings.json'))['source_nup']);p=n.best_package();root=Path('work/public-variants/manual-shield');symbols={v[2]:int(v[0],16) for l in subprocess.check_output(['llvm-nm',str(r/'manual.elf')],text=True).splitlines() if len(v:=l.split())==3}\n68 import zbic,lz4.block\n",
+      "col_offset": 178,
+      "end_col_offset": 244,
+      "filename": "native/build_public_manual.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 67,
+      "line_range": [
+        67
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "79 for at,name,expected,link in [(0x2b30de0,'manual_frame_entry','7f2303d5',False),(0x346966c,'manual_hid_entry',None,True),(0x37ba100,'hero_setter_hook','c101f837',False),(0x972e18,'hero_target_guard_flags','0801092a',False),(0x97320c,'hero_target_guard_update','29010d32',False)]:\n80  if expected:assert t[at:at+4].hex()==expected\n81  t[at:at+4]=branch(at,symbols[name],link)\n",
+      "col_offset": 13,
+      "end_col_offset": 46,
+      "filename": "native/build_public_manual.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 80,
+      "line_range": [
+        80
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "81  t[at:at+4]=branch(at,symbols[name],link)\n82 struct.pack_into('<I',b,60,struct.unpack_from('<I',b,60)[0]+0x5000);(root/'exefs').mkdir(parents=True,exist_ok=True);(root/'exefs/main').write_bytes(emit(b,t));b=n.read(p['index'],'exefs/subsdk0');t=text(b);assert len(t)==0x84770;payload=(r/'manual.bin').read_bytes();assert len(payload)<=0x890;t.extend(payload);(root/'exefs/subsdk0').write_bytes(emit(b,t));print('Built standalone experimental manual shield',len(payload),'bytes')\n",
+      "col_offset": 207,
+      "end_col_offset": 229,
+      "filename": "native/build_public_manual.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 82,
+      "line_range": [
+        82
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "81  t[at:at+4]=branch(at,symbols[name],link)\n82 struct.pack_into('<I',b,60,struct.unpack_from('<I',b,60)[0]+0x5000);(root/'exefs').mkdir(parents=True,exist_ok=True);(root/'exefs/main').write_bytes(emit(b,t));b=n.read(p['index'],'exefs/subsdk0');t=text(b);assert len(t)==0x84770;payload=(r/'manual.bin').read_bytes();assert len(payload)<=0x890;t.extend(payload);(root/'exefs/subsdk0').write_bytes(emit(b,t));print('Built standalone experimental manual shield',len(payload),'bytes')\n",
+      "col_offset": 268,
+      "end_col_offset": 294,
+      "filename": "native/build_public_manual.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 82,
+      "line_range": [
+        82
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "1 from pathlib import Path\n2 import re,subprocess,struct,json,sys,hashlib\n3 sys.path.insert(0,'outputs/OOT-Test-Kit');from nup_overlay import Nup\n",
+      "col_offset": 0,
+      "end_col_offset": 44,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "19 ''';s=s.replace('void hero_guard_frame(void) {','void hero_guard_frame(void) {');\n20 wheel_symbols={v[2]:int(v[0],16) for l in subprocess.check_output(['llvm-nm','work/wheel_standalone.elf'],text=True).splitlines() if len(v:=l.split())==3}\n21 s=s.replace('void hero_all_input(u64 *records, u32 count) {','void hero_all_input(u64 *records, u32 count) {\\n    wheel_raw(records,count);')\n",
+      "col_offset": 42,
+      "end_col_offset": 116,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 20,
+      "line_range": [
+        20
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "19 ''';s=s.replace('void hero_guard_frame(void) {','void hero_guard_frame(void) {');\n20 wheel_symbols={v[2]:int(v[0],16) for l in subprocess.check_output(['llvm-nm','work/wheel_standalone.elf'],text=True).splitlines() if len(v:=l.split())==3}\n21 s=s.replace('void hero_all_input(u64 *records, u32 count) {','void hero_all_input(u64 *records, u32 count) {\\n    wheel_raw(records,count);')\n",
+      "col_offset": 42,
+      "end_col_offset": 116,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 20,
+      "line_range": [
+        20
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "70 ''';ld+='\\nmain_image = 0;\\n';(r/'manual_controls.ld').write_text(ld)\n71 def run(args):subprocess.run(args,check=True)\n72 flags=['--target=aarch64-none-elf','-Oz','-ffreestanding','-ffunction-sections','-fdata-sections','-fno-stack-protector']\n",
+      "col_offset": 14,
+      "end_col_offset": 45,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 71,
+      "line_range": [
+        71
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "73 run(['clang',*flags,'-c',str(r/'manual_controls.c'),'-o',str(r/'manual_c.o')]);run(['clang','--target=aarch64-none-elf','-c',str(r/'manual_controls.S'),'-o',str(r/'manual_s.o')]);run(['ld.lld.exe','--gc-sections','--undefined=manual_frame_entry','--undefined=manual_hid_entry','--undefined=hero_setter_hook','--undefined=hero_target_guard_flags','--undefined=hero_target_guard_update','-T',str(r/'manual_controls.ld'),str(r/'manual_c.o'),str(r/'manual_s.o'),'-o',str(r/'manual.elf')]);run(['llvm-objcopy','-O','binary','--only-section=.text',str(r/'manual.elf'),str(r/'manual.bin')])\n74 n=Nup(json.load(open('outputs/OOT-Test-Kit/settings.json'))['source_nup']);p=n.best_package();root=Path('work/public-variants/hero-without-stamina');symbols={v[2]:int(v[0],16) for l in subprocess.check_output(['llvm-nm',str(r/'manual.elf')],text=True).splitlines() if len(v:=l.split())==3}\n75 import zbic,lz4.block\n",
+      "col_offset": 185,
+      "end_col_offset": 251,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 74,
+      "line_range": [
+        74
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "73 run(['clang',*flags,'-c',str(r/'manual_controls.c'),'-o',str(r/'manual_c.o')]);run(['clang','--target=aarch64-none-elf','-c',str(r/'manual_controls.S'),'-o',str(r/'manual_s.o')]);run(['ld.lld.exe','--gc-sections','--undefined=manual_frame_entry','--undefined=manual_hid_entry','--undefined=hero_setter_hook','--undefined=hero_target_guard_flags','--undefined=hero_target_guard_update','-T',str(r/'manual_controls.ld'),str(r/'manual_c.o'),str(r/'manual_s.o'),'-o',str(r/'manual.elf')]);run(['llvm-objcopy','-O','binary','--only-section=.text',str(r/'manual.elf'),str(r/'manual.bin')])\n74 n=Nup(json.load(open('outputs/OOT-Test-Kit/settings.json'))['source_nup']);p=n.best_package();root=Path('work/public-variants/hero-without-stamina');symbols={v[2]:int(v[0],16) for l in subprocess.check_output(['llvm-nm',str(r/'manual.elf')],text=True).splitlines() if len(v:=l.split())==3}\n75 import zbic,lz4.block\n",
+      "col_offset": 185,
+      "end_col_offset": 251,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 74,
+      "line_range": [
+        74
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "86 for at,name,expected,link in [(0x2b30de0,'manual_frame_entry','7f2303d5',False),(0x346966c,'manual_hid_entry',None,True),(0x37ba100,'hero_setter_hook','c101f837',False),(0x972e18,'hero_target_guard_flags','0801092a',False),(0x97320c,'hero_target_guard_update','29010d32',False)]:\n87  if expected and at!=0x2b30de0:assert t[at:at+4].hex()==expected\n88  t[at:at+4]=branch(at,symbols[name],link)\n",
+      "col_offset": 31,
+      "end_col_offset": 64,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 87,
+      "line_range": [
+        87
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "88  t[at:at+4]=branch(at,symbols[name],link)\n89 (root/'exefs').mkdir(parents=True,exist_ok=True);(root/'exefs/main').write_bytes(emit(b,t));b=n.read(p['index'],'exefs/subsdk0');t=text(b);assert len(t)==0x84770;payload=(r/'manual.bin').read_bytes();assert len(payload)<=0x890;t.extend(payload);(root/'exefs/subsdk0').write_bytes(emit(b,t));print('Built standalone experimental manual shield',len(payload),'bytes')\n",
+      "col_offset": 139,
+      "end_col_offset": 161,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 89,
+      "line_range": [
+        89
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "88  t[at:at+4]=branch(at,symbols[name],link)\n89 (root/'exefs').mkdir(parents=True,exist_ok=True);(root/'exefs/main').write_bytes(emit(b,t));b=n.read(p['index'],'exefs/subsdk0');t=text(b);assert len(t)==0x84770;payload=(r/'manual.bin').read_bytes();assert len(payload)<=0x890;t.extend(payload);(root/'exefs/subsdk0').write_bytes(emit(b,t));print('Built standalone experimental manual shield',len(payload),'bytes')\n",
+      "col_offset": 200,
+      "end_col_offset": 226,
+      "filename": "native/build_public_no_stamina.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 89,
+      "line_range": [
+        89
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "5 from pathlib import Path\n6 import sys, json, struct, subprocess, shutil, hashlib\n7 sys.path[:0] = ['work/publish-oot-mods', 'outputs/OOT-Test-Kit']\n",
+      "col_offset": 0,
+      "end_col_offset": 53,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 6,
+      "line_range": [
+        6
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "17 flags = ['--target=aarch64-none-elf','-Oz','-ffreestanding','-ffunction-sections','-fdata-sections','-fno-stack-protector','-fno-jump-tables','-Ioutputs/OOT-Test-Kit']\n18 def run(*args): subprocess.run(list(map(str,args)),check=True)\n19 def compile(src,dst): run('clang',*flags,'-c',src,'-o',dst)\n",
+      "col_offset": 16,
+      "end_col_offset": 62,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 18,
+      "line_range": [
+        18
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "20 def symbols(elf):\n21     return {v[2]:int(v[0],16) for l in subprocess.check_output(['llvm-nm',str(elf)],text=True).splitlines() if len(v:=l.split())==3}\n22 def branch(a,b,link=False):\n",
+      "col_offset": 39,
+      "end_col_offset": 94,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 21,
+      "line_range": [
+        21
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "20 def symbols(elf):\n21     return {v[2]:int(v[0],16) for l in subprocess.check_output(['llvm-nm',str(elf)],text=True).splitlines() if len(v:=l.split())==3}\n22 def branch(a,b,link=False):\n",
+      "col_offset": 39,
+      "end_col_offset": 94,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 21,
+      "line_range": [
+        21
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "23     d=b-a\n24     assert d%4==0 and -(1<<27)<=d<(1<<27)\n25     return struct.pack('<I',(0x94000000 if link else 0x14000000)|((d//4)&0x3ffffff))\n",
+      "col_offset": 4,
+      "end_col_offset": 41,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 24,
+      "line_range": [
+        24
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "107         args+=['--undefined='+s for s in ['stamina_frame','attack_enter','tired_damage','hero_mp_init','hid_full','hid_dual','hid_left','hid_right','hid_handheld',*json.load(open('work/stamina-runtime-patches.json')).keys()]]\n108     subprocess.run(args+['-T','context.ld',*[p.name for p in objects],'-o','context.elf'],cwd=root,check=True)\n109     sy=symbols(root/'context.elf')\n",
+      "col_offset": 4,
+      "end_col_offset": 110,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 108,
+      "line_range": [
+        108
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "110     run('llvm-objcopy','-O','binary','--only-section=.text',root/'context.elf',root/'main.bin')\n111     code=(root/'main.bin').read_bytes();assert 0x3c46600+len(code)<=0x3c47000,len(code)\n112     t=texts['main']\n",
+      "col_offset": 40,
+      "end_col_offset": 87,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 111,
+      "line_range": [
+        111
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "118     for at,s in [(0x2894340,'ocarina_enter'),(0x28947f0,'ocarina_leave')]:\n119         assert t[at:at+4]==bytes.fromhex('7f2303d5');t[at:at+4]=branch(at,sy[s])\n120     raw=sy['wheel_context_raw']\n",
+      "col_offset": 8,
+      "end_col_offset": 52,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 119,
+      "line_range": [
+        119
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "140         sdk=bytearray(install.nso_text(original['sdk']))\n141         assert sdkbase+len(sdk)==0x5803850\n142         run('llvm-objcopy','-O','binary','--only-section=.sdktext',root/'context.elf',root/'sdk.bin')\n",
+      "col_offset": 8,
+      "end_col_offset": 42,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 141,
+      "line_range": [
+        141
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "142         run('llvm-objcopy','-O','binary','--only-section=.sdktext',root/'context.elf',root/'sdk.bin')\n143         sc=(root/'sdk.bin').read_bytes();assert len(sdk)+len(sc)<=0x87f000\n144         sdk.extend(sc);blobs['sdk']=original['sdk'];texts['sdk']=sdk\n",
+      "col_offset": 41,
+      "end_col_offset": 74,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 143,
+      "line_range": [
+        143
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "151         off=control-0x4ea5000\n152         assert int.from_bytes(texts['subsdk0'][off:off+4],'little')&0xff00001f==0xb4000000\n153         texts['subsdk0'][off:off+4]=branch(control,sy['controls_context'])\n",
+      "col_offset": 8,
+      "end_col_offset": 90,
+      "filename": "native/compatibility/build_compatibility.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 152,
+      "line_range": [
+        152
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "24         u.emu_start(base+sy[name],stop,count=2000)\n25         assert u.reg_read(UC_ARM64_REG_PC)==stop\n26     def raw(sample,bits):\n",
+      "col_offset": 8,
+      "end_col_offset": 48,
+      "filename": "native/compatibility/check_context.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 25,
+      "line_range": [
+        25
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "30     word(heartbeat,1)\n31     assert raw(1,0x80)==0,variant\n32     assert raw(2,0)==0 and get(cache+112)==1,variant\n",
+      "col_offset": 4,
+      "end_col_offset": 33,
+      "filename": "native/compatibility/check_context.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 31,
+      "line_range": [
+        31
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "31     assert raw(1,0x80)==0,variant\n32     assert raw(2,0)==0 and get(cache+112)==1,variant\n33     word(cache+120,1);word(cache+112,2)\n",
+      "col_offset": 4,
+      "end_col_offset": 52,
+      "filename": "native/compatibility/check_context.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 32,
+      "line_range": [
+        32
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "33     word(cache+120,1);word(cache+112,2)\n34     assert raw(3,0x3ff)==0x3ff and get(cache+112)==0,variant\n35     if variant!='item-wheel':run('controls_context') # must return with native input untouched\n",
+      "col_offset": 4,
+      "end_col_offset": 60,
+      "filename": "native/compatibility/check_context.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 34,
+      "line_range": [
+        34
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "36     word(cache+120,0)\n37     for _ in range(12):assert raw(4,0)==0\n38     assert raw(5,0x3ff)==0x3ff,variant # paused menu: both shoulder buttons pass\n",
+      "col_offset": 23,
+      "end_col_offset": 41,
+      "filename": "native/compatibility/check_context.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 37,
+      "line_range": [
+        37
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "37     for _ in range(12):assert raw(4,0)==0\n38     assert raw(5,0x3ff)==0x3ff,variant # paused menu: both shoulder buttons pass\n39     if variant!='item-wheel':run('controls_context')\n",
+      "col_offset": 4,
+      "end_col_offset": 38,
+      "filename": "native/compatibility/check_context.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 38,
+      "line_range": [
+        38
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "40     word(heartbeat,2)\n41     assert raw(6,0x80)==0,variant # resume gameplay filtering\n42     results.append({'variant':variant,'tap':True,'ocarina_passthrough':True,'menu_passthrough':True,'resume':True})\n",
+      "col_offset": 4,
+      "end_col_offset": 33,
+      "filename": "native/compatibility/check_context.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 41,
+      "line_range": [
+        41
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "1 from pathlib import Path\n2 import json,struct,hashlib,shutil,subprocess,sys\n3 import zbic\n",
+      "col_offset": 0,
+      "end_col_offset": 48,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "15     else: data=raw\n16     assert len(data)==size\n17     return b,bytearray(data)\n",
+      "col_offset": 4,
+      "end_col_offset": 26,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 16,
+      "line_range": [
+        16
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "26 def branch(at,to):\n27     d=to-at; assert d%4==0 and -(1<<27)<=d<(1<<27),(hex(at),hex(to),hex(d))\n28     return struct.pack('<I',0x14000000|((d>>2)&0x3ffffff))\n",
+      "col_offset": 13,
+      "end_col_offset": 75,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 27,
+      "line_range": [
+        27
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "31 main_blob=(base/'exefs/main').read_bytes(); main,text=text_segment(main_blob)\n32 assert main[64:84].hex().upper()=='E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348'\n33 patch_at=0x37ba100; old=bytes(text[patch_at:patch_at+4]); assert old==bytes.fromhex('c101f837'), old.hex()\n",
+      "col_offset": 0,
+      "end_col_offset": 76,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 32,
+      "line_range": [
+        32
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "32 assert main[64:84].hex().upper()=='E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348'\n33 patch_at=0x37ba100; old=bytes(text[patch_at:patch_at+4]); assert old==bytes.fromhex('c101f837'), old.hex()\n34 data_mem,data_size=struct.unpack_from('<II',main,0x34); bss=struct.unpack_from('<I',main,0x3c)[0]; assert data_mem+data_size+bss==0x4ea5000, hex(data_mem+data_size+bss)\n",
+      "col_offset": 58,
+      "end_col_offset": 106,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 33,
+      "line_range": [
+        33
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "33 patch_at=0x37ba100; old=bytes(text[patch_at:patch_at+4]); assert old==bytes.fromhex('c101f837'), old.hex()\n34 data_mem,data_size=struct.unpack_from('<II',main,0x34); bss=struct.unpack_from('<I',main,0x3c)[0]; assert data_mem+data_size+bss==0x4ea5000, hex(data_mem+data_size+bss)\n35 symbols={parts[2]:int(parts[0],16) for line in subprocess.check_output(['llvm-nm','work/hero-mode-integrated-trial/hero_controls_runtime.elf'],text=True).splitlines() if len(parts:=line.split())==3}\n",
+      "col_offset": 99,
+      "end_col_offset": 168,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 34,
+      "line_range": [
+        34
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "34 data_mem,data_size=struct.unpack_from('<II',main,0x34); bss=struct.unpack_from('<I',main,0x3c)[0]; assert data_mem+data_size+bss==0x4ea5000, hex(data_mem+data_size+bss)\n35 symbols={parts[2]:int(parts[0],16) for line in subprocess.check_output(['llvm-nm','work/hero-mode-integrated-trial/hero_controls_runtime.elf'],text=True).splitlines() if len(parts:=line.split())==3}\n36 text[patch_at:patch_at+4]=branch(patch_at,symbols['hero_setter_hook'])\n",
+      "col_offset": 47,
+      "end_col_offset": 153,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 35,
+      "line_range": [
+        35
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "34 data_mem,data_size=struct.unpack_from('<II',main,0x34); bss=struct.unpack_from('<I',main,0x3c)[0]; assert data_mem+data_size+bss==0x4ea5000, hex(data_mem+data_size+bss)\n35 symbols={parts[2]:int(parts[0],16) for line in subprocess.check_output(['llvm-nm','work/hero-mode-integrated-trial/hero_controls_runtime.elf'],text=True).splitlines() if len(parts:=line.split())==3}\n36 text[patch_at:patch_at+4]=branch(patch_at,symbols['hero_setter_hook'])\n",
+      "col_offset": 47,
+      "end_col_offset": 153,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 35,
+      "line_range": [
+        35
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "37 for at,label,expected in [(0x27f7d00,'hero_guard_impact_entry','7f2303d5'),(0x933270,'hero_as_request_hook','7f2303d5'),(0x972e18,'hero_target_guard_flags','0801092a'),(0x97320c,'hero_target_guard_update','29010d32')]:\n38     assert text[at:at+4].hex()==expected,(hex(at),text[at:at+4].hex())\n39     text[at:at+4]=branch(at,symbols[label])\n",
+      "col_offset": 4,
+      "end_col_offset": 70,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 38,
+      "line_range": [
+        38
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "42 rtld_blob=source.read(pkg['index'],'exefs/rtld');rtld,rtld_text=text_segment(rtld_blob)\n43 assert len(rtld_text)==0x2740 and len(rtld_text)+Path('work/hero-mode-integrated-trial/wheel_probe.bin').stat().st_size<=0x3000\n44 rtld_text.extend(Path('work/hero-mode-integrated-trial/wheel_probe.bin').read_bytes())\n",
+      "col_offset": 0,
+      "end_col_offset": 127,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 43,
+      "line_range": [
+        43
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "48 sub_blob=source.read(pkg['index'],'exefs/subsdk0'); sub,sub_text=text_segment(sub_blob)\n49 assert sub[64:84].hex().upper()=='B0110087A7B339EF74588D3BD0B4DD5D5C7ABD0F'\n50 assert len(sub_text)==0x84770\n",
+      "col_offset": 0,
+      "end_col_offset": 75,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 49,
+      "line_range": [
+        49
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "49 assert sub[64:84].hex().upper()=='B0110087A7B339EF74588D3BD0B4DD5D5C7ABD0F'\n50 assert len(sub_text)==0x84770\n51 elf=Path('work/hero-mode-integrated-trial/hero_controls_runtime.elf').read_bytes()\n",
+      "col_offset": 0,
+      "end_col_offset": 29,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 50,
+      "line_range": [
+        50
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "54 text_addresses=[struct.unpack_from('<Q',elf,shoff+i*ents+16)[0] for i in range(num) if names[struct.unpack_from('<I',elf,shoff+i*ents)[0]:].split(b'\\0')[0]==b'.text']\n55 assert text_addresses==[0x4ea5000+len(sub_text)], 'Payload link address differs from actual module placement'\n56 control=Path('work/hero-mode-integrated-trial/hero_controls_runtime.bin').read_bytes()\n",
+      "col_offset": 0,
+      "end_col_offset": 109,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 55,
+      "line_range": [
+        55
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "56 control=Path('work/hero-mode-integrated-trial/hero_controls_runtime.bin').read_bytes()\n57 assert len(sub_text)+len(control)<=0x85000\n58 sub_text.extend(control); (root/'exefs/subsdk0').write_bytes(emit_text(sub,sub_text))\n",
+      "col_offset": 0,
+      "end_col_offset": 42,
+      "filename": "native/hero-with-stamina/build_candidate.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 57,
+      "line_range": [
+        57
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "1 \"\"\"Execute the compiled AArch64 candidate at a relocated base, without the game.\"\"\"\n2 import sys,pathlib,struct,subprocess,json\n3 sys.path.insert(0,'work/hero-review-deps')\n",
+      "col_offset": 0,
+      "end_col_offset": 41,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "6 root=pathlib.Path('work/hero-mode-integrated-trial')\n7 symbols={p[2]:int(p[0],16) for l in subprocess.check_output(['llvm-nm',str(root/'hero_controls_runtime.elf')],text=True).splitlines() if len(p:=l.split())==3}\n8 base=0x80000000;u=Uc(UC_ARCH_ARM64,UC_MODE_ARM);mapped=set()\n",
+      "col_offset": 36,
+      "end_col_offset": 120,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 7,
+      "line_range": [
+        7
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "6 root=pathlib.Path('work/hero-mode-integrated-trial')\n7 symbols={p[2]:int(p[0],16) for l in subprocess.check_output(['llvm-nm',str(root/'hero_controls_runtime.elf')],text=True).splitlines() if len(p:=l.split())==3}\n8 base=0x80000000;u=Uc(UC_ARCH_ARM64,UC_MODE_ARM);mapped=set()\n",
+      "col_offset": 36,
+      "end_col_offset": 120,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 7,
+      "line_range": [
+        7
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "16 code=(root/'hero_controls_runtime.bin').read_bytes();placement=0x4ea5000+0x84770\n17 assert symbols['hero_guard_impact']==placement, 'ELF code address differs from mapped NSO code'\n18 write(base+placement,code)\n",
+      "col_offset": 0,
+      "end_col_offset": 95,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 17,
+      "line_range": [
+        17
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "27  u.emu_start(base+symbols.get(name,0),stop,count=200000)\n28  assert u.reg_read(UC_ARM64_REG_PC)==stop,name\n29 tick=0\n",
+      "col_offset": 1,
+      "end_col_offset": 46,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 28,
+      "line_range": [
+        28
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "35  return struct.unpack('<Q',u.mem_read(records+8,8))[0]\n36 assert raw(0x40|0x100|0x200|1)==0x100|0x200|1\n37 assert u.mem_read(state+1,2)==b'\\x01\\x01'\n",
+      "col_offset": 0,
+      "end_col_offset": 45,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 36,
+      "line_range": [
+        36
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "36 assert raw(0x40|0x100|0x200|1)==0x100|0x200|1\n37 assert u.mem_read(state+1,2)==b'\\x01\\x01'\n38 assert raw(0x200)==0x300\n",
+      "col_offset": 0,
+      "end_col_offset": 41,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 37,
+      "line_range": [
+        37
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "37 assert u.mem_read(state+1,2)==b'\\x01\\x01'\n38 assert raw(0x200)==0x300\n39 assert raw(0x40|0x200)==0x200\n",
+      "col_offset": 0,
+      "end_col_offset": 24,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 38,
+      "line_range": [
+        38
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "38 assert raw(0x200)==0x300\n39 assert raw(0x40|0x200)==0x200\n40 assert u.mem_read(state+1,2)==b'\\0\\0'\n",
+      "col_offset": 0,
+      "end_col_offset": 29,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 39,
+      "line_range": [
+        39
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "39 assert raw(0x40|0x200)==0x200\n40 assert u.mem_read(state+1,2)==b'\\0\\0'\n41 raw(0);raw(0x40);assert raw(0x20|0x200)==0x220\n",
+      "col_offset": 0,
+      "end_col_offset": 37,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 40,
+      "line_range": [
+        40
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "40 assert u.mem_read(state+1,2)==b'\\0\\0'\n41 raw(0);raw(0x40);assert raw(0x20|0x200)==0x220\n42 assert u.mem_read(state+1,1)==b'\\0'\n",
+      "col_offset": 17,
+      "end_col_offset": 46,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 41,
+      "line_range": [
+        41
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "41 raw(0);raw(0x40);assert raw(0x20|0x200)==0x220\n42 assert u.mem_read(state+1,1)==b'\\0'\n43 for _ in range(10):v=raw(0x140|0x200,advance=False)\n",
+      "col_offset": 0,
+      "end_col_offset": 35,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 42,
+      "line_range": [
+        42
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "43 for _ in range(10):v=raw(0x140|0x200,advance=False)\n44 assert v==0x200 and u.mem_read(state+2,1)==b'\\0'\n45 raw(0x20)\n",
+      "col_offset": 0,
+      "end_col_offset": 48,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 44,
+      "line_range": [
+        44
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "45 raw(0x20)\n46 assert raw(0x200|0x100|8,n=64)==0x308\n47 player=0x93000000;actor=0x93003000;table=0x93006000;component=0x93009000;equipment=0x9300c000\n",
+      "col_offset": 0,
+      "end_col_offset": 37,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 46,
+      "line_range": [
+        46
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "59 run('hero_guard_frame')\n60 assert get(component+0x24)==0x420 and u.mem_read(values+18,1)==b'\\x01'\n61 assert len(draw)==1 and draw[0][:2]==(equipment,4)\n",
+      "col_offset": 0,
+      "end_col_offset": 70,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 60,
+      "line_range": [
+        60
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "60 assert get(component+0x24)==0x420 and u.mem_read(values+18,1)==b'\\x01'\n61 assert len(draw)==1 and draw[0][:2]==(equipment,4)\n62 run('hero_guard_frame');assert len(draw)==1\n",
+      "col_offset": 0,
+      "end_col_offset": 50,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 61,
+      "line_range": [
+        61
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "61 assert len(draw)==1 and draw[0][:2]==(equipment,4)\n62 run('hero_guard_frame');assert len(draw)==1\n63 write(state+2,b'\\0');run('hero_guard_frame');assert get(component+0x24)==0x400 and u.mem_read(values+18,1)==b'\\0'\n",
+      "col_offset": 24,
+      "end_col_offset": 43,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 62,
+      "line_range": [
+        62
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "62 run('hero_guard_frame');assert len(draw)==1\n63 write(state+2,b'\\0');run('hero_guard_frame');assert get(component+0x24)==0x400 and u.mem_read(values+18,1)==b'\\0'\n64 write(state+2,b'\\x01');write(runtime,struct.pack('<f',0));run('hero_guard_frame');assert u.mem_read(values+18,1)==b'\\0'\n",
+      "col_offset": 45,
+      "end_col_offset": 113,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 63,
+      "line_range": [
+        63
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "63 write(state+2,b'\\0');run('hero_guard_frame');assert get(component+0x24)==0x400 and u.mem_read(values+18,1)==b'\\0'\n64 write(state+2,b'\\x01');write(runtime,struct.pack('<f',0));run('hero_guard_frame');assert u.mem_read(values+18,1)==b'\\0'\n65 word(runtime+36,0);run('hero_guard_frame');assert u.mem_read(values+18,1)==b'\\x01'\n",
+      "col_offset": 82,
+      "end_col_offset": 119,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 64,
+      "line_range": [
+        64
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "64 write(state+2,b'\\x01');write(runtime,struct.pack('<f',0));run('hero_guard_frame');assert u.mem_read(values+18,1)==b'\\0'\n65 word(runtime+36,0);run('hero_guard_frame');assert u.mem_read(values+18,1)==b'\\x01'\n66 word(runtime+32,0);run('hero_guard_frame');assert u.mem_read(values+18,1)==b'\\0'\n",
+      "col_offset": 43,
+      "end_col_offset": 82,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 65,
+      "line_range": [
+        65
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "65 word(runtime+36,0);run('hero_guard_frame');assert u.mem_read(values+18,1)==b'\\x01'\n66 word(runtime+32,0);run('hero_guard_frame');assert u.mem_read(values+18,1)==b'\\0'\n67 # Exercise the real setter hook for another bool index and another AS object.\n",
+      "col_offset": 43,
+      "end_col_offset": 80,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 66,
+      "line_range": [
+        66
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "68 symbols['setter_test']=0x37ba100\n69 run('setter_test',animation,15,1);assert u.mem_read(values+19,1)==b'\\x01'\n70 other=0x9301c000;maprange(other,4096);quad(other+0x30,values);quad(other+0x60,dirty)\n",
+      "col_offset": 34,
+      "end_col_offset": 73,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 69,
+      "line_range": [
+        69
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "70 other=0x9301c000;maprange(other,4096);quad(other+0x30,values);quad(other+0x60,dirty)\n71 run('setter_test',other,14,1);assert u.mem_read(values+18,1)==b'\\x01'\n72 # Actual request trampoline: preserve the native StringRef ABI and scope.\n",
+      "col_offset": 30,
+      "end_col_offset": 69,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 71,
+      "line_range": [
+        71
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "80 write(state+4,b'\\x01');symbols['request_hook_test']=symbols['hero_as_request_hook']\n81 run('request_hook_test',player,1,ref);assert request_log[-1]=='CommonUpper'\n82 write(text,b'Wait\\0'+b'\\0'*20);run('request_hook_test',player,0,ref);assert request_log[-1]=='Wait'\n",
+      "col_offset": 38,
+      "end_col_offset": 75,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 81,
+      "line_range": [
+        81
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "81 run('request_hook_test',player,1,ref);assert request_log[-1]=='CommonUpper'\n82 write(text,b'Wait\\0'+b'\\0'*20);run('request_hook_test',player,0,ref);assert request_log[-1]=='Wait'\n83 write(text,b'Move\\0'+b'\\0'*20);run('request_hook_test',player,0,ref);assert request_log[-1]=='Move'\n",
+      "col_offset": 69,
+      "end_col_offset": 99,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 82,
+      "line_range": [
+        82
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "82 write(text,b'Wait\\0'+b'\\0'*20);run('request_hook_test',player,0,ref);assert request_log[-1]=='Wait'\n83 write(text,b'Move\\0'+b'\\0'*20);run('request_hook_test',player,0,ref);assert request_log[-1]=='Move'\n84 write(text,b'BowChargeUpper\\0');run('request_hook_test',player,1,ref);assert request_log[-1]=='BowChargeUpper'\n",
+      "col_offset": 69,
+      "end_col_offset": 99,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 83,
+      "line_range": [
+        83
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "83 write(text,b'Move\\0'+b'\\0'*20);run('request_hook_test',player,0,ref);assert request_log[-1]=='Move'\n84 write(text,b'BowChargeUpper\\0');run('request_hook_test',player,1,ref);assert request_log[-1]=='BowChargeUpper'\n85 # Real compiled block-cost adapter: one event, scoped player, combat-only, no underflow.\n",
+      "col_offset": 70,
+      "end_col_offset": 110,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 84,
+      "line_range": [
+        84
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "88 write(runtime,struct.pack('<f',100));write(runtime+16,struct.pack('<f',1.5));write(runtime+64,struct.pack('<f',8));write(runtime+12,struct.pack('<f',9))\n89 run('hero_guard_impact',player);assert struct.unpack('<f',u.mem_read(runtime,4))[0]==88 and get(runtime+12)==0\n90 before=bytes(u.mem_read(runtime,184));run('hero_guard_impact',other);assert bytes(u.mem_read(runtime,184))==before\n",
+      "col_offset": 32,
+      "end_col_offset": 110,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 89,
+      "line_range": [
+        89
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "89 run('hero_guard_impact',player);assert struct.unpack('<f',u.mem_read(runtime,4))[0]==88 and get(runtime+12)==0\n90 before=bytes(u.mem_read(runtime,184));run('hero_guard_impact',other);assert bytes(u.mem_read(runtime,184))==before\n91 word(runtime+36,0);run('hero_guard_impact',player);assert struct.unpack('<f',u.mem_read(runtime,4))[0]==88\n",
+      "col_offset": 69,
+      "end_col_offset": 114,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 90,
+      "line_range": [
+        90
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "90 before=bytes(u.mem_read(runtime,184));run('hero_guard_impact',other);assert bytes(u.mem_read(runtime,184))==before\n91 word(runtime+36,0);run('hero_guard_impact',player);assert struct.unpack('<f',u.mem_read(runtime,4))[0]==88\n92 word(runtime+36,1);write(state+4,b'\\0');run('hero_guard_impact',player);assert struct.unpack('<f',u.mem_read(runtime,4))[0]==88\n",
+      "col_offset": 51,
+      "end_col_offset": 106,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 91,
+      "line_range": [
+        91
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "91 word(runtime+36,0);run('hero_guard_impact',player);assert struct.unpack('<f',u.mem_read(runtime,4))[0]==88\n92 word(runtime+36,1);write(state+4,b'\\0');run('hero_guard_impact',player);assert struct.unpack('<f',u.mem_read(runtime,4))[0]==88\n93 write(state+4,b'\\1');write(runtime,struct.pack('<f',5));run('hero_guard_impact',player);assert get(runtime)==0 and struct.unpack('<f',u.mem_read(runtime+168,4))[0]==5\n",
+      "col_offset": 72,
+      "end_col_offset": 127,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 92,
+      "line_range": [
+        92
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "92 word(runtime+36,1);write(state+4,b'\\0');run('hero_guard_impact',player);assert struct.unpack('<f',u.mem_read(runtime,4))[0]==88\n93 write(state+4,b'\\1');write(runtime,struct.pack('<f',5));run('hero_guard_impact',player);assert get(runtime)==0 and struct.unpack('<f',u.mem_read(runtime+168,4))[0]==5\n94 result={'confirmed_block_cost_scoped_combat_and_clamp':True,'relocated_base':hex(base),'input_toggle_and_R2_preservation':True,'64_state_input_batch':True,'pause_passthrough':True,'scoped_AS_setter':True,'guard_AS_request_and_StringRef_ABI':True,'guard_frame_request_bit':True,'one_draw_per_guard_entry':True,'combat_exhaustion_disallows_guard':True,'outside_combat_zero_stamina_allows_guard':True,'dead_player_disallows_guard':True,'native_collision_and_visible_pose':'Not established by emulation; require live qualification'}\n",
+      "col_offset": 88,
+      "end_col_offset": 166,
+      "filename": "native/hero-with-stamina/review_a64.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 93,
+      "line_range": [
+        93
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "1 from pathlib import Path\n2 import subprocess\n3 \n",
+      "col_offset": 0,
+      "end_col_offset": 17,
+      "filename": "native/hero-with-stamina/update_subsdk_symbols.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "5 symbols = {}\n6 for line in subprocess.check_output(['llvm-nm', str(root/'hero_controls_runtime.elf')], text=True).splitlines():\n7     parts = line.split()\n",
+      "col_offset": 12,
+      "end_col_offset": 98,
+      "filename": "native/hero-with-stamina/update_subsdk_symbols.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 6,
+      "line_range": [
+        6
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "5 symbols = {}\n6 for line in subprocess.check_output(['llvm-nm', str(root/'hero_controls_runtime.elf')], text=True).splitlines():\n7     parts = line.split()\n",
+      "col_offset": 12,
+      "end_col_offset": 98,
+      "filename": "native/hero-with-stamina/update_subsdk_symbols.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 6,
+      "line_range": [
+        6
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "41  for rel,budget in budgets.items():\n42   crc=zlib.crc32(rel.encode());hits=[i for i in range(22,22+count*8,8) if struct.unpack_from('<I',rss,i)[0]==crc];assert len(hits)==1;i=hits[0]+4;struct.pack_into('<I',rss,i,max(struct.unpack_from('<I',rss,i)[0],(budget+4095)&~4095))\n43  p=root/'romfs'/rssrel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(zs.ZstdCompressor(level=12).compress(rss));print('Prepared',name,'without PS5 artwork/profile',flush=True)\n",
+      "col_offset": 114,
+      "end_col_offset": 133,
+      "filename": "native/prepare_public_variants.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 42,
+      "line_range": [
+        42
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "22    if not isinstance(old,(int,float)) or old<=0:continue\n23    typ,off=loc[(field,)];assert typ==0xd1,(member,field,typ)\n24    value=math.ceil(old*1.5) if field=='MaxLife' else old*2\n",
+      "col_offset": 25,
+      "end_col_offset": 60,
+      "filename": "native/resources/build_all_enemy_balance.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 23,
+      "line_range": [
+        23
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "25    struct.pack_into(e+'i',patched,off,value);want[field]=value;changes.append({'member':member,'field':field,'stock':old,'new':value})\n26   if changes and patched!=members[member]:assert parse(patched)[0]==want;replacements[member]=bytes(patched)\n27   if member in replacements:\n",
+      "col_offset": 42,
+      "end_col_offset": 72,
+      "filename": "native/resources/build_all_enemy_balance.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 26,
+      "line_range": [
+        26
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "29    # Identical named resources must not receive inconsistent balance settings.\n30    if member in canonical:assert canonical[member]==digest,member\n31    canonical[member]=digest\n",
+      "col_offset": 26,
+      "end_col_offset": 65,
+      "filename": "native/resources/build_all_enemy_balance.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 30,
+      "line_range": [
+        30
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "36   q=nodes+16*i;_,attr,st,en=struct.unpack_from('<IIII',archive,q);p=names+(attr&0xffffff)*4;n=bytes(archive[p:archive.index(0,p)]).decode()\n37   if n in replacements:assert en-st==len(replacements[n]);archive[dataoff+st:dataoff+en]=replacements[n];found.add(n)\n38  assert found==set(replacements)\n",
+      "col_offset": 23,
+      "end_col_offset": 57,
+      "filename": "native/resources/build_all_enemy_balance.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 37,
+      "line_range": [
+        37
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "37   if n in replacements:assert en-st==len(replacements[n]);archive[dataoff+st:dataoff+en]=replacements[n];found.add(n)\n38  assert found==set(replacements)\n39  after=a.sarc(archive)\n",
+      "col_offset": 1,
+      "end_col_offset": 32,
+      "filename": "native/resources/build_all_enemy_balance.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 38,
+      "line_range": [
+        38
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "39  after=a.sarc(archive)\n40  for n,b in members.items():assert after[n]==replacements.get(n,b)\n41  packed=zs.ZstdCompressor(level=12,dict_data=a.DICT[4]).compress(archive);assert a.decompress(packed)==archive\n",
+      "col_offset": 28,
+      "end_col_offset": 66,
+      "filename": "native/resources/build_all_enemy_balance.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 40,
+      "line_range": [
+        40
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "40  for n,b in members.items():assert after[n]==replacements.get(n,b)\n41  packed=zs.ZstdCompressor(level=12,dict_data=a.DICT[4]).compress(archive);assert a.decompress(packed)==archive\n42  target=OUT/'romfs'/rel;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(packed)\n",
+      "col_offset": 74,
+      "end_col_offset": 110,
+      "filename": "native/resources/build_all_enemy_balance.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 41,
+      "line_range": [
+        41
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "45 if obj.blackboard is None:obj.blackboard=ainb.Blackboard()\n46 patched=obj.to_binary();assert ainb.AINB.from_binary(patched).as_dict()==d\n47 # Append only this SARC member; preserve every other member and its offsets.\n",
+      "col_offset": 24,
+      "end_col_offset": 74,
+      "filename": "native/resources/build_phased_attack.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 46,
+      "line_range": [
+        46
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "52  if name==member:record=q\n53 assert record is not None\n54 bundle.extend(b'\\0'*((-len(bundle))%16));st=len(bundle)-dataoff;bundle.extend(patched);struct.pack_into('<II',bundle,record+8,st,len(bundle)-dataoff);struct.pack_into('<I',bundle,8,len(bundle));assert a.sarc(bundle)[member]==patched\n",
+      "col_offset": 0,
+      "end_col_offset": 25,
+      "filename": "native/resources/build_phased_attack.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 53,
+      "line_range": [
+        53
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "53 assert record is not None\n54 bundle.extend(b'\\0'*((-len(bundle))%16));st=len(bundle)-dataoff;bundle.extend(patched);struct.pack_into('<II',bundle,record+8,st,len(bundle)-dataoff);struct.pack_into('<I',bundle,8,len(bundle));assert a.sarc(bundle)[member]==patched\n55 import zstandard as zs\n",
+      "col_offset": 194,
+      "end_col_offset": 232,
+      "filename": "native/resources/build_phased_attack.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 54,
+      "line_range": [
+        54
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "55 import zstandard as zs\n56 out=pathlib.Path('work/hero-phased-trial/romfs')/rel;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[4]).compress(bundle));assert a.decompress(out.read_bytes())==bundle\n57 pathlib.Path('work/hero-phased-attack.json').write_text(json.dumps(d,indent=2));print('Built phase candidate; original member',len(original),'patched',len(patched),'initial rate1, latch at frame38, then rate2; slip rotation branch disabled')\n",
+      "col_offset": 180,
+      "end_col_offset": 225,
+      "filename": "native/resources/build_phased_attack.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 56,
+      "line_range": [
+        56
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "5     src=next(t for t in textures if t['name']=='MpGaugeCenter_00');dst=next(t for t in textures if t['name']=='ControllerGuide_Pro_04')\n6     sp,dp=src['pos'],dst['pos'];nameptr=struct.unpack_from('<Q',tex,dp+0x60)[0];block=struct.unpack_from('<I',tex,dp+4)[0];assert block==struct.unpack_from('<I',tex,sp+4)[0]\n7     view=bytearray(tex[sp:sp+block])\n",
+      "col_offset": 123,
+      "end_col_offset": 173,
+      "filename": "native/resources/stamina_texture.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 6,
+      "line_range": [
+        6
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "11     struct.pack_into('<Q',view,0x60,nameptr);struct.pack_into('<I',view,0x58,0x05000303)\n12     rlt=struct.unpack_from('<I',tex,0x18)[0];assert tex[rlt:rlt+4]==b'_RLT'\n13     pixels=rlt;extra=bytes(tex[src['data']:src['data']+src['size']]);tex[rlt:rlt]=extra\n",
+      "col_offset": 45,
+      "end_col_offset": 75,
+      "filename": "native/resources/stamina_texture.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 12,
+      "line_range": [
+        12
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "15     # Relocation section 1 owns encoded images and must include the appended copy.\n16     section1=new_rlt+16+24;assert struct.unpack_from('<I',tex,section1+8)[0]==struct.unpack_from('<Q',tex,0x30)[0]\n17     struct.pack_into('<I',tex,section1+12,struct.unpack_from('<I',tex,section1+12)[0]+len(extra))\n",
+      "col_offset": 27,
+      "end_col_offset": 114,
+      "filename": "native/resources/stamina_texture.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 16,
+      "line_range": [
+        16
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "17     struct.pack_into('<I',tex,section1+12,struct.unpack_from('<I',tex,section1+12)[0]+len(extra))\n18     image_table=struct.unpack_from('<Q',view,0x70)[0]-dp;assert 0<=image_table<len(view)-7\n19     struct.pack_into('<Q',view,image_table,pixels);tex[dp:dp+block]=view\n",
+      "col_offset": 57,
+      "end_col_offset": 90,
+      "filename": "native/resources/stamina_texture.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 18,
+      "line_range": [
+        18
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "20     struct.pack_into('<I',tex,0x1c,len(tex));data_block=struct.unpack_from('<Q',tex,0x30)[0];struct.pack_into('<Q',tex,data_block+8,new_rlt-data_block)\n21     assert tex[src['pos']+0x58:src['pos']+0x5c]==bytes.fromhex('02030405')\n22     return tex\n",
+      "col_offset": 4,
+      "end_col_offset": 74,
+      "filename": "native/resources/stamina_texture.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 21,
+      "line_range": [
+        21
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "32    p=arrays[h,0]+i*8;value=struct.unpack_from('<Q',out,p)[0]\n33    assert pool<=value<pool+poolsize\n34    struct.pack_into('<Q',out,p,value+delta)\n",
+      "col_offset": 3,
+      "end_col_offset": 35,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 33,
+      "line_range": [
+        33
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "55 # Separate gauge asset: original magic meter remains untouched.\n56 bar=bytearray(members['PaMpGauge_00.buil']);old=struct.unpack_from('<4f',bar,0x74e8);assert abs(old[1]-.5647)<.0001;struct.pack_into('<4f',bar,0x74e8,1,.85,.15,1)\n57 # Reserve an unused transparent PS5 guide layer as a separate yellow texture view.\n",
+      "col_offset": 85,
+      "end_col_offset": 115,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 56,
+      "line_range": [
+        56
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "64 for rec in records:meta.extend(struct.pack('<IIII',*rec))\n65 meta.extend(archive[names-8:names]);meta.extend(pool);meta.extend(b'\\0'*((-len(meta))%4096));newdata=len(meta);meta.extend(data);struct.pack_into('<I',meta,12,newdata);struct.pack_into('<I',meta,8,len(meta));assert a.sarc(meta)[name]==bar;assert changed>0\n66 out=root/rel;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(meta));assert a.decompress(out.read_bytes())==meta\n",
+      "col_offset": 208,
+      "end_col_offset": 238,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 65,
+      "line_range": [
+        65
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "64 for rec in records:meta.extend(struct.pack('<IIII',*rec))\n65 meta.extend(archive[names-8:names]);meta.extend(pool);meta.extend(b'\\0'*((-len(meta))%4096));newdata=len(meta);meta.extend(data);struct.pack_into('<I',meta,12,newdata);struct.pack_into('<I',meta,8,len(meta));assert a.sarc(meta)[name]==bar;assert changed>0\n66 out=root/rel;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(meta));assert a.decompress(out.read_bytes())==meta\n",
+      "col_offset": 239,
+      "end_col_offset": 255,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 65,
+      "line_range": [
+        65
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "65 meta.extend(archive[names-8:names]);meta.extend(pool);meta.extend(b'\\0'*((-len(meta))%4096));newdata=len(meta);meta.extend(data);struct.pack_into('<I',meta,12,newdata);struct.pack_into('<I',meta,8,len(meta));assert a.sarc(meta)[name]==bar;assert changed>0\n66 out=root/rel;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(meta));assert a.decompress(out.read_bytes())==meta\n67 Path('work/stamina-hud-layout.json').write_text(json.dumps({'status':'Unvalidated additive HUD layout trial','root_copies_patched':changed,'new_part':'Pa_StaminaGauge_00','new_asset':name,'bar_color_rgba':[1,.85,.15,1],'old_palette_rgba':old,'old_archive_size':len(archive),'new_archive_size':len(meta)},indent=2));print('Added independent stamina gauge part:',changed,'root variants; archive growth',len(meta)-len(archive))\n",
+      "col_offset": 138,
+      "end_col_offset": 181,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 66,
+      "line_range": [
+        66
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "73  if struct.unpack_from('<I',rss,p)[0]==wanted:hits.append(p)\n74 assert len(hits)==1;oldbudget=struct.unpack_from('<I',rss,hits[0]+4)[0];budget=(len(meta)+65536+4095)&~4095;struct.pack_into('<I',rss,hits[0]+4,budget)\n75 p=root/rssrel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(zs.ZstdCompressor(level=12).compress(rss));assert a.decompress(p.read_bytes())==rss\n",
+      "col_offset": 0,
+      "end_col_offset": 19,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 74,
+      "line_range": [
+        74
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "74 assert len(hits)==1;oldbudget=struct.unpack_from('<I',rss,hits[0]+4)[0];budget=(len(meta)+65536+4095)&~4095;struct.pack_into('<I',rss,hits[0]+4,budget)\n75 p=root/rssrel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(zs.ZstdCompressor(level=12).compress(rss));assert a.decompress(p.read_bytes())==rss\n76 print('UI resource budget',oldbudget,'->',budget)\n",
+      "col_offset": 114,
+      "end_col_offset": 154,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 75,
+      "line_range": [
+        75
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "81 textures=json.loads(Path('work/oot-textures.json').read_text());src=next(t for t in textures if t['name']=='MpGaugeCenter_00');dst=next(t for t in textures if t['name']=='ControllerGuide_Pro_04')\n82 sp,dp=src['pos'],dst['pos'];nameptr=struct.unpack_from('<Q',tex,dp+0x60)[0];block=struct.unpack_from('<I',tex,dp+4)[0];assert block==struct.unpack_from('<I',tex,sp+4)[0]\n83 view=bytearray(tex[sp:sp+block])\n",
+      "col_offset": 119,
+      "end_col_offset": 169,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 82,
+      "line_range": [
+        82
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "87 struct.pack_into('<Q',view,0x60,nameptr);struct.pack_into('<I',view,0x58,0x05000303)\n88 rlt=struct.unpack_from('<I',tex,0x18)[0];assert tex[rlt:rlt+4]==b'_RLT'\n89 pixels=rlt;extra=bytes(tex[src['data']:src['data']+src['size']]);tex[rlt:rlt]=extra\n",
+      "col_offset": 41,
+      "end_col_offset": 71,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 88,
+      "line_range": [
+        88
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "91 # Relocation section 1 owns encoded images and must include the appended copy.\n92 section1=new_rlt+16+24;assert struct.unpack_from('<I',tex,section1+8)[0]==struct.unpack_from('<Q',tex,0x30)[0]\n93 struct.pack_into('<I',tex,section1+12,struct.unpack_from('<I',tex,section1+12)[0]+len(extra))\n",
+      "col_offset": 23,
+      "end_col_offset": 110,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 92,
+      "line_range": [
+        92
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "93 struct.pack_into('<I',tex,section1+12,struct.unpack_from('<I',tex,section1+12)[0]+len(extra))\n94 image_table=struct.unpack_from('<Q',view,0x70)[0]-dp;assert 0<=image_table<len(view)-7\n95 struct.pack_into('<Q',view,image_table,pixels);tex[dp:dp+block]=view\n",
+      "col_offset": 53,
+      "end_col_offset": 86,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 94,
+      "line_range": [
+        94
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "96 struct.pack_into('<I',tex,0x1c,len(tex));data_block=struct.unpack_from('<Q',tex,0x30)[0];struct.pack_into('<Q',tex,data_block+8,new_rlt-data_block)\n97 assert tex[src['pos']+0x58:src['pos']+0x5c]==bytes.fromhex('02030405')\n98 p=root/texrel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(tex));assert a.decompress(p.read_bytes())==tex\n",
+      "col_offset": 0,
+      "end_col_offset": 70,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 97,
+      "line_range": [
+        97
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "97 assert tex[src['pos']+0x58:src['pos']+0x5c]==bytes.fromhex('02030405')\n98 p=root/texrel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(tex));assert a.decompress(p.read_bytes())==tex\n99 print('Independent yellow texture view created; encoded texture bytes untouched')\n",
+      "col_offset": 134,
+      "end_col_offset": 174,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 98,
+      "line_range": [
+        98
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "101 # The texture archive also grows by one encoded image allocation.\n102 wanted=zlib.crc32(texrel.removesuffix('.zs').encode());hits=[p for p in range(22,22+count*8,8) if struct.unpack_from('<I',rss,p)[0]==wanted];assert len(hits)==1\n103 old_tex_budget=struct.unpack_from('<I',rss,hits[0]+4)[0];new_tex_budget=(len(tex)+65536+4095)&~4095;struct.pack_into('<I',rss,hits[0]+4,new_tex_budget)\n",
+      "col_offset": 141,
+      "end_col_offset": 160,
+      "filename": "native/stamina/build_stamina_hud_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 102,
+      "line_range": [
+        102
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "1 \"\"\"Build an isolated NSO candidate from the user's original NUP, preserving other segments.\"\"\"\n2 import sys,struct,hashlib,json,pathlib,zbic,subprocess\n3 sys.path.insert(0,'outputs/OOT-Test-Kit');from nup_overlay import Nup\n",
+      "col_offset": 0,
+      "end_col_offset": 54,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "3 sys.path.insert(0,'outputs/OOT-Test-Kit');from nup_overlay import Nup\n4 s=json.loads(pathlib.Path('outputs/OOT-Test-Kit/settings.json').read_text());n=Nup(s['source_nup']);pkg=n.best_package();original=n.read(pkg['index'],'exefs/main');b=bytearray(original);assert b[:4]==b'NSO0';assert b[64:84].hex().upper()=='E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348'\n5 fileoff,memoff,size=struct.unpack_from('<III',b,0x10);compressed=struct.unpack_from('<I',b,0x60)[0];text=bytearray(zbic.decompress(bytes(b[fileoff:fileoff+compressed])));assert len(text)==size\n",
+      "col_offset": 186,
+      "end_col_offset": 207,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 4,
+      "line_range": [
+        4
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "3 sys.path.insert(0,'outputs/OOT-Test-Kit');from nup_overlay import Nup\n4 s=json.loads(pathlib.Path('outputs/OOT-Test-Kit/settings.json').read_text());n=Nup(s['source_nup']);pkg=n.best_package();original=n.read(pkg['index'],'exefs/main');b=bytearray(original);assert b[:4]==b'NSO0';assert b[64:84].hex().upper()=='E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348'\n5 fileoff,memoff,size=struct.unpack_from('<III',b,0x10);compressed=struct.unpack_from('<I',b,0x60)[0];text=bytearray(zbic.decompress(bytes(b[fileoff:fileoff+compressed])));assert len(text)==size\n",
+      "col_offset": 208,
+      "end_col_offset": 281,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 4,
+      "line_range": [
+        4
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "4 s=json.loads(pathlib.Path('outputs/OOT-Test-Kit/settings.json').read_text());n=Nup(s['source_nup']);pkg=n.best_package();original=n.read(pkg['index'],'exefs/main');b=bytearray(original);assert b[:4]==b'NSO0';assert b[64:84].hex().upper()=='E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348'\n5 fileoff,memoff,size=struct.unpack_from('<III',b,0x10);compressed=struct.unpack_from('<I',b,0x60)[0];text=bytearray(zbic.decompress(bytes(b[fileoff:fileoff+compressed])));assert len(text)==size\n6 symbols={parts[2]:int(parts[0],16) for line in subprocess.check_output(['llvm-nm','work/hero_stamina_runtime.elf'],text=True).splitlines() if len(parts:=line.split())==3};payload=pathlib.Path('work/hero_stamina_runtime.bin').read_bytes();cave=0x3c461d0;assert len(text)==cave;assert cave+len(payload)<=0x3c47000;text.extend(payload);changes=[]\n",
+      "col_offset": 170,
+      "end_col_offset": 192,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 5,
+      "line_range": [
+        5
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "5 fileoff,memoff,size=struct.unpack_from('<III',b,0x10);compressed=struct.unpack_from('<I',b,0x60)[0];text=bytearray(zbic.decompress(bytes(b[fileoff:fileoff+compressed])));assert len(text)==size\n6 symbols={parts[2]:int(parts[0],16) for line in subprocess.check_output(['llvm-nm','work/hero_stamina_runtime.elf'],text=True).splitlines() if len(parts:=line.split())==3};payload=pathlib.Path('work/hero_stamina_runtime.bin').read_bytes();cave=0x3c461d0;assert len(text)==cave;assert cave+len(payload)<=0x3c47000;text.extend(payload);changes=[]\n7 def branch(at,to,link=False):\n",
+      "col_offset": 47,
+      "end_col_offset": 125,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 6,
+      "line_range": [
+        6
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "5 fileoff,memoff,size=struct.unpack_from('<III',b,0x10);compressed=struct.unpack_from('<I',b,0x60)[0];text=bytearray(zbic.decompress(bytes(b[fileoff:fileoff+compressed])));assert len(text)==size\n6 symbols={parts[2]:int(parts[0],16) for line in subprocess.check_output(['llvm-nm','work/hero_stamina_runtime.elf'],text=True).splitlines() if len(parts:=line.split())==3};payload=pathlib.Path('work/hero_stamina_runtime.bin').read_bytes();cave=0x3c461d0;assert len(text)==cave;assert cave+len(payload)<=0x3c47000;text.extend(payload);changes=[]\n7 def branch(at,to,link=False):\n",
+      "col_offset": 47,
+      "end_col_offset": 125,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 6,
+      "line_range": [
+        6
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "5 fileoff,memoff,size=struct.unpack_from('<III',b,0x10);compressed=struct.unpack_from('<I',b,0x60)[0];text=bytearray(zbic.decompress(bytes(b[fileoff:fileoff+compressed])));assert len(text)==size\n6 symbols={parts[2]:int(parts[0],16) for line in subprocess.check_output(['llvm-nm','work/hero_stamina_runtime.elf'],text=True).splitlines() if len(parts:=line.split())==3};payload=pathlib.Path('work/hero_stamina_runtime.bin').read_bytes();cave=0x3c461d0;assert len(text)==cave;assert cave+len(payload)<=0x3c47000;text.extend(payload);changes=[]\n7 def branch(at,to,link=False):\n",
+      "col_offset": 253,
+      "end_col_offset": 275,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 6,
+      "line_range": [
+        6
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "5 fileoff,memoff,size=struct.unpack_from('<III',b,0x10);compressed=struct.unpack_from('<I',b,0x60)[0];text=bytearray(zbic.decompress(bytes(b[fileoff:fileoff+compressed])));assert len(text)==size\n6 symbols={parts[2]:int(parts[0],16) for line in subprocess.check_output(['llvm-nm','work/hero_stamina_runtime.elf'],text=True).splitlines() if len(parts:=line.split())==3};payload=pathlib.Path('work/hero_stamina_runtime.bin').read_bytes();cave=0x3c461d0;assert len(text)==cave;assert cave+len(payload)<=0x3c47000;text.extend(payload);changes=[]\n7 def branch(at,to,link=False):\n",
+      "col_offset": 276,
+      "end_col_offset": 311,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 6,
+      "line_range": [
+        6
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "7 def branch(at,to,link=False):\n8  delta=to-at;assert delta%4==0 and -(1<<27)<=delta<(1<<27);return struct.pack('<I',(0x94000000 if link else 0x14000000)|((delta>>2)&0x3ffffff))\n9 def change(at,new,expected=None):\n",
+      "col_offset": 13,
+      "end_col_offset": 58,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 8,
+      "line_range": [
+        8
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "10  old=bytes(text[at:at+len(new)])\n11  if expected is not None:assert old==expected,(hex(at),old.hex(),expected.hex())\n12  text[at:at+len(new)]=new;changes.append({'offset':hex(at),'before':old.hex(),'after':new.hex()})\n",
+      "col_offset": 25,
+      "end_col_offset": 80,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 11,
+      "line_range": [
+        11
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "21 newpacked=bytes(text);struct.pack_into('<I',b,0xc,struct.unpack_from('<I',b,0xc)[0]&~1);b.extend(b'\\0'*((-len(b))%0x100));newfile=len(b);b.extend(newpacked);struct.pack_into('<I',b,0x10,newfile);struct.pack_into('<I',b,0x18,len(text));struct.pack_into('<I',b,0x60,len(newpacked));b[0xa0:0xc0]=hashlib.sha256(text).digest()\n22 data_mem,data_size=struct.unpack_from('<II',b,0x34);bss=struct.unpack_from('<I',b,0x3c)[0];assert data_mem+data_size+bss==0x4ea0000;struct.pack_into('<I',b,0x3c,bss+0x1000)\n23 out=pathlib.Path('work/hero-stamina-trial/exefs/main');out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(b);pathlib.Path('work/hero-stamina-trial/changes.json').write_text(json.dumps({'status':'Native stamina action/frame/gate candidate; live qualification pending','source_build':b[64:84].hex(),'text_size':len(text),'cache_offset':'0x4ea0000','changes':changes},indent=2));print('Built native stamina candidate',len(b),'bytes; source unchanged')\n",
+      "col_offset": 91,
+      "end_col_offset": 131,
+      "filename": "native/stamina/build_stamina_runtime.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 22,
+      "line_range": [
+        22
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "39  raw=patch(name,archive[dataoff+st:dataoff+en])\n40  assert len(raw)==en-st\n41  out[dataoff+st:dataoff+en]=raw;changed.append(name)\n",
+      "col_offset": 1,
+      "end_col_offset": 23,
+      "filename": "native/wheel/build_wheel_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 40,
+      "line_range": [
+        40
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "42 (root/rel).write_bytes(zs.ZstdCompressor(level=12,dict_data=a.DICT[1]).compress(out))\n43 assert len(changed)>=2\n44 print('Patched layout members:',changed)\n",
+      "col_offset": 0,
+      "end_col_offset": 22,
+      "filename": "native/wheel/build_wheel_layout.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 43,
+      "line_range": [
+        43
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "2 from pathlib import Path\n3 import hashlib,json,struct,subprocess,sys,shutil,zbic\n4 sys.path.insert(0,'outputs/OOT-Test-Kit')\n",
+      "col_offset": 0,
+      "end_col_offset": 53,
+      "filename": "native/wheel/build_wheel_standalone.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 3,
+      "line_range": [
+        3
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "10 p=root/'romfs'/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(source.read(pkg['index'],'romfs/'+rel))\n11 symbols={p[2]:int(p[0],16) for line in subprocess.check_output(['llvm-nm','work/wheel_standalone.elf'],text=True).splitlines() if len(p:=line.split())==3}\n12 payload=Path('work/wheel_standalone.bin').read_bytes()\n",
+      "col_offset": 39,
+      "end_col_offset": 113,
+      "filename": "native/wheel/build_wheel_standalone.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 11,
+      "line_range": [
+        11
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "10 p=root/'romfs'/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(source.read(pkg['index'],'romfs/'+rel))\n11 symbols={p[2]:int(p[0],16) for line in subprocess.check_output(['llvm-nm','work/wheel_standalone.elf'],text=True).splitlines() if len(p:=line.split())==3}\n12 payload=Path('work/wheel_standalone.bin').read_bytes()\n",
+      "col_offset": 39,
+      "end_col_offset": 113,
+      "filename": "native/wheel/build_wheel_standalone.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 11,
+      "line_range": [
+        11
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "22  else:data=raw\n23  assert len(data)==size\n24  return bytearray(data)\n",
+      "col_offset": 1,
+      "end_col_offset": 23,
+      "filename": "native/wheel/build_wheel_standalone.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 23,
+      "line_range": [
+        23
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "25 def branch(at,to):\n26  delta=to-at;assert delta%4==0 and -(1<<27)<=delta<(1<<27)\n27  return struct.pack('<I',0x14000000|((delta//4)&0x3ffffff))\n",
+      "col_offset": 13,
+      "end_col_offset": 58,
+      "filename": "native/wheel/build_wheel_standalone.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 26,
+      "line_range": [
+        26
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "33 rtld=source.read(pkg['index'],'exefs/rtld');text=text_segment(rtld)\n34 assert len(text)==0x2740 and len(text)+len(payload)<=0x3000\n35 emit(rtld,text+payload,root/'exefs/rtld')\n",
+      "col_offset": 0,
+      "end_col_offset": 59,
+      "filename": "native/wheel/build_wheel_standalone.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 34,
+      "line_range": [
+        34
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    },
+    {
+      "code": "37 for at,label,expected in [(0x33ca1d0,'wheel_bind_item','e00315aa'),(0xe9ee30,'wheel_list_ctor','7f2303d5'),(0x3773874,'wheel_draw_entry','e923506d'),(0x33c9270,'wheel_update','7f2303d5'),(0x2b30de0,'wheel_tick_entry','7f2303d5'),(0x346966c,'wheel_hid_entry',struct.pack('<I',struct.unpack('<I',branch(0x346966c,0x3c42800))[0]|0x80000000).hex())]:\n38  assert text[at:at+4].hex()==expected\n39  replacement=branch(at,symbols[label]-0x20000)\n",
+      "col_offset": 1,
+      "end_col_offset": 37,
+      "filename": "native/wheel/build_wheel_standalone.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+      "line_number": 38,
+      "line_range": [
+        38
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html",
+      "test_id": "B101",
+      "test_name": "assert_used"
+    }
+  ]
+}

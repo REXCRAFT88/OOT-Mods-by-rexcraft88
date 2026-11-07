@@ -7,6 +7,8 @@ def original(path):
  return source_cache[path]
 variants=[('hero-with-stamina','Hero Mode with Stamina','work/public-variants/hero-with-stamina'),('hero-without-stamina','Hero Mode without Stamina','work/public-variants/hero-without-stamina'),('item-wheel','Item Wheel','work/wheel-standalone-trial')]
 if '--manual' in sys.argv:variants=[('manual-shield','Manual Shield','work/public-variants/manual-shield')]
+if '--compatibility' in sys.argv:
+ variants=[(key,name,'work/compatibility-candidates/'+key) for key,name in [('hero-with-stamina','Hero Mode with Stamina'),('hero-without-stamina','Hero Mode without Stamina'),('manual-shield','Manual Shield'),('item-wheel','Item Wheel')]]
 for key,name,folder in variants:
  root=Path(folder);out=repo/'patches'/key;out.mkdir(parents=True,exist_ok=True);files=[]
  for f in sorted(root.rglob('*')):
@@ -41,4 +43,4 @@ for key,name,folder in variants:
    else:assert bsdiff4.patch(o,patch)==t
    entry={'path':path,'kind':kind,'source_sha256':sh,'target_sha256':th,'dictionary':ident,'patch':patchname}
   (out/patchname).write_bytes(patch);files.append(entry)
- m={'name':name,'version':{'hero-with-stamina':'0.1.0-beta.3','hero-without-stamina':'0.1.0-beta.2','item-wheel':'0.1.1','manual-shield':'0.1.0'}[key],'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};(out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)
+ m={'name':name,'version':{'hero-with-stamina':'0.1.0-beta.4','hero-without-stamina':'0.1.0-beta.3','item-wheel':'0.1.2','manual-shield':'0.1.1'}[key],'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};(out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)

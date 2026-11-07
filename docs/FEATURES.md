@@ -60,3 +60,9 @@ Hold R/R1 to open the wheel, choose with the left stick and release to equip. Ta
 This variant keeps the game's normal targeting, shielding, item-use and face-button behavior; it does not install Hero Mode's L/L1 target toggle or ZL/L2 manual-shield policy. It contains no stamina or enemy balance changes. Do not combine its executable/UI replacements with Hero Mode, which already includes the wheel.
 
 Use the prepared Add-on ZIP on Lichii build95 (release tag build-94), which fixes NUP RomFS overrides. Build93 needs the optional patched-NUP fallback for the complete wheel layout.
+
+## Compatibility update
+
+Hero Mode with Stamina Beta4 relocates its native code out of the known Dynamic FPS and 3440x1440 ultrawide code areas. The installed Dynamic-fps IPS and Ultrawide 21x9 (3440x1440) IPS were checked for byte overlap; both were enabled in the live build95 check. This does not promise compatibility with every FPS, aspect-ratio or UI mod. Two mods replacing the same RomFS archive still need a merged resource; use one Hero/standalone native package at a time.
+
+All four updated variants pass shoulder inputs through in paused menus. Wheel variants additionally bypass their R/R1 tap/hold filter during the native ocarina action. Compiled passthrough checks pass; a live ocarina check on a normal progressed save is still pending because the synthetic development save cannot activate the instrument even in a peaceful area. Existing game saves are not modified.
