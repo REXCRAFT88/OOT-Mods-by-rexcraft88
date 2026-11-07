@@ -1,0 +1,4 @@
+bsdiff4==1.4.2
+zstandard==0.25.0
+lz4==4.4.5
+zbic==1.0.1.post1

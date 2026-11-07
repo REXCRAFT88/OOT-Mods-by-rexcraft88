@@ -1,0 +1,93 @@
+# Modder resources and implementation map
+
+This is a version-specific reverse-engineering notebook for Project Eglantine update131072, title0400486024DEC000, main buildE0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348. Offsets below are **main-module-relative** unless stated otherwise. They are not universal Switch/OOT addresses.
+
+## Repository layout
+
+- `patches/<variant>/manifest.json`: exact input/output hashes and each changed file. This is the authoritative release file list.
+- `install.py`: deterministic native-module reconstruction and checked resource delta application; accepts a NUP or extracted exefs/romfs folder. Optional `--patched-nup` builds an independent playable copy.
+- `nup_reader.py`: NUP v1 package/member parsing and copy-only member replacement, TOC/header hashes and read-back verification.
+- `native/wheel/`: wheel C, AArch64 hooks, linker script and historical layout/build scripts.
+- `native/stamina/`: portable stamina core, game adapter, AArch64 entry/leave hooks and HUD builder snapshots.
+- `native/manual-shield/`: the standalone released guard input/frame/state code and linker script.
+- `native/hero-with-stamina/`: merged wheel/guard input pipeline and rtld/subsdk linker information.
+- `native/hero-without-stamina/`: no-stamina frame/input bridge calling the standalone wheel helpers.
+- `native/resources/`: enemy stat/AI builders; `docs/enemy-balance-report.json` records exact balance fields.
+- `docs/STAMINA-DEVELOPMENT.md`, `ITEM-WHEEL-DEVELOPMENT.md`, `RESEARCH-AUDIT.md`: detailed earlier findings and failure history. Where older controls/status conflict with FEATURES.md or this page, the release files and current feature guide take precedence.
+
+Historical builder snapshots retain references to the original development `work/` and `outputs/OOT-Test-Kit/` layout. They are implementation references, not a promise that running each old script from this checkout rebuilds every asset. The portable installer is the supported exact-release reconstruction path. Edit the native snapshots and adapt/relink their addresses when developing a new version; never publish a source-only edit without rebuilding the payload and validating its native hook branches.
+
+## Native modules and safe linking
+
+Original main image ends at0x4ea0000. The wheel/manual releases reserve0x5000 additional BSS bytes; with these headers subsdk0 loads at main+0x4ea5000. Original subsdk0 text ends at0x84770 and its rodata begins at0x85000, leaving2192 bytes of alignment space. Thus the guard payload starts at **main+0x4f29770**. Using0x4f2c770 was wrong and caused a black-screen boot freeze.
+
+`rtld` precedes main by0x20000 in the tested layout. The wheel payload uses its original text end0x2740 up to0x3000. Symbols linked from rtld to main must account for the0x20000 relationship. Do not relocate main text/rodata arbitrarily: existing pointer/relocation tables depend on their virtual addresses.
+
+Installable NSOs preserve the original rodata/data bytes and append one uncompressed text replacement, updating header offsets/sizes, BSS, compression flag and text hash. A larger disk NSO does not imply that all its unused stored text copies are mapped into game RAM. The public packager normalizes the text replacement to avoid retaining successive obsolete appended copies.
+
+Payload and state allocations:
+
+| Purpose | Main-relative address |
+| --- | --- |
+| Stamina/player cache |0x4ea0000 |
+| Native stamina or manual-only bridge state |0x4ea0800 |
+| Wheel state |0x4ea1000 |
+| Guard/target input state |0x4ea3000 |
+| Stamina executable payload |0x3c461d0, within original text padding |
+| Manual/merged guard payload |0x4f29770, in subsdk0 alignment space |
+
+When relinking, inspect ELF symbols with `llvm-nm`, verify the actual module load address, assert payload capacity and check original instruction bytes before writing branches. An ELF that links successfully can still branch into the wrong mapped module.
+
+## Input and manual guard
+
+The qualified full-controller HID state has40-byte stride; sample clock at+0 and button bits at+8. Logical masks: L=0x40, R=0x80, ZL=0x100, ZR=0x200, right-stick click=0x20. Batch counts1..64 are accepted. Input hooking is scoped to full Pro-controller-style IDs0/32; split Joy-Con/handheld paths still need testing.
+
+The merged path handles wheel timing then guard/target remapping once. L rising-edge toggles targeting; right-stick click cancels; physical ZL means held guard. Native ZL is supplied while targeting or guarding so the **native controller, movement state and animation agree**. Swapping only Wait/Move animation names to LockOnWait/LockOnMove produced the observed random-forward/axis-constrained movement and was removed.
+
+The player AS Bool14 setter at0x37ba100 is scoped to the actual player AS-interface pointer, not merely the address of its BSS pointer slot. Other actors and other boolean indices keep the original behavior. The interface is obtained from Actor component table+0x40, then pointer chain+0x18,+0x18,+0x40. Native bool getter is0x37bb4c0; int getter0x37bb2c0. Native enum names and AS-blackboard indices are not interchangeable.
+
+Guard KeepMove flag is bit5 at Actor component188+0x24. Native LockOnWait E50 guard writes are hooked at0x972e18 and0x97320c to suppress guard when the manual policy denies it. PlayerState resolution helper0x973030 takes an action/selector context; Actor component resolver0x974eb0 takes an Actor.
+
+Released guard entry requests **shield slot4 only** through0x6b6820(EquipmentUser,4), once per entry. The former0xa43030(Actor,1,1) sword/equipment draw request could force the sword out while targeting and was removed. EquipmentUser is Actor.table+0x200; Actor.table is Actor+0x270.
+
+A no-player-update watchdog clears guard/menu state but still consumes L/ZL. Passing L through that watchdog let it reach the stock item selector, fighting target toggle; the final release reserves it. This changes L shoulder-tab behavior in paused UI too; retain access to other menu navigation controls.
+
+The implementation still uses native target/guard locomotion and can align the camera/select a native target. Tester confirmed final L1 exclusivity and moving shield with sword sheathed in both toggle states on DualSense/Lichii. This is not exhaustive equipment/child/controller coverage.
+
+## Stamina
+
+`hero_core.c/.h` own the tunable costs and portable policy; `hero_native_runtime.c` owns game observations/action adapters. HeroState stores stamina/capacity at+0/+4, initialized+20, alive+32, combat+36. NativeHero AS interface is+0x80 and tick counter+0x88; confusing decimal128 with hex0x128 breaks the setter scope.
+
+Core rules:20 units per permanent heart; current injury increases cost; no stamina restrictions outside combat. Nearby enemy ActorManager scan uses a25-unit radius and five-second grace. Do not use BattleMode/IsCaution alone as proximity: merely drawing/attacking can enable them.
+
+Explicit action-entry/leave hooks charge slash, stab, jump attack, spin, roll, jump, backflip and sidestep. Costs are in FEATURES.md. AttackComboType int14 value5 identifies a stab in the qualified path. Fatigued melee uses private per-entry damage storage rather than mutating shared actor parameters, with damage0.5 and animation rate0.75. Restore the previous AS rate after the attack; a stored rate field alone is not evidence that animation actually slowed. Earlier timing checks measured normal38–39 vs fatigued50–55 native ticks.
+
+Regeneration delay1.25 seconds, rate24/second. Held guard costs2/second before injury scaling. Shield impact spending/guard break exists as portable core logic but **has no qualified live contact/stagger adapter in this release**.
+
+Potential future impact entry: ExecutePlayerReactionGuard vtable0x49c71b8, Enter0x27f7d00, Update0x27f7f90, Leave0x27f8100. GuardBreak vtable0x49c7480, Enter0x27fa200. Enter/Update/Leave slots are+e8/+f0/+f8. Do not invoke GuardBreak Enter using a ReactionGuard object: their object layouts differ. Successful contact enums/token deduplication still need live qualification; do not fake collision by forcing a shared damage/result bit.
+
+## Wheel and HUD resources
+
+Wheel integration hooks bind0x33ca1d0, list constructor0xe9ee30, draw0x3773874, update0x33c9270, MainScheduler tick0x2b30de0 and full HID callsite0x346966c. Native highlight helper0x33c8f50 is not a commit; actual commit0x33c98f0(controller,0). Preserve that distinction for tap-cycling.
+
+Tap/hold uses native sample-clock delta192. Initial hold input is consumed; release emits a variant-cycle event for a tap or preserves long-hold selection. A tap does not open the native selector. Groups preserve native inventory/age usability and remember selected variants. Bow item widget names can change after equipping; grouping must recognize both Weapon_Range and Pouch_Range naming or fire-arrow cycling gets stuck.
+
+Layout2 authored pane position is+0x6c/+0x70; scale+0x60/+0x64, dirty flags OR0x6f at+0. Writes to derived+0x4c/+0x50 are overwritten by the renderer. Reuse native cursor/glow instead of allocating a new renderer. All duplicate ShortCut_01/PaShortCutSlideList SARC members must be patched; a dictionary keyed by filename silently discards duplicates.
+
+The yellow stamina gauge is a separate cloned PlayerStatus part and PaStaminaGauge asset. Green magic remains stock. A BNTX view reuses a copied magic gauge image with channel swizzle for yellow; it must be placed under `romfs/UI/Layout2Archive/`, not next to romfs. Missing that file produced a visually empty gauge despite240/240 runtime stamina. Common UI resource allocations must cover the expanded uncompressed layouts and texture archive. The public builds restore original controller/font/guide members instead of redistributing the PS5 profile/art.
+
+## Enemy and floor resources
+
+Enemy packs are compressed SARC archives containing parameter/AI resources. Patch positive HP with ceiling1.5x and positive attack scalars2x, preserve zero/special cases, and ensure shared named resources have identical edited content in all owners. Include dedicated enemy projectile packs; exclude player arrows/reflected-player actors. The balance report records exact paths and values.
+
+Wolfos edits retain first attack speed, accelerate follow-ups and bypass rear-exposure control flow. Stalfos retains counter/interval edits. Reparse the complete graph, verify exact-length resource edits and compression round trips; branch names alone are not behavior evidence.
+
+Blood textures: `Tex/Rock_Well_RoomFloor_A_Alb.bntx.zs` and `Tex/Rock_ShadowTemple_Floor_A_Alb.bntx.zs`. They are albedo material replacements with mip chains, not decals. Geometry/tiling were preserved; edited art was generated from each original floor reference. Inspect every mip and swizzle/ASTC round trip before replacing a texture.
+
+## Test workflow and boundaries
+
+Use an isolated adult/full-inventory save and a separate game copy. Fresh native-module launches are stronger evidence than live code writes. JSON input injection does not reliably traverse the raw HID hook; physical-controller confirmation is needed for raw guard/target routing. Automated AArch64 emulation checks relocation, masks, batch handling, scoped setters and exhaustion policy but cannot prove shield collision or visible poses.
+
+Test stamina capacity/injury separately, guard held/released, target alone, shield moving diagonally, target+shield with sword sheathed, R1 tap without popup, wheel hold/equip, R2 bombs/bow, green magic/yellow stamina, pause UI and scene transitions. Do not publish the Stalfos test override as global balance: the special test used36 HP (2x), while released global Stalfos HP is27 (1.5x18).
+
+Future work: qualified shield impact cost and guard break; optional in-game controller settings; broader controller/child/boss coverage; more enemy patterns and extra saves. These are future work, not shipped features.

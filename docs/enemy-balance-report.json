@@ -1,0 +1,3865 @@
+{
+  "damage_multiplier": 2,
+  "health_multiplier": 1.5,
+  "integer_health_rounding": "ceil; positive one-hit enemies become 2 HP",
+  "packs": [
+    {
+      "pack": "BeamosBeam.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/BeamosBeam.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Bubble_Green_Bullet_Aura.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Bubble_Green_Bullet_Aura.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Dodongo_Bullet_Fire.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Dodongo_Bullet_Fire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossDodongo_Bullet_Fire.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossDodongo_Bullet_Fire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossDodongo_Bullet_StrongFire.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossDodongo_Bullet_Fire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossGanon_Bullet_ShockWave.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossGanon_Bullet_ShockWave.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossGanondrof_Bullet_ChargeLightBall.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_ChargeLightBall.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossGanondrof_Bullet_LightBall.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_LightBall.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossGanondrof_Bullet_ShockWave.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_ShockWave.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossGanondrof_Bullet_StrongShockWave.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_ShockWave.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        },
+        {
+          "member": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_StrongShockWave.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossPhantomGanon_Bullet_LightBall.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossPhantomGanon_Bullet_LightBall.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        },
+        {
+          "member": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_LightBall.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossVolvagia_FireBreath.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossVolvagia_FireBreath.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "DungeonBossVolvagia_FireBreathField.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/DungeonBossVolvagia_FireBreathField.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Amos.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Amos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Amos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Amos_AlwaysRespawn.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Amos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Amos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Anubis.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Anubis.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Anubis_MagicField.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Anubis_MagicField.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_BabyDodongo.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_BabyDodongo.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_BabyDodongo.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Bari.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Bari.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Bari.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Beamos.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Beamos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Beamos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Beamos_For_High_Place.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Beamos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Beamos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Biri.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Biri.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Biri.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Bubble_Blue.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Bubble_Blue.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_BubbleBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_BubbleBase.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Bubble_Green.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Bubble_Green.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Bubble_Green.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_BubbleBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_BubbleBase.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Bubble_Green_Big.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Bubble_Green.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_BubbleBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_BubbleBase.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Bubble_Green_Big.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 8,
+          "new": 12
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Bubble_Green_Big.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Bubble_Red.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Bubble_Red.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Bubble_Red.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_BubbleBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_BubbleBase.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Bubble_White.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_BubbleBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_BubbleBase.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_CrazyFloorTile.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_FlyingPot.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_FlyingPot.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_CrazyFloorTile.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DeadHand.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DeadHand.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_DeadHand.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DeadHand_Hand.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DeadHand_Hand.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Dekubaba.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Dekubaba.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Dekubaba.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Dekubaba_Withered.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Dekubaba.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Dekubaba_Withered.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Dekubaba_Withered.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Dekubaba.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Dinolfos.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Dinolfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Lizalfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 9,
+          "new": 14
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Dinolfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Dodongo.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Dodongo.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Dodongo.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 6,
+          "new": 9
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Barinade.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Barinade.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 15,
+          "new": 23
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Barinade.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Barinade_Beam.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Barinade_Beam.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Barinade_Jellyfish.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Barinade_Jellyfish.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Barinade_Jellyfish.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_BongoBongo.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_BongoBongo.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 56,
+          "new": 84
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_BongoBongo.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_BongoBongo_LeftHand.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_BongoBongo_RightHand.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_BongoBongo_RightHand.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_BongoBongo_RightHand.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Dodongo.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Dodongo.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Dodongo.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 24,
+          "new": 36
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Dodongo_SpawnBabyDodongo.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_BabyDodongo.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_BabyDodongo.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Ganon.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Ganon.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 36,
+          "new": 54
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Ganon.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 16,
+          "new": 32
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Ganon_SecondHalfBattle.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Ganon.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 36,
+          "new": 54
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Ganon_SecondHalfBattle.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Ganon.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 16,
+          "new": 32
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Ganondorf.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Ganondorf.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 70,
+          "new": 105
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Gohma.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Gohma.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Gohma.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 21,
+          "new": 32
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Gohma_Egg.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Gohma_Egg.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Gohma_Egg.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Kotake.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Kotake.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Koume.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Kotake.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Morpha.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Morpha.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 48,
+          "new": 72
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Morpha.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Morpha_Tentacle.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Morpha_Tentacle.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 100,
+          "new": 150
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Morpha_Tentacle.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_PhantomGanon.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_PhantomGanon.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_PhantomGanon.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 42,
+          "new": 63
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Twinrova.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Twinrova.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Twinrova.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 48,
+          "new": 72
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Volvagia.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_DungeonBoss_Volvagia.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_DungeonBoss_Volvagia.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 60,
+          "new": 90
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Floormaster.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Floormaster.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 4,
+          "new": 6
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Floormaster.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Floormaster_Little.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Floormaster_Little.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Floormaster_Little_Truth.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Floormaster_Little.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Floormaster_Truth.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Floormaster.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 4,
+          "new": 6
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Floormaster.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_FlyingPot.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_FlyingPot.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_FlyingPot.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_FlyingPot_IceCavern.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_FlyingPot.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_FlyingPot.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_FlyingPot_ShadowTemple.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_FlyingPot.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_FlyingPot.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_FlyingPot_SpiritTemple.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_FlyingPot.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_FlyingPot.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Freezard.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Freezard.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 6,
+          "new": 9
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Freezard.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Freezard_Fixed.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Freezard.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 6,
+          "new": 9
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Freezard.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Gibdo.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_ReDead.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Gohma_Egg.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Gohma_Egg.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Gohma_Egg.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Gohma_Larva.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Gohma_Larva.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Gohma_Larva.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Guay.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Guay.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Guay_Boss.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Guay.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Guay_Fixed.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Guay.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Guay_Flock.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Guay.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_IronKnuckle_Black.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_IronKnuckle.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 34,
+          "new": 51
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_IronKnuckle.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_IronKnuckle_Silver.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_IronKnuckle.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 34,
+          "new": 51
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_IronKnuckle.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_IronKnuckle_White.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_IronKnuckle.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 34,
+          "new": 51
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_IronKnuckle.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Keese.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Keese_Fire.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Keese_Ice.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Keese_Truth.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Leever.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Leever.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Leever.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Leever_Big.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Leever.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Leever.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Leever_Big.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Leever_Big.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 8,
+          "new": 12
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Leever_Fixed.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Leever.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Leever.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_LikeLike.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_LikeLike.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_LikeLike.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Lizalfos.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Lizalfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 9,
+          "new": 14
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Lizalfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_BigOcto.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_MiddleBoss_BigOcto.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_BigOcto.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 9,
+          "new": 14
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_DarkLink.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_DarkLink.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_FlareDancer.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_FlareDancer.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 42,
+          "new": 63
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_MiddleBoss_FlareDancer.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_FlareDancer_FireBody.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_MiddleBoss_FlareDancer_FireBody.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_FlareDancer_FireBody.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 5,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_GerudoThief.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_GerudoThief.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_MiddleBoss_GerudoThief.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_GerudoThief_02.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_GerudoThief.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_MiddleBoss_GerudoThief.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_GerudoThief_03.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_GerudoThief.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_MiddleBoss_GerudoThief.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_GerudoThief_04.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_GerudoThief.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_MiddleBoss_GerudoThief.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_IronKnuckle_Nabooru.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_IronKnuckle_Nabooru.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 40,
+          "new": 60
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_IronKnuckle.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 34,
+          "new": 51
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_IronKnuckle.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_Lizalfos.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Lizalfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 9,
+          "new": 14
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Lizalfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_Poe_Meg.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_Poe_Meg.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 24,
+          "new": 36
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe_SistersBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MiddleBoss_Poe_Meg_Dummy.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_Poe_Meg.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 24,
+          "new": 36
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe_SistersBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_MiddleBoss_Poe_Meg_Dummy.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Moblin.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Moblin.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Moblin.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_MoblinClub_ShockWave.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_MoblinClub_ShockWave.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Moblin_Club.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Moblin_Club.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Moblin_Club.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Octorok.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Octorok.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Octorok.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Peahat.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Peahat.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 6,
+          "new": 9
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Peahat.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Peahat_AircraftCarrier.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Peahat.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 6,
+          "new": 9
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Peahat.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Peahat_Larva.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Peahat_Larva.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Peahat_Larva.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Peahat_Larva_Independent.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Peahat_Larva.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Peahat_Larva.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_Amy.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Poe_Sisters.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe_SistersBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_Base.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_Beth.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Poe_Sisters.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe_SistersBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_Big.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Poe_Hyrule.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 4,
+          "new": 6
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_Flat.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe_Sharp.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_Hyrule.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Poe_Hyrule.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 4,
+          "new": 6
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_Joelle.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Poe_Sisters.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe_SistersBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_Sharp.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe_Sharp.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Poe_SistersBase.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Poe_Sisters.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Poe_SistersBase.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_ReDead.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_ReDead.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_ReDead_AlwaysRespawn.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_ReDead.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_ReDead_ClimaxOnly.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_ReDead.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 12,
+          "new": 18
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_ReDead_ClimaxOnly.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 4,
+          "new": 6
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Scrub_Business.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Scrub_Deku.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 100,
+          "new": 150
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Scrub_Business_Seed.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Scrub_Deku.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 100,
+          "new": 150
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Scrub_Deku.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Scrub_Deku.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 100,
+          "new": 150
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Scrub_Deku_Brothers.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Scrub_Deku.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 100,
+          "new": 150
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Scrub_Mad.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Scrub_Mad.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Shabom.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Shabom.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Shabom.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Shabom_AlwaysRespawn.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Shabom.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Shabom.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Shabom_BigOctoChild.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Shabom.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Shabom.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_ShellBlade.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_ShellBlade.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_ShellBlade.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_SkullKid.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_SkullKid.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 10,
+          "new": 15
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Skulltula.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Skulltula.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Skulltula.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Skulltula_Gold.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Skulltula_Gold.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Skullwalltula.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Skulltula_Gold.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Skullwalltula.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Skulltula_Truth.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Skulltula.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Skulltula.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Skullwalltula.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Skullwalltula.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Skullwalltula.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Spike.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Spike.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Spike.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Stalchild.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stalchild.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Stalchild.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Stalchild_Big.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Stalchild_Big.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 9,
+          "new": 14
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stalchild.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Stalchild.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stalchild_Big.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Stalfos.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Stalfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stalfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Stalfos_AlwaysRespawn.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Stalfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stalfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Stalfos_ForChild.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Stalfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stalfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Stalfos_Weak.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Stalfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stalfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stalfos_Weak.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Stinger.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stinger.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Stinger.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Stinger_UnderWater.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Stinger.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Stinger.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Tailpasaran.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Tailpasaran.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Tailpasaran.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Tektite_Blue.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Tektite_Red.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Tektite_Red.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Tektite_Blue.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Tektite_Red.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Tektite_Red.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 2,
+          "new": 3
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Tektite_Red.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Tentacle_Blue.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Tentacle_Red.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Tentacle_Blue.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 4,
+          "new": 6
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Tentacle_Green.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Tentacle_Red.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Tentacle_Green.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 5,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Tentacle_Red.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Tentacle_Red.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 3,
+          "new": 5
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Tentacle_Red.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_TorchSlug.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_TorchSlug.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_TorchSlug.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 8,
+          "new": 12
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_TrickyDoor.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_TrickyDoor.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_TrickyDoor.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_TrickyDoor_SpiritTemple.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_TrickyDoor.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_TrickyDoor.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 1,
+          "new": 2
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Wallmaster.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "Life/LifeParameters/Enemy_Wallmaster.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 4,
+          "new": 6
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Wolfos.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Wolfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Wolfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 9,
+          "new": 14
+        }
+      ]
+    },
+    {
+      "pack": "Enemy_Wolfos_White.pack.zs",
+      "type": "enemy",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Enemy_Wolfos.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Wolfos.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 9,
+          "new": 14
+        },
+        {
+          "member": "Life/LifeParameters/Enemy_Wolfos_White.game__life__LifeParameters.bgyml",
+          "field": "MaxLife",
+          "stock": 18,
+          "new": 27
+        },
+        {
+          "member": "GameBalance/AttackParam/Enemy_Wolfos_White.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "FlareDancer_Bullet_FireBall.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/FlareDancer_Bullet_FireBall.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "FlareDancer_Bullet_FireDanceBall.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/FlareDancer_Bullet_FireBall.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Ganon_Bullet_ShockSquirt.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Ganon_Bullet_ShockSquirt.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Ganon_Bullet_ShockSquirt_Weak.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Ganon_Bullet_ShockSquirt.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Ganon_Bullet_StrongShockSquirt.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Ganon_Bullet_ShockSquirt.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Ganon_Bullet_Thunder.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Ganon_Bullet_Thunder.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "Ganondorf_Bullet_Thunder_Shockwave.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Ganondorf_Bullet_Thunder_Shockwave.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 16,
+          "new": 32
+        }
+      ]
+    },
+    {
+      "pack": "KotakeKoumeTwinrova_Bullet_GuardBreakFire.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/KotakeKoumeTwinrova_Bullet_GuardBreakFire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "KotakeKoumeTwinrova_Bullet_GuardBreakIce.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/KotakeKoumeTwinrova_Bullet_GuardBreakIce.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        },
+        {
+          "member": "GameBalance/AttackParam/KotakeKoumeTwinrova_Bullet_GuardBreakFire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Octorok_Bullet.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/ScrubDeku_DekuNut.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "PhantomGanon_Bullet_Thunder.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/PhantomGanon_Bullet_Thunder.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "PhantomGanon_Bullet_Thunder_Shockwave.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Ganondorf_Bullet_Thunder_Shockwave.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 16,
+          "new": 32
+        },
+        {
+          "member": "GameBalance/AttackParam/PhantomGanon_Bullet_Thunder_Shockwave.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 4,
+          "new": 8
+        }
+      ]
+    },
+    {
+      "pack": "PoeHyrule_Bullet_FireBall.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/PoeHyrule_Bullet_FireBall.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "ScrubDeku_DekuNut.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/ScrubDeku_DekuNut.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "SkullKid_Bullet.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/SkullKid_Bullet.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Twinrova_Bullet_FireBeam.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_FireBeam.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Twinrova_Bullet_FireBullet.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_FireBullet.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "Twinrova_Bullet_FireField.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_FireField.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    },
+    {
+      "pack": "Twinrova_Bullet_GuardBreakFire.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_GuardBreakFire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        },
+        {
+          "member": "GameBalance/AttackParam/KotakeKoumeTwinrova_Bullet_GuardBreakFire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Twinrova_Bullet_GuardBreakIce.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_GuardBreakIce.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        },
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_GuardBreakFire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        },
+        {
+          "member": "GameBalance/AttackParam/KotakeKoumeTwinrova_Bullet_GuardBreakFire.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Twinrova_Bullet_IceBeam.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_IceBeam.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        },
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_FireBeam.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 8,
+          "new": 16
+        }
+      ]
+    },
+    {
+      "pack": "Twinrova_Bullet_IceBullet.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_FireBullet.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        },
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_IceBullet.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 12,
+          "new": 24
+        }
+      ]
+    },
+    {
+      "pack": "Twinrova_Bullet_IceField.pack.zs",
+      "type": "enemy projectile",
+      "changes": [
+        {
+          "member": "GameBalance/AttackParam/Twinrova_Bullet_IceField.game__gamebalance__AttackParam.bgyml",
+          "field": "BaseAttackPower",
+          "stock": 2,
+          "new": 4
+        }
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "pack": "Enemy_Amos_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Amos_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Anubis_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Anubis_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_BabyDodongo_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_BabyDodongo_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bari_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bari_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Beamos_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Beamos_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Biri_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Biri_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Blue_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Blue_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Green_Big_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Green_Big_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Green_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Green_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Green_Haribote.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Red_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_Red_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_White_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Bubble_White_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_CrazyFloorTile_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_CrazyFloorTile_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DeadHand_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DeadHand_Hand_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DeadHand_Hand_Sub_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dekubaba_DekuStickDrop.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dekubaba_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dekubaba_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dekubaba_Withered_DekuStickDrop.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dekubaba_Withered_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dictionary_Template.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dinolfos_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dinolfos_Haribote.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dodongo_Attention.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dodongo_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Dodongo_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Barinade_Arm.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Barinade_Attention.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Barinade_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Barinade_Jellyfish_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_BongoBongo_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_BongoBongo_LeftHand_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_BongoBongo_RightHand_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Dodongo_Attention.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Dodongo_Attention_RollingCenter.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Dodongo_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Ganon_Attention.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Ganon_Crystal.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Ganon_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Ganon_LegAttention.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Ganondorf_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Gohma_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Kotake_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Koume_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Morpha_Attention.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Morpha_Attention_Spin.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Morpha_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Morpha_Tentacle_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_PhantomGanon_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Twinrova_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_DungeonBoss_Volvagia_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_FlockGuayManager.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Floormaster_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Floormaster_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Floormaster_Little_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_FlyingPot_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_FlyingPot_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Freezard_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Freezard_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_Base.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_PhantomGanon.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_PhantomGanonHorse.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_PhantomGanonHorse_Imitation.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_PhantomGanonImitation.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_Poe_Amy.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_Poe_Base.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_Poe_Beth.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_Poe_Joelle.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_GhostPicturePerformer_Poe_Meg.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Gibdo_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Gibdo_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Gohma_Egg_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Gohma_Larva_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Gohma_Larva_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Guay_Boss_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Guay_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Guay_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Haribote_Template.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_IronKnuckle_Black_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_IronKnuckle_Silver_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_IronKnuckle_White_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Keese_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Keese_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Keese_Fire_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Keese_Fire_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Keese_Ice_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Keese_Ice_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_KotakeKoumeBattleManager.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Leever_Big_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Leever_Big_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Leever_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Leever_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_LikeLike_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_LikeLike_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_BigOcto_Attention.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_BigOcto_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_DarkLink_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_DarkLink_EffectLocater.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_FlareDancer_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_FlareDancer_FireBody_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_GerudoThief_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_IronKnuckle_Nabooru_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_Lizalfos_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_MiddleBoss_Poe_Meg_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Moblin_Club_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Moblin_Club_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Moblin_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Moblin_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Octorok_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Octorok_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Peahat_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Peahat_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Peahat_Larva_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Peahat_Larva_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_PhantomGanonHorse.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_PhantomGanonHorse_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Amy_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Amy_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Beth_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Beth_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Big_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Big_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Flat_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Flat_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Hyrule_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Hyrule_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Joelle_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Joelle_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Sharp_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Poe_Sharp_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_ReDead_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_ReDead_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Business_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Business_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Business_Leaf.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Business_Leaf_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Deku_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Deku_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Deku_Leaf.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Deku_Leaf_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_ForestStage.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_ForestStage_Elder.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_ForestStage_Elder_Leaf.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_ForestStage_Leaf.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Mad_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Mad_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Mad_Leaf.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Scrub_Mad_Leaf_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Shabom_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Shabom_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_ShellBlade_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_ShellBlade_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_SkullKid_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_SkullKid_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Skulltula_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Skulltula_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Skulltula_Gold_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Skulltula_Gold_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Skullwalltula_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Skullwalltula_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Spike_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Spike_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Spike_Stone_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Stalchild_Big_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Stalchild_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Stalchild_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Stalfos_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Stalfos_Haribote.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Stalfos_Weak_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Stinger_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Stinger_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Tailpasaran_Attention.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Tailpasaran_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Tailpasaran_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Tektite_Blue_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Tektite_Blue_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Tektite_Red_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Tektite_Red_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_TorchSlug_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_TorchSlug_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_TrickyDoor_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_TrickyDoor_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_TrickyDoor_SpiritTemple_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_TrickyDoor_SpiritTemple_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Wallmaster_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Wallmaster_Dictionary_Undefeated.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Wolfos_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    },
+    {
+      "pack": "Enemy_Wolfos_White_Dictionary.pack.zs",
+      "reason": "no positive health/attack scalar (dictionary, helper, inherited or non-damaging actor)"
+    }
+  ],
+  "unique_changed_resources": 188,
+  "changed_pack_count": 174
+}

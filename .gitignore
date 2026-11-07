@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+GeneratedMods/
+PatchedGames/
+*.nup
+*.nsp
+*.xci
+*.exe
+*.o
+*.elf
