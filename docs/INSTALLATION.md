@@ -27,13 +27,13 @@ py -3 install.py --source "D:/Games/original.nup" --output "D:/Mods/Manual-Shiel
 
 Add `--variant manual-shield` when using the full source checkout instead of the single-mod release ZIP.
 
-## Hero Mode: NUP-copy fallback on build-93
+## Hero Mode and Item Wheel: NUP-copy fallback on build-93
 
-1. Extract either Hero Mode release ZIP and run `Install-Windows.cmd`.
+1. Extract the Item Wheel or either Hero Mode release ZIP and run `Install-Windows.cmd`.
 2. Select your original NUP and a NEW patched NUP path.
 3. Wait for file/hash/read-back verification and launch the NEW NUP.
 
-Build-93 applies ExeFS replacement mods to NUP games, so the standalone shield can use Add-ons. However, its NUP RomFS path still bypasses the normal RomFS patching step. Hero Mode needs those RomFS changes for the HUD/wheel layouts and enemy resources; appearing in the Add-ons list alone does not prove all those changes are loaded. The NUP-copy path keeps the complete Hero Mode working on this tested build. On a loader with verified NUP RomFS override support, the generated Hero Mode folder can be imported instead.
+Build-93 applies ExeFS replacement mods to NUP games, so the standalone shield can use Add-ons. However, its NUP RomFS path still bypasses the normal RomFS patching step. The standalone Item Wheel needs its RomFS wheel layout, and Hero Mode needs HUD/wheel layouts and enemy resources; appearing in the Add-ons list alone does not prove all those changes are loaded. The NUP-copy path keeps the complete mod working on this tested build. On a loader with verified NUP RomFS override support, the generated mod folder or `.addon.zip` can be imported instead. The installer creates that Add-on ZIP alongside the patched NUP. Do not import the downloaded patch-builder ZIP itself.
 
 This distinction is visible in the exact build-93 source: [NUP loader](https://github.com/zortos293/Lichii/blob/09b78bd2dfdd279cc81caed2a794ed85062725c9/src/core/loader/nup.cpp), [ExeFS loading](https://github.com/zortos293/Lichii/blob/09b78bd2dfdd279cc81caed2a794ed85062725c9/src/core/loader/deconstructed_rom_directory.cpp), and [RomFS factory](https://github.com/zortos293/Lichii/blob/09b78bd2dfdd279cc81caed2a794ed85062725c9/src/core/file_sys/romfs_factory.cpp).
 

@@ -34,7 +34,7 @@ def main():
     if not out:
         return 0
     path = pathlib.Path(out)
-    if path.exists():
+    if path.exists() or (not shield_only and path.with_suffix('.addon.zip').exists()):
         messagebox.showerror('Choose a new destination', 'This destination already exists. Select a new filename.')
         return 1
     folder = path.with_suffix('').with_name(path.stem + '-Mod')
@@ -49,7 +49,9 @@ def main():
         pack_addon(folder, path)
         messagebox.showinfo('Shield Add-on ready', 'In Lichii: right-click the game > Configure Game > Add-ons > Import Mod from ZIP.\nSelect:\n' + out + '\nEnable it, Apply, and launch your original game.')
     else:
-        messagebox.showinfo('Mod build', 'Finished. Launch the new NUP:\n' + out)
+        addon = path.with_suffix('.addon.zip')
+        pack_addon(folder, addon)
+        messagebox.showinfo('Mod build', 'Finished. On Lichii build-93, launch the new NUP:\n' + out + '\n\nAn Add-on ZIP was also generated for loaders with NUP RomFS override support:\n' + str(addon))
     return 0
 
 

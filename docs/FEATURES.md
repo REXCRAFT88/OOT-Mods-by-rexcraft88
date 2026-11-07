@@ -1,6 +1,6 @@
 # Changes and controls
 
-## Shared controller labels
+## Hero Mode and Manual Shield controller labels
 
 Map your pad to a normal Switch Pro Controller in the emulator. The mod uses logical inputs, not a Sony device ID.
 
@@ -51,3 +51,11 @@ Includes the same wheel, manual-shield/targeting policy, enemy balance/behavior 
 ## Manual Shield standalone
 
 Installs only executable hooks for held guard, target toggle/cancel, scoped guard animation/state policy and the native shield-slot draw request. It contains no item wheel, stamina HUD/system, enemy stat/AI pack, PS5 artwork or controller profile. Use it by itself; Hero Mode already contains the corresponding shield implementation.
+
+## Item Wheel standalone
+
+Hold R/R1 to open the wheel, choose with the left stick and release to equip. Tap R/R1 cycles owned variants of the selected group without opening the wheel. The selected group has the outline/glow described above. Bow/arrow, bottle, spell and mask grouping uses the native available inventory.
+
+This variant keeps the game's normal targeting, shielding, item-use and face-button behavior; it does not install Hero Mode's L/L1 target toggle or ZL/L2 manual-shield policy. It contains no stamina or enemy balance changes. Do not combine its executable/UI replacements with Hero Mode, which already includes the wheel.
+
+On Lichii build-93, use the generated patched NUP to ensure the wheel's RomFS layout loads. The generated Add-on ZIP is for a loader with verified NUP RomFS override support. Seeing the mod in Add-ons does not establish that its layout was applied.
