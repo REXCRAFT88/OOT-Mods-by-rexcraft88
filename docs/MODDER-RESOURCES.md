@@ -113,3 +113,10 @@ The native C bridge source is native/compatibility/stamina_configurable.c. Its n
 HUD coordinates are changed only when the additive stamina pane binds. Capacity scaling is normalized for display, so the visual GaugeMax continues to correspond to permanent hearts at20 display units per heart while the underlying stamina pool can be larger. The visibility scale continues to be combat-only, and the magic gauge resource is unchanged. A real in-game settings frontend remains separate work; JSON in the ZIP is a receipt, not a file automatically loaded by the game.
 
 Edit stamina_settings.py DEFAULTS for user defaults or encode_settings for base costs/percent conversion, then rebuild the sidecar and release manifest. The legacy hero_default_config routine alone no longer supplies native Beta6 defaults.
+
+
+## Standalone wheel right-bumper-only (v0.1.4)
+
+The base game has separate left and right shortcut branches. Filtering only R at HID level leaves L able to open the replaced selector. `native/wheel/right_bumper_only.py` disables the L-only BoolSelector True branches by routing them to their existing False destinations: Event node141, ShortCut node52, UpdateShortCutOpenHoldFrameCounter nodes3/14. R, menu and ocarina queries are untouched; no global L input mask is installed. Resource sizes do not increase. The installer applies source/target SHA256-checked binary deltas for these three uncompressed AINB resources. Do not stack another mod replacing these sequences without merging its graph changes. This change applies only to standalone Item Wheel.
+
+Validation on build117 PGO: initial and repeated L85-frame holds leave the wheel closed; R85-frame hold opens it; R5-frame tap does not open it. Installer round-trip verifies all seven files. Compiled context and FPS loader regression checks pass. These checks do not replace a full controller/ocarina playthrough.

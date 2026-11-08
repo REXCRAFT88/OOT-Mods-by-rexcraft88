@@ -65,7 +65,11 @@ def build(source,manifest_path,destination):
             staged.append((path,patch))
             continue
         original=source.read(path)
-        if entry['kind']=='nso':
+        if entry['kind']=='binary':
+            if sha(original)!=entry['source_sha256']:raise ValueError('Wrong game/resource version: '+path)
+            target=bsdiff4.patch(original,patch)
+            if sha(target)!=entry['target_sha256']:raise ValueError('Output validation failed: '+path)
+        elif entry['kind']=='nso':
             if sha(original)!=entry['source_sha256']:raise ValueError('Wrong game version: '+path)
             p=json.loads(zlib.decompress(patch)); old=nso_text(original)
             text=bytearray(old[:p['length']]);text.extend(b'\0'*(p['length']-len(text)))

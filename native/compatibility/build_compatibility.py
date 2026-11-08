@@ -181,3 +181,6 @@ wheel_heartbeat:
     for name,txt in texts.items():(root/'exefs'/name).write_bytes(emit(blobs[name],txt))
     (root/'compatibility.json').write_text(json.dumps({'variant':variant,'main_code_start':'0x3c46600','main_code_bytes':len(code),'sdk_code_bytes':len(sc) if stamina else 0,'symbols':sy},indent=2))
     print(variant,'built',len(code),'main bytes',len(sc) if stamina else 0,'SDK bytes',flush=True)
+
+# Standalone wheel must not inherit the native left-bumper shortcut.
+subprocess.run([sys.executable, str(SRC.parent/'wheel/right_bumper_only.py')], check=True)

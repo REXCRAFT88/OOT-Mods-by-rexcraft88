@@ -55,7 +55,7 @@ Installs only executable hooks for held guard, target toggle/cancel, scoped guar
 
 ## Item Wheel standalone
 
-Hold R/R1 to open the wheel, choose with the left stick and release to equip. Tap R/R1 cycles owned variants of the selected group without opening the wheel. The selected group has the outline/glow described above. Bow/arrow, bottle, spell and mask grouping uses the native available inventory.
+Hold R/R1/RB to open the wheel, choose with the left stick and release to equip. Tap R/R1/RB cycles owned variants of the selected group without opening the wheel. The left bumper (L/L1/LB) does not open or cycle the standalone wheel. Left-bumper menu navigation and ocarina inputs remain available. The selected group has the outline/glow described above. Bow/arrow, bottle, spell and mask grouping uses the native available inventory.
 
 This variant keeps the game's normal targeting, shielding, item-use and face-button behavior; it does not install Hero Mode's L/L1 target toggle or ZL/L2 manual-shield policy. It contains no stamina or enemy balance changes. Do not combine its executable/UI replacements with Hero Mode, which already includes the wheel.
 
