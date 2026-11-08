@@ -9,6 +9,7 @@ extern u8 hero_runtime[];
 extern u64 get_guard_component(void *actor);
 typedef void (*set_native_bool)(void *, u32, u32);
 extern void native_draw_equipment(void *, u32);
+extern u32 as_int(void *,u32);
 extern void wheel_raw(u64 *, u32);
 extern void native_request_as_original(void *,u32,void *,u32,u32);
 
@@ -94,7 +95,7 @@ void hero_guard_frame(void) {
     if (allowed && !hero_control_state[3]) {
         u64 table=*(u64 *)(actor+0x270);
         u64 equipment=table?*(u64 *)(table+0x200):0;
-        if(equipment)native_draw_equipment((void *)equipment,4);
+        if(equipment)native_draw_equipment((void *)equipment,interface&&as_int((void *)interface,1)==2?0:4);
     }
     hero_control_state[3] = (u8)allowed;
 }

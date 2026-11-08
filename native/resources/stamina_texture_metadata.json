@@ -1,0 +1,28 @@
+[
+  {
+    "name": "MpGaugeCenter_00",
+    "pos": 361752,
+    "width": 1024,
+    "height": 43,
+    "format": "0x2d06",
+    "mips": 1,
+    "layout": 1,
+    "tile": 0,
+    "size": 65536,
+    "data": 103560704,
+    "comp": "0x5040302"
+  },
+  {
+    "name": "ControllerGuide_Pro_04",
+    "pos": 472184,
+    "width": 1555,
+    "height": 1511,
+    "format": "0x1d01",
+    "mips": 1,
+    "layout": 4,
+    "tile": 0,
+    "size": 1204224,
+    "data": 145945088,
+    "comp": "0x2010101"
+  }
+]

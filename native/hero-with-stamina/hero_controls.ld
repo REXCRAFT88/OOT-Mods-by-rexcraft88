@@ -13,3 +13,5 @@ original_setter_early = 0x37ba138;
 original_request_body = 0x933274;
 original_guard_flags_resume = 0x972e1c;
 original_guard_update_resume = 0x973210;
+
+as_int = 0x37bb2c0;

@@ -1,214 +1,142 @@
 {
-  "checked_on": "2026-11-07",
-  "defender": {
-    "product_version": "4.18.26100.4",
-    "signature_version": "1.463.178.0",
-    "signature_updated_local": "2026-11-07 05:56:41 America/New_York",
-    "repository_scan": "No threats found",
-    "release_folder_scan": "No threats found",
-    "command": "MpCmdRun.exe -Scan -ScanType 3 -File <release folder> -DisableRemediation",
-    "scope": "Four prepared Add-on ZIPs, four optional builder ZIPs and checksum assets; scan run locally, no third-party upload"
+  "date": "2026-11-08",
+  "scope": "November release ZIPs and Python source; no third-party upload",
+  "microsoft_defender": {
+    "scan_type": "custom directory scan",
+    "result": "no threats found",
+    "exit_code": 0,
+    "signature_version": "1.463.191.0"
   },
-  "static_analysis": {
-    "tool": "Bandit",
-    "high": 0,
-    "medium": 0,
-    "low": 179,
-    "interpretation": "Low findings include developer assertions and local subprocess/tool invocations; no high/medium findings remain. Runtime user-facing builders do not use shell=True or exec."
+  "bandit": {
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 202
   },
-  "dependencies": {
-    "tool": "pip-audit",
-    "scope": "Four pinned direct requirements, no-deps mode",
-    "known_vulnerabilities": 0
-  },
-  "assets": [
+  "asset_checksums": [
     {
-      "variant": "hero-with-stamina",
-      "version": "0.1.0-beta.7",
-      "files": [
-        {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.7-Prepared-Addon.zip",
-          "sha256": "565bdfb310f4b4c9dd2b4eeaaf1f7a8dfdd42e35dfdc831f8891ac4a8bf94078",
-          "bytes": 162674507
-        },
-        {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.7-Prepared-Addon-SHA256.txt",
-          "sha256": "c798b3213032b5935224ab11e5dc0022a6e1509ae747e1d026103b8cbbb2b0d7",
-          "bytes": 127
-        },
-        {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.7-Optional-Builder.zip",
-          "sha256": "0b03204c00fc900c17b937becd0afd56165833088a288c69ad0929df4c50c00a",
-          "bytes": 1604229
-        },
-        {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.7-Optional-Builder-SHA256.txt",
-          "sha256": "090556413fdb66eacfd2979cf132c83f82fdf7ee9f99ba4e6068d897137d6118",
-          "bytes": 129
-        },
-        {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.7-125pct-Prepared-Addon-SHA256.txt",
-          "sha256": "e0738b4baa027493382431c491b45ef5b4eacc53593a01cd2049463a7e237b1e",
-          "bytes": 134
-        },
-        {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.7-125pct-Prepared-Addon.zip",
-          "sha256": "95d829244ddb9fe8949882a3f7e6c987b4d4593a57847eaaa091df152873b7af",
-          "bytes": 162674517
-        },
-        {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.7-150pct-Prepared-Addon-SHA256.txt",
-          "sha256": "67c72a64bc635deb5635c67d9449173f7c51f98f826dc5b351a279b243b5c9cf",
-          "bytes": 134
-        },
-        {
-          "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.7-150pct-Prepared-Addon.zip",
-          "sha256": "b8a0b80bf73f453dfef6effef0950ceeff20b7a4621a1c4847de45076bba317f",
-          "bytes": 162674515
-        }
-      ]
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-Prepared-Addon.zip",
+      "sha256": "ca29cbc8e8a99d8ef77516e18fcb0ec0198f81f15b95478be852e21fca0f5c4d",
+      "bytes": 162695536
     },
     {
-      "variant": "hero-without-stamina",
-      "version": "0.1.0-beta.5",
-      "files": [
-        {
-          "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.5-Prepared-Addon.zip",
-          "sha256": "b3ea69f11eb82d066e95a190e55058ee3391ab8fe2b5124a595dc4a7ea53d02e",
-          "bytes": 84338963
-        },
-        {
-          "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.5-Prepared-Addon-SHA256.txt",
-          "sha256": "949876f8d7c8dc4f24ff00b959d77ab0afb5fa8739aed587d256f47a01753244",
-          "bytes": 130
-        },
-        {
-          "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.5-Optional-Builder.zip",
-          "sha256": "43e26b5332ace3d04c1eed6791e2b698f52773eb27a0f1432a0802459661ff47",
-          "bytes": 1519029
-        },
-        {
-          "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.5-Optional-Builder-SHA256.txt",
-          "sha256": "036eb995bde52da7f7a9d8ca5a8caa53cbcf9c7d91d2f2c92d7dce25e0a3f363",
-          "bytes": 132
-        }
-      ]
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-Prepared-Addon-SHA256.txt",
+      "sha256": "917298d44c89c726f043f4730111458176ea14480b140810988a92bafbcec37b",
+      "bytes": 127
     },
     {
-      "variant": "manual-shield",
-      "version": "0.1.3",
-      "files": [
-        {
-          "name": "OOT-Manual-Shield-v0.1.3-Prepared-Addon.zip",
-          "sha256": "6332be49fa6b358536c2f531132ea3c010ec782f75bc95e3acc5cf4d2a0aab70",
-          "bytes": 69788279
-        },
-        {
-          "name": "OOT-Manual-Shield-v0.1.3-Prepared-Addon-SHA256.txt",
-          "sha256": "e0d5f916030f84441a08eee1e07f2370bf1cf2c0adc35922ed12e22043209bcb",
-          "bytes": 111
-        },
-        {
-          "name": "OOT-Manual-Shield-v0.1.3-Optional-Builder.zip",
-          "sha256": "c7f4bd8d3b712b8d1cb25fe74151035f47fe2bc958a6f36bf036a22c3154e6ea",
-          "bytes": 1415538
-        },
-        {
-          "name": "OOT-Manual-Shield-v0.1.3-Optional-Builder-SHA256.txt",
-          "sha256": "329fcbb52dfe88c5238b6db87f94eec206e16520448dd381b3c28108c55aff4f",
-          "bytes": 113
-        }
-      ]
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-Optional-Builder.zip",
+      "sha256": "1d617eb53350846f8a7c597875c78754c15a3680e541b10fc6ca24e338dc16fa",
+      "bytes": 1621033
     },
     {
-      "variant": "item-wheel",
-      "version": "0.1.4",
-      "files": [
-        {
-          "name": "OOT-Item-Wheel-v0.1.4-Prepared-Addon.zip",
-          "sha256": "9f5523d69c9604a6a5e5eadd94d0a40717bc00e9f3d45daaadff98e4b503c21e",
-          "bytes": 56714875
-        },
-        {
-          "name": "OOT-Item-Wheel-v0.1.4-Prepared-Addon-SHA256.txt",
-          "sha256": "f9f0f7267715040d7708f0594c45a38ea5d73c66d8a8466f20f88ad8d739b8fb",
-          "bytes": 108
-        },
-        {
-          "name": "OOT-Item-Wheel-v0.1.4-Optional-Builder.zip",
-          "sha256": "4492edc4b8407df183fb1fde8b08ffa58f28da0f0287e8c59387bcffbf624084",
-          "bytes": 180734
-        },
-        {
-          "name": "OOT-Item-Wheel-v0.1.4-Optional-Builder-SHA256.txt",
-          "sha256": "636c7f633c7d53d2d61627ea79ce269d3f6b887325182684fe3318c987ef88d8",
-          "bytes": 110
-        }
-      ]
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-Optional-Builder-SHA256.txt",
+      "sha256": "7934984afb1fad3032d9726852fe6b0c621e45685a8cb98a7f6599745eb126c3",
+      "bytes": 129
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-125pct-Prepared-Addon.zip",
+      "sha256": "5c80ed040fe7aec68a5e75d7651755841b23fb3d03ab18f84846e4ec727b420c",
+      "bytes": 162695546
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-125pct-Prepared-Addon-SHA256.txt",
+      "sha256": "6c1994a4f2d001306e1c047fb93306cfb95e923541a2832ee143139e6b865f81",
+      "bytes": 134
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-150pct-Prepared-Addon.zip",
+      "sha256": "3e0bbed78ae2fcad9c2b5943cb41a9927d3ded8020a9ad82cfddc3b41276a983",
+      "bytes": 162695547
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-150pct-Prepared-Addon-SHA256.txt",
+      "sha256": "53667eb38e972b678162875375d2548ede0a9807dff0190c5a686cd40c310c03",
+      "bytes": 134
+    },
+    {
+      "name": "HUD-Compatibility-Tool.zip",
+      "sha256": "40bcab4e47acfacc450c915e6057c0a745f3ee43beac096cf91228dea040e004",
+      "bytes": 11072
+    },
+    {
+      "name": "HUD-Compatibility-Tool-SHA256.txt",
+      "sha256": "2709ed0388da8d8df4abea01cbabd0b67311e12255fe755797f54b5f2a861c08",
+      "bytes": 94
+    },
+    {
+      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.6-Prepared-Addon.zip",
+      "sha256": "4974f9b0195edecdfe17ac87b07b62f49ee86d4c70575327b829fa2424ccbd67",
+      "bytes": 94528930
+    },
+    {
+      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.6-Prepared-Addon-SHA256.txt",
+      "sha256": "eb52f62b72da86f6e8b19ed2ced19e7b41efb5652860a49f43a985d8eaa305f9",
+      "bytes": 130
+    },
+    {
+      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.6-Optional-Builder.zip",
+      "sha256": "b6661f50aa4c9644499f490e66ce5aceb8b38206c058c9c47e7d6c72aa6732fe",
+      "bytes": 1536483
+    },
+    {
+      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.6-Optional-Builder-SHA256.txt",
+      "sha256": "875d278076016ae6648fefe7a8a1ba49cff226e0c5157c1da1f8d81555ffb34e",
+      "bytes": 132
+    },
+    {
+      "name": "OOT-Manual-Shield-v0.1.4-Prepared-Addon.zip",
+      "sha256": "991caa82ec87973d7d49d8b621655dfe50f3083498bad0bb29d1d7bdb6023b9e",
+      "bytes": 79978079
+    },
+    {
+      "name": "OOT-Manual-Shield-v0.1.4-Prepared-Addon-SHA256.txt",
+      "sha256": "9fb3dbd19cdeb81d7a29f66690d884c3a2374e0a072b893aeb4a997d6a1b0924",
+      "bytes": 111
+    },
+    {
+      "name": "OOT-Manual-Shield-v0.1.4-Optional-Builder.zip",
+      "sha256": "b16fe994f2092ae95347fc3880db3fcc1cbfc44f3ce189b2dccefd14883d1bb5",
+      "bytes": 1432469
+    },
+    {
+      "name": "OOT-Manual-Shield-v0.1.4-Optional-Builder-SHA256.txt",
+      "sha256": "cc5374547ee1551337907a2c33694b429fef505d7c80399201448849ae4dbe53",
+      "bytes": 113
     }
   ],
-  "limits": "Maintainer checks, not independent certification. Clean antivirus/static results are not proof of safety; checksums prove identity only.",
-  "compatibility_checks": {
-    "all_four_variants": "Compiled menu/ocarina bypass checks pass; each optional builder exactly reproduced the release files",
-    "fps_and_ultrawide": "No overlap with the 128 installed ultrawide records or two FPS records; live FPS/ultrawide/max-resolution bytes verified",
-    "menu_tabs": "User confirmed L1/R1 work",
-    "ocarina": "Compiled native action passthrough checked; normal progressed-save gameplay check pending (synthetic test save cannot activate the instrument)",
-    "timing": "Regression reproduced from prior ZIP headers in all four variants. New main text extent equals stock; built-in FPS padding/hook/BSS conditions pass for all four. Live stamina Hero with built-in FPS plus ultrawide and no-stamina Hero with external FPS plus ultrawide reached gameplay. Live game-step samples show variable elapsed-time scaling.",
-    "installation": "Current release requires complete Add-on including IPS sidecar on the original NUP; patched-NUP output is rejected."
-  },
-  "stamina_settings_checks": {
-    "default": "Live12-heart capacity240, HUD(-1560,778), config bytes match",
-    "150_percent": "Live capacity360, displayed GaugeMax240, same HUD(-1560,778)",
-    "custom": "Live capacity300, Master Sword cost9, regeneration30/sec with0.5s delay, HUD(-1544,778); memory bytes match custom JSON",
-    "presets": "Only96-byte IPS config, JSON and mod receipt content differ; other file bytes identical",
-    "tool": "Tk layout six inputs/four buttons; invalid values, incompatible formats and overwrites rejected; builder ZIP supports customizer",
-    "native_copy": "Compiled AArch6480-byte copy checked without overwriting adjacent state",
-    "in_game_menu": false
-  },
-  "wheel_right_bumper_update": {
-    "version": "0.1.4",
-    "defender": "No threats found in final prepared and optional-builder ZIPs",
-    "live_test": {
-      "build": "117 PGO",
-      "initial_L_closed": true,
-      "R_hold_opened": true,
-      "repeat_L_and_R_tap_closed": [
-        {
-          "button": "L",
-          "frames": 85,
-          "state": {
-            "owner_state": "00",
-            "screen": "0000"
-          }
-        },
-        {
-          "button": "R",
-          "frames": 5,
-          "state": {
-            "owner_state": "00",
-            "screen": "0000"
-          }
-        }
-      ],
-      "fps": 58.732321571207066
-    },
-    "installer_roundtrip": "All seven files reconstructed and verified",
-    "compiled_context_and_FPS_checks": "Passed all four variants",
-    "scope": "Only standalone wheel changed; existing Hero and shield releases retained"
-  },
-  "controller_settings_update": {
-    "variants": [
-      "hero-with-stamina",
-      "hero-without-stamina",
-      "manual-shield"
+  "validation": {
+    "installer_reconstruction": [
+      {
+        "variant": "hero-with-stamina",
+        "version": "0.1.0-beta.8",
+        "files_verified": 204,
+        "reconstructed_bytes_match": true,
+        "experimental_asb_absent": true
+      },
+      {
+        "variant": "hero-without-stamina",
+        "version": "0.1.0-beta.6",
+        "files_verified": 203,
+        "reconstructed_bytes_match": true,
+        "experimental_asb_absent": true
+      },
+      {
+        "variant": "manual-shield",
+        "version": "0.1.4",
+        "files_verified": 26,
+        "reconstructed_bytes_match": true,
+        "experimental_asb_absent": true
+      }
     ],
-    "defender": "No threats found in final Controller-Settings downloads",
-    "compiled_input": "Four modes and independent shielding pass in all three variants",
-    "installer_roundtrip": "201 / 199 / 22 files built and hash verified",
-    "fps_eligibility": "Original main text size, FPS hook/state and ultrawide padding preserved",
-    "existing_resources": "All prior enemy/wheel/stamina resources retain their target hashes",
-    "live_checks": "Bumper Hold releases, bumper Toggle stays latched and toggles off; swapped menu choice survived restart on Lichii117 PGO",
-    "physical_trigger_check": "Pending; automated ZL injection is not reliable for the raw trigger path",
-    "stamina_presets": "100%,125%,150%; configurable sidecar preserved"
-  }
+    "hud_merge": {
+      "zip": "work\\november-hud-merge-1794162280074784600.zip",
+      "verified": true,
+      "original_inputs_unchanged": true
+    }
+  },
+  "limits": [
+    "Low-severity developer-tool findings are disclosed.",
+    "These checks do not certify absence of malware.",
+    "No new dependency vulnerability audit was performed for this update."
+  ]
 }

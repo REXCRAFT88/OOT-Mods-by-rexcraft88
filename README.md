@@ -2,7 +2,7 @@
 
 Mods for Project Eglantine / Ocarina of Time, title **0400486024DEC000**, update **131072**, executable build **E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348**.
 
-Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases), then use **Configure Game > Add-ons > Import Mod from ZIP**. No commands or builder step are needed. Use Lichii build95 (release tag `build-94`) for full NUP RomFS support.
+Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases), then use **Configure Game > Add-ons > Import Mod from ZIP**. No commands or builder step are needed. Use an emulator with full NUP RomFS and IPS support; the current test setup uses Fritchii v4.1.
 
 **Upgrading from an older `heromode.nup`? Use your original unmodified NUP with the new Prepared Add-on.** Current releases keep Lichii’s built-in FPS timing fix working through an IPS sidecar; do not stack them onto a previously patched game. See the [illustrated guide](docs/INSTALLATION.md).
 
@@ -23,6 +23,8 @@ See [Download verification and security checks](docs/SECURITY.md) for checksums,
 
 The game/version above is required. These are Eglantine patches, not N64 ROM patches, Ship of Harkinian mods, or Zelda64Recomp mods. Other executable updates are not supported by these exact offsets.
 
-Hero Mode with Stamina Beta6 includes [stamina/HUD configuration](docs/STAMINA-SETTINGS.md), plus ready-made 125% and 150% capacity presets.
+Hero Mode with Stamina includes [stamina/HUD configuration](docs/STAMINA-SETTINGS.md), plus ready-made 125% and 150% capacity presets.
 
 Controller settings updates: [Hold/Toggle targeting and bumper/trigger layouts](docs/CONTROLLER-SETTINGS.md).
+
+Latest update: combat-only stamina detection, a 100–300 stamina curve, heavier Biggoron/hammer costs, small ranged-item costs, separate targeting/shield settings, and an R1-only Hero wheel. [HUD compatibility](docs/HUD-COMPATIBILITY.md).

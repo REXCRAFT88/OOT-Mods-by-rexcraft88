@@ -22,9 +22,9 @@ options_index:
  b 4f
 1: mov w2,#1
  b 4f
-2: mov w2,#2
+2: mov w2,#0
  b 4f
-3: mov w2,#3
+3: mov w2,#1
 4: ldr w8,[x0,#80]
  ret
 '''
@@ -40,14 +40,14 @@ for key in ['hero-with-stamina','hero-without-stamina','manual-shield']:
  shutil.copytree(candidate,dst,dirs_exist_ok=True)
  control=0x4f29810 if key=='hero-with-stamina'else 0x4f29770
  begin=0x4f29c40
- (root/'options.ld').write_text(f'SECTIONS {{ . = {begin}; .text : {{ *(.text*) *(.rodata*) }} /DISCARD/ : {{ *(.comment) *(.note*) *(.eh_frame*) }} }}\nhero_control_state = 0x4ea3000; game_data_singleton = 0x4e842a8; read_enum = 0x17bf90; native_controls = {control+4};')
+ (root/'options.ld').write_text(f'SECTIONS {{ . = {begin}; .text : {{ *(.text*) *(.rodata*) }} /DISCARD/ : {{ *(.comment) *(.note*) *(.eh_frame*) }} }}\nhero_control_state = 0x4ea3000; game_data_singleton = 0x4e842a8; read_enum = 0x17bf90; read_bool = 0x179f70; native_controls = {control+4};')
  subprocess.run(['ld.lld.exe','-T',str(root/'options.ld'),str(root/'options.o'),str(root/'menu.o'),'-o',str(root/'options.elf')],check=True)
  sy={v[2]:int(v[0],16)for l in subprocess.check_output(['llvm-nm',str(root/'options.elf')],text=True).splitlines()if len(v:=l.split())==3}
  subprocess.run(['llvm-objcopy','-O','binary','--only-section=.text',str(root/'options.elf'),str(root/'options.bin')],check=True)
  code=(root/'options.bin').read_bytes();print(key,len(code),hex(begin+len(code)))
  assert begin+len(code)<=0x4f2a000
  def branch(a,b,link=False):return struct.pack('<I',(0x94000000 if link else 0x14000000)|(((b-a)//4)&0x3ffffff))
- path=dst/'exefs/subsdk0';blob=path.read_bytes();text=bytearray(install.nso_text(blob));off=begin-0x4ea5000;text.extend(b'\0'*(off-len(text)));text.extend(code)
+ path=dst/'exefs/subsdk0';blob=path.read_bytes();text=bytearray(install.nso_text(blob));off=begin-0x4ea5000;text.extend(b'\0'*max(0,off+len(code)-len(text)));text[off:off+len(code)]=code
  # Existing input trampoline points into main's context guard; retarget its tail via IPS.
  d=json.load(open(candidate/'compatibility.json'));resume=d['symbols']['controls_context'];main=bytearray(install.nso_text((dst/'exefs/main').read_bytes()))
  # original compatibility stub ends with B controls_resume before RET
@@ -69,3 +69,6 @@ for key in ['hero-with-stamina','hero-without-stamina','manual-shield']:
 
 
 
+
+for key in ["hero-with-stamina", "hero-without-stamina", "manual-shield"]:
+ subprocess.run([sys.executable, str(Path(__file__).resolve().parent.parent/"wheel/right_bumper_only.py"), "--root", str(Path("work/controller-options-candidates")/key)], check=True)

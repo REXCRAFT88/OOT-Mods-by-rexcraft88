@@ -35,7 +35,7 @@ def encode_settings(values):
     cost = s['cost_percent'] / 100
     floats = [20*s['capacity_percent']/100, s['regeneration_delay'], 24*s['regeneration_percent']/100,
               12*cost, 10*cost, 8*cost, 8*cost, 4*cost, .5, .75,
-              8*cost, 12*cost, 18*cost, 20*cost, 1, 1.1, 1.5, 1.8, 2, 2*cost,
+              8*cost, 12*cost, 24*cost, 24*cost, 1, 1.1, 1.5, 1.8, 2, 2*cost,
               s['hud_offset_x'], s['hud_offset_y']]
     return struct.pack('<22fII', *floats, MAGIC, 1)
 

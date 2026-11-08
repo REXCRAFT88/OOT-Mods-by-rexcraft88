@@ -16,3 +16,5 @@ resolve_player = 0x973030;
 main_scheduler_vtable = 0x4b05318;
 original_frame_body = 0x2b30de4;
 sdk_full = 0x3c42800;
+
+as_int = 0x37bb2c0;

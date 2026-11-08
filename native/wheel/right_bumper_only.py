@@ -13,7 +13,7 @@ from nup_overlay import Nup
 
 source = Nup(json.load(open('outputs/OOT-Test-Kit/settings.json'))['source_nup'])
 package = source.best_package()['index']
-root = Path('work/compatibility-candidates/item-wheel')
+root = Path(sys.argv[sys.argv.index('--root') + 1]) if '--root' in sys.argv else Path('work/compatibility-candidates/item-wheel')
 for name, selectors, query in [
     ('Event', [141], 35),
     ('ShortCut', [52], 3),

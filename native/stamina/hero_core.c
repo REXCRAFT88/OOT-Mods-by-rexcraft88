@@ -7,14 +7,16 @@ void hero_default_config(HeroConfig* c){
     c->roll_cost=12;c->backflip_cost=10;c->sidestep_cost=8;
     c->block_base_cost=8;c->block_cost_per_damage_heart=4;
     c->tired_damage=.5f;c->tired_speed=.75f;
-    c->weapon_cost[0]=8;c->weapon_cost[1]=12;c->weapon_cost[2]=18;c->weapon_cost[3]=20;
+    c->weapon_cost[0]=8;c->weapon_cost[1]=12;c->weapon_cost[2]=24;c->weapon_cost[3]=24;
     c->move_cost_scale[0]=1;c->move_cost_scale[1]=1.1f;c->move_cost_scale[2]=1.5f;c->move_cost_scale[3]=1.8f;
     c->low_health_cost_max=2.0f;
     c->guard_hold_per_second=2.0f;
 }
 void hero_tick(HeroState* s,const HeroConfig* c,const HeroInput* in){
     float unit=maxf(c->units_per_heart,0)*.25f;
-    s->full_cap=in->max_life_quarters*unit;
+    /* 3 hearts: five-heart reserve; 20 hearts: fifteen-heart reserve. */
+    float hearts=5.0f+((float)in->max_life_quarters*.25f-3.0f)*(10.0f/17.0f);
+    s->full_cap=minf(maxf(hearts,5.0f),15.0f)*unit*4;
     s->cap=s->full_cap;
     float health=in->max_life_quarters?minf((float)in->life_quarters/(float)in->max_life_quarters,1.0f):0;
     s->drain_multiplier=1.0f+(maxf(c->low_health_cost_max,1.0f)-1.0f)*(1.0f-health);
@@ -43,7 +45,7 @@ HeroResult hero_begin_action(HeroState* s,const HeroConfig* c,u32 action,u32 wea
     /* The bridge must provide a non-zero, monotonically changing accepted-action token. */
     if(token==0||token==s->last_action_token){r.allowed=0;return r;}
     if(!s->in_combat){
-        if(action>HERO_SIDESTEP||(action==HERO_ATTACK&&(weapon>=4||move>=4))){r.allowed=0;return r;}
+        if(action>HERO_BOOMERANG||(action==HERO_ATTACK&&(weapon>=4||move>=4))){r.allowed=0;return r;}
         s->last_action_token=token;return r;
     }
     if(action==HERO_ATTACK){
@@ -53,10 +55,11 @@ HeroResult hero_begin_action(HeroState* s,const HeroConfig* c,u32 action,u32 wea
     }else if(action==HERO_ROLL)cost=c->roll_cost;
     else if(action==HERO_BACKFLIP)cost=c->backflip_cost;
     else if(action==HERO_SIDESTEP)cost=c->sidestep_cost;
+    else if(action>=HERO_BOW&&action<=HERO_BOOMERANG)cost=c->weapon_cost[1]*(action==HERO_BOW?1.0f/3.0f:.25f);
     else{r.allowed=0;return r;}
     cost=maxf(cost,0);
     if(action!=HERO_ATTACK)cost*=s->drain_multiplier;
-    if(action!=HERO_ATTACK&&s->stamina<cost){r.allowed=0;return r;}
+    if(action>=HERO_ROLL&&action<=HERO_SIDESTEP&&s->stamina<cost){r.allowed=0;return r;}
     s->last_action_token=token;r.spent=minf(s->stamina,cost);s->stamina-=r.spent;s->idle_seconds=0;return r;
 }
 HeroResult hero_block_impact(HeroState* s,const HeroConfig* c,u32 held,float damage,u32 token){

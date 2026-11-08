@@ -1,18 +1,14 @@
 # Target and shield settings
 
-In Hero Mode and Manual Shield, open **System > Options > Target / Shield Controls**. This replaces the original Targeting Type row; Swap Jump Controls remains separate.
+Open **System > Options**. These are two separate rows:
 
-| Choice | Target | Hold shield |
-|---|---|---|
-| Hold: bumper target | Hold L / L1 / LB | ZL / L2 / LT |
-| Toggle: bumper target | Press L / L1 / LB | ZL / L2 / LT |
-| Hold: trigger target | Hold ZL / L2 / LT | L / L1 / LB |
-| Toggle: trigger target | Press ZL / L2 / LT | L / L1 / LB |
+- **Targeting Type:** Hold Target or Toggle Target.
+- **Swap Shield and Target:** Off or On.
 
-Hold targeting ends when released. Toggle targeting ends on the next press. Press the right stick (R3) to cancel targeting. Shield is always held, independently of targeting. R / R1 / RB remains the Hero item wheel; ZR / R2 / RT uses the equipped item. No emulator controller profile is included.
+Default: **Toggle Target**, **Swap Off**. Press L/L1/LB to toggle targeting; hold ZL/L2/LT for shield. With Swap On, target uses ZL/L2/LT and shield uses L/L1/LB. Right-stick click cancels targeting. Close Options normally to save.
 
-Close Options normally to save. The choice persists across game restarts. Existing Hold/Toggle choices are respected instead of overriding the displayed setting. Before removing/downgrading this settings-capable mod, select a **bumper target** choice and close Options: the trigger choices extend the targeting enum and old packages do not recognize them.
+Hero's wheel uses only R/R1/RB; ZR/R2/RT uses the item. Standalone Manual Shield has no wheel. Native shoulder menu navigation and ocarina controls are retained. Map your controller to the normal logical Pro Controller buttons in the emulator; no device-specific profile is installed.
 
-Use one Hero or Manual Shield package. Standalone Item Wheel does not add manual shielding or this setting. This update overrides Bootup's option table, GameData's targeting enum, localized option-message archives and resource budgets. Mods replacing those files require merging. The added setting text is currently English in every language.
+The previous four-choice setting is replaced by these independent rows. Existing Hold/Toggle choices remain readable; the new swap switch starts Off. Restore Swap Off before removing/downgrading the mod.
 
-![Target and shield setting in Options](images/controller-settings.png)
+Other mods replacing Bootup, GameData, localized option messages or resource-size tables require a merge. Added option labels are English in all languages. Old screenshots showing one combined row describe the previous release.

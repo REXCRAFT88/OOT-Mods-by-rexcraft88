@@ -87,6 +87,8 @@ wheel_heartbeat:
     (root/'context.c').write_text(('' if variant=='item-wheel' else '#define HERO_CONTEXT\n')+(SRC/'wheel_context.c').read_text())
     compile(root/'context.S',root/'context_s.o');compile(root/'context.c',root/'context_c.o')
     objects=[root/'context_s.o',root/'context_c.o']
+    if variant!='item-wheel':
+        compile(SRC/'guard_equipment.c',root/'guard.o');objects.append(root/'guard.o')
     if stamina:
         asm=Path('work/hero_stamina_runtime.S').read_text()
         asm=asm.replace('exertion_filter:\n','''exertion_filter:
@@ -100,21 +102,22 @@ wheel_heartbeat:
         compile('outputs/OOT-Test-Kit/hero_core.c',root/'core.o')
         compile(SRC/'stamina_configurable.c',root/'native.o')
         objects += [root/'stamina_s.o',root/'core.o',root/'native.o']
-        ld+='stamina_s.o(.text*) core.o(.text*) core.o(.rodata*) native.o(.text.near_enemy) '
+        ld+='stamina_s.o(.text*) core.o(.text*) core.o(.rodata*) native.o(.text.hero_item_tick) '
     ld+='} '
     if stamina:
         # SDK text alignment pad is 1968 bytes. Module placement stays unchanged.
-        ld+='. = 0x5803850; .sdktext : { native.o(.text*) native.o(.rodata*) } '
+        ld+='. = 0x4f29ed0; .itemtext : { native.o(.text.near_enemy) } . = 0x5803850; .sdktext : { native.o(.text*) native.o(.rodata*) guard.o(.text*) } '
+    elif variant!='item-wheel':ld+='. = 0x5803850; .sdktext : { guard.o(.text*) } '
     ld+='/DISCARD/ : { *(.comment) *(.note*) *(.eh_frame*) } }\n'
     defs=Path('work/hero_stamina_runtime.ld').read_text().split('\n',1)[1]
     ld+=defs+'\nwheel_cache = 0x4ea1000;\nocarina_enter_resume = 0x2894344;\nocarina_leave_resume = 0x28947f4;\n'
-    ld+='hero_user_options = 0x4ea4000;\n'
+    ld+='player_as_interface = 0x4ea0880;\nnative_draw_equipment = 0x6b6820;\nhero_control_state = 0x4ea3000;\nhero_user_options = 0x4ea4000;\nbattle_info_slot = 0x4e371e8;\nbattle_sound_slot = 0x4dd39e8;\n'
     if variant!='item-wheel':ld+=f'controls_resume = {control+4};\n'
     else:ld+='wheel_tick_resume = 0x2ddc - 0x20000 + 4;\n'
     (root/'context.ld').write_text(ld)
     # lld input selectors use basenames, so execute from this build directory.
     args=[shutil.which('ld.lld.exe'),'--gc-sections','--undefined=ocarina_enter','--undefined=ocarina_leave','--undefined=wheel_context_raw']
-    if variant!='item-wheel':args+=['--undefined=controls_context']
+    if variant!='item-wheel':args+=['--undefined=controls_context','--undefined=hero_guard_draw']
     else:args+=['--undefined=wheel_heartbeat']
     if stamina:
         args+=['--undefined='+s for s in ['stamina_frame','attack_enter','tired_damage','hero_mp_init','hid_full','hid_dual','hid_left','hid_right','hid_handheld',*json.load(open('work/stamina-runtime-patches.json')).keys()]]
@@ -155,11 +158,28 @@ wheel_heartbeat:
         run('llvm-objcopy','-O','binary','--only-section=.sdktext',root/'context.elf',root/'sdk.bin')
         sc=(root/'sdk.bin').read_bytes();assert len(sdk)+len(sc)<=0x87f000
         sdk.extend(sc);blobs['sdk']=original['sdk'];texts['sdk']=sdk
+        run('llvm-objcopy','-O','binary','--only-section=.itemtext',root/'context.elf',root/'item.bin')
+        extra=(root/'item.bin').read_bytes();assert len(extra)<=0x130,len(extra)
+        itemoff=0x4f29ed0-0x4ea5000
+        texts['subsdk0'].extend(b'\0'*max(0,itemoff+len(extra)-len(texts['subsdk0'])))
+        texts['subsdk0'][itemoff:itemoff+len(extra)]=extra
         off=0x4f29a88-0x4ea5000
         texts['subsdk0'][off:off+4]=branch(0x4f29a88,raw)
     elif variant!='manual-shield':
         rt=texts['rtld'];rt[0x2f18:0x2f1c]=branch(0x2f18,raw+0x20000)
         if variant=='item-wheel':rt[0x2ddc:0x2de0]=branch(0x2ddc,sy['wheel_heartbeat']+0x20000)
+    if variant!='item-wheel':
+        if not stamina:
+            sdk=bytearray(install.nso_text(original['sdk']))
+            run('llvm-objcopy','-O','binary','--only-section=.sdktext',root/'context.elf',root/'sdk.bin')
+            sc=(root/'sdk.bin').read_bytes();assert len(sdk)+len(sc)<=0x87f000
+            sdk.extend(sc);blobs['sdk']=original['sdk'];texts['sdk']=sdk
+        sub=texts['subsdk0'];hits=[]
+        for pos in range(control-0x4ea5000,min(len(sub),0x4f29c40-0x4ea5000),4):
+            pc=pos+0x4ea5000
+            if sub[pos:pos+4]==branch(pc,0x6b6820,True):hits.append(pos)
+        assert len(hits)==1,(variant,hits)
+        pos=hits[0];sub[pos:pos+4]=branch(pos+0x4ea5000,sy['hero_guard_draw'],True)
     if variant!='item-wheel':
         off=control-0x4ea5000
         assert int.from_bytes(texts['subsdk0'][off:off+4],'little')&0xff00001f==0xb4000000
@@ -179,7 +199,7 @@ wheel_heartbeat:
     (root/'exefs/E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348.ips').write_bytes(ips)
     texts['main']=texts['main'][:original_extent]
     for name,txt in texts.items():(root/'exefs'/name).write_bytes(emit(blobs[name],txt))
-    (root/'compatibility.json').write_text(json.dumps({'variant':variant,'main_code_start':'0x3c46600','main_code_bytes':len(code),'sdk_code_bytes':len(sc) if stamina else 0,'symbols':sy},indent=2))
+    (root/'compatibility.json').write_text(json.dumps({'variant':variant,'main_code_start':'0x3c46600','main_code_bytes':len(code),'sdk_code_bytes':len(sc) if variant!='item-wheel' else 0,'symbols':sy},indent=2))
     print(variant,'built',len(code),'main bytes',len(sc) if stamina else 0,'SDK bytes',flush=True)
 
 # Standalone wheel must not inherit the native left-bumper shortcut.

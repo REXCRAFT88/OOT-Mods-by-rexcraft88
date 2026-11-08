@@ -21,7 +21,7 @@ typedef struct {
     u32 in_combat, exerting; /* jumping, rolling, dodging, sprinting or other exertion */
 } HeroInput;
 typedef struct { u32 allowed, exhausted, guard_break; float damage_scale, speed_scale, spent; } HeroResult;
-enum { HERO_ATTACK=0, HERO_ROLL=1, HERO_BACKFLIP=2, HERO_SIDESTEP=3 };
+enum { HERO_ATTACK=0, HERO_ROLL=1, HERO_BACKFLIP=2, HERO_SIDESTEP=3, HERO_BOW=4, HERO_SLINGSHOT=5, HERO_BOOMERANG=6 };
 void hero_default_config(HeroConfig* c);
 void hero_tick(HeroState* s,const HeroConfig* c,const HeroInput* in);
 HeroResult hero_begin_action(HeroState* s,const HeroConfig* c,u32 action,u32 weapon,u32 move,u32 unique_token);

@@ -18,3 +18,5 @@ original_frame_body = 0x2b30de4;
 sdk_full = 0x3c42800;
 
 main_image = 0;
+
+as_int = 0x37bb2c0;

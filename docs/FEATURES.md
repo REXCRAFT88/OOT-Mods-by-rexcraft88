@@ -12,7 +12,7 @@ Map your pad to a normal Switch Pro Controller in the emulator. The mod uses log
 | Use selected item | ZR | R2 | RT |
 | Reset camera / cancel toggle target | Right-stick click | R3 | RS click |
 
-Face-button actions retain the game's mappings. No PS5 face-button remap, replacement button art, L3 sprint, separate Circle roll/Cross jump, contextual Square put-away, or controller-settings menu is included. The manual shield uses the game's native target/guard locomotion path: guard can align the camera and participate in native target selection. Fully independent guard camera/target selection remains an area for refinement.
+Face-button actions retain the game's mappings. Hold/Toggle targeting and swapping shield/target are available as two separate rows in System > Options. Manual shield retains native guard/target locomotion; camera alignment can still follow that path. No separate sprint/jump/roll remap is installed.
 
 The standalone shield was confirmed working by the tester on the running DualSense/Lichii setup. Final L1 exclusivity and moving shield with sword sheathed were also confirmed in both target states. Other full Pro-controller-style pads are expected to work when mapped to the same logical inputs, but Xbox, physical Switch Pro, split Joy-Con and handheld paths have not all been tested. Draw a weapon using the game's normal draw/attack control if the current action prevents the shield drawing. Only the shield slot is requested once on guard entry; the hook does not request drawing the sword.
 
@@ -27,15 +27,16 @@ The requested extra save slots, random double/flaming scrub/Octorok seeds, guara
 
 ## With Stamina only
 
-A separate yellow stamina bar sits beneath the green magic bar. Combat is detected by nearby enemy actors (about 25 world units), with a five-second grace after threats disappear; it is a coarse proximity check, not line of sight.
+A separate yellow stamina bar sits beneath the green magic bar. Combat is detected by nearby enemy actors (within 12 world units) together with targeting, attacking, guarding or taking damage, plus native battle/music signals where available. Proximity alone does not activate stamina. A five-second recovery grace applies only while an enemy remains nearby; leaving enemies cancels this fallback.
 
-Permanent maximum hearts increase capacity (20 units per heart). Lower current health increases drain rather than shrinking the maximum. Stamina is unrestricted outside combat. Walking remains available when exhausted and permits regeneration.
+Capacity scales from 100 units at 3 hearts to 300 at 20 hearts, interpolating with permanent heart progress. Lower current health increases drain rather than shrinking the maximum. Stamina is unrestricted outside combat. Walking remains available when exhausted and permits regeneration.
 
 | Action | Full-health default cost |
 | --- | --- |
 | Master Sword slash / stab / jump attack / spin | 12 / 13.2 / 18 / 21.6 |
-| Kokiri / Biggoron / hammer base melee | 8 / 18 / 20 |
+| Kokiri / Biggoron / hammer base melee | 8 / 24 / 24 |
 | Move multipliers: slash / stab / jump attack / spin | 1 / 1.1 / 1.5 / 1.8 |
+| Bow release / slingshot release / boomerang throw | 4 / 3 / 3 |
 | Roll or ordinary jump | 12 |
 | Backflip / sidestep | 10 / 8 |
 | Held shield | 2 units per second |
@@ -79,3 +80,7 @@ Hero Mode with Stamina now has a configuration block for capacity, regeneration,
 ## Controller settings
 
 The settings-capable Hero and Manual Shield updates use **System > Options > Target / Shield Controls** for Hold/Toggle targeting and left bumper/trigger swapping. See [the controller settings guide](CONTROLLER-SETTINGS.md) for the four choices, saved settings and downgrade instructions. The standalone wheel remains right-bumper-only and keeps native targeting/shielding.
+
+Biggoron Sword: guarding no longer draws the shield onto Link’s arm. This does not add sword blocking or a new blocking pose; the unsuccessful experimental pose is excluded.
+
+Classic HUD Hearts v1.0.1 replaces the same texture archive as stamina. Do not enable both separate texture archives. See [HUD compatibility](HUD-COMPATIBILITY.md) for the optional merge tool.
