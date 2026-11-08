@@ -74,3 +74,8 @@ The earlier compatibility packages extended main's NSO text size into padding. L
 ## Configurable stamina (Beta6)
 
 Hero Mode with Stamina now has a configuration block for capacity, regeneration, delay, action/shield costs and HUD offsets. Default balance remains the same, with the yellow gauge moved24 layout units upward toward magic. Ready-to-import125% and150% capacity presets and an optional Python settings tool are available; there is no in-game settings screen yet. The meter's visual length remains tied to permanent hearts when capacity is boosted. See [Stamina settings](STAMINA-SETTINGS.md).
+
+
+## Controller settings
+
+The settings-capable Hero and Manual Shield updates use **System > Options > Target / Shield Controls** for Hold/Toggle targeting and left bumper/trigger swapping. See [the controller settings guide](CONTROLLER-SETTINGS.md) for the four choices, saved settings and downgrade instructions. The standalone wheel remains right-bumper-only and keeps native targeting/shielding.
