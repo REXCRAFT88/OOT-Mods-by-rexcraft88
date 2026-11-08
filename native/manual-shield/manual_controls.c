@@ -95,7 +95,7 @@ void hero_guard_frame(void) {
     if (allowed && !hero_control_state[3]) {
         u64 table=*(u64 *)(actor+0x270);
         u64 equipment=table?*(u64 *)(table+0x200):0;
-        if(equipment)native_draw_equipment((void *)equipment,interface&&as_int((void *)interface,1)==2?0:4);
+        if(equipment&&(!interface||as_int((void *)interface,1)!=2))native_draw_equipment((void *)equipment,4);
     }
     hero_control_state[3] = (u8)allowed;
 }

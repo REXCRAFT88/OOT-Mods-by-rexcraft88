@@ -14,93 +14,93 @@
   },
   "asset_checksums": [
     {
-      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-Prepared-Addon.zip",
-      "sha256": "ca29cbc8e8a99d8ef77516e18fcb0ec0198f81f15b95478be852e21fca0f5c4d",
-      "bytes": 162695536
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.9-Prepared-Addon.zip",
+      "sha256": "0065c044863aa66a82c4f058a88f5833d8601e401dd6b8a2e3212e9c84c81b6d",
+      "bytes": 162695537
     },
     {
-      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-Prepared-Addon-SHA256.txt",
-      "sha256": "917298d44c89c726f043f4730111458176ea14480b140810988a92bafbcec37b",
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.9-Prepared-Addon-SHA256.txt",
+      "sha256": "6f637d847870f21dc15d5a7128e4abb1ded0453a7a26a84eab76c88406ee16b7",
       "bytes": 127
     },
     {
-      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-Optional-Builder.zip",
-      "sha256": "1d617eb53350846f8a7c597875c78754c15a3680e541b10fc6ca24e338dc16fa",
-      "bytes": 1621033
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.9-Optional-Builder.zip",
+      "sha256": "dd114113b83ff8ee3606028a49e7c32f4aea6089b2a85a9487ed11cdf723d417",
+      "bytes": 1621127
     },
     {
-      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-Optional-Builder-SHA256.txt",
-      "sha256": "7934984afb1fad3032d9726852fe6b0c621e45685a8cb98a7f6599745eb126c3",
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.9-Optional-Builder-SHA256.txt",
+      "sha256": "3f0359b335205135eb9abff3a9c174120097e5d5300c841cbdf3300e7f104b93",
       "bytes": 129
     },
     {
-      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-125pct-Prepared-Addon.zip",
-      "sha256": "5c80ed040fe7aec68a5e75d7651755841b23fb3d03ab18f84846e4ec727b420c",
-      "bytes": 162695546
-    },
-    {
-      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-125pct-Prepared-Addon-SHA256.txt",
-      "sha256": "6c1994a4f2d001306e1c047fb93306cfb95e923541a2832ee143139e6b865f81",
-      "bytes": 134
-    },
-    {
-      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-150pct-Prepared-Addon.zip",
-      "sha256": "3e0bbed78ae2fcad9c2b5943cb41a9927d3ded8020a9ad82cfddc3b41276a983",
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.9-125pct-Prepared-Addon.zip",
+      "sha256": "e4cb1eab535469e61173dfa8f7fdfe40894b81ce4041df9c28e0ebbd1fe56ba3",
       "bytes": 162695547
     },
     {
-      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.8-150pct-Prepared-Addon-SHA256.txt",
-      "sha256": "53667eb38e972b678162875375d2548ede0a9807dff0190c5a686cd40c310c03",
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.9-125pct-Prepared-Addon-SHA256.txt",
+      "sha256": "169c3806d3f4c53ff2c658f0866be50e5b281a3c69296947e71a0c3f98109f25",
+      "bytes": 134
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.9-150pct-Prepared-Addon.zip",
+      "sha256": "59df6b839d7a13ac8d1c747ec98526c63101bdae38fa376eae28cc5a7b62d065",
+      "bytes": 162695548
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.9-150pct-Prepared-Addon-SHA256.txt",
+      "sha256": "c02f9daf824da5b3b15d1a14e9a221c895fc827b86f457f27dfdc739532e8c54",
       "bytes": 134
     },
     {
       "name": "HUD-Compatibility-Tool.zip",
-      "sha256": "40bcab4e47acfacc450c915e6057c0a745f3ee43beac096cf91228dea040e004",
+      "sha256": "a332370cd3d551020f45d2c706801c98d6383006ae5594237b190be1b413136c",
       "bytes": 11072
     },
     {
       "name": "HUD-Compatibility-Tool-SHA256.txt",
-      "sha256": "2709ed0388da8d8df4abea01cbabd0b67311e12255fe755797f54b5f2a861c08",
+      "sha256": "9e5f269016b2c4e354923437ef67a10a290e07c0c11781427dd07c560eb85702",
       "bytes": 94
     },
     {
-      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.6-Prepared-Addon.zip",
-      "sha256": "4974f9b0195edecdfe17ac87b07b62f49ee86d4c70575327b829fa2424ccbd67",
-      "bytes": 94528930
+      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.7-Prepared-Addon.zip",
+      "sha256": "9453db7a35bc3dc06cb2cbec1ccf2db48b7a828341ea27b0acf4f2599d10413f",
+      "bytes": 94528940
     },
     {
-      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.6-Prepared-Addon-SHA256.txt",
-      "sha256": "eb52f62b72da86f6e8b19ed2ced19e7b41efb5652860a49f43a985d8eaa305f9",
+      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.7-Prepared-Addon-SHA256.txt",
+      "sha256": "6ca4686ff6168c8751b4ad57b8e9523838c7442aff1beb32a6f4d0491fbae918",
       "bytes": 130
     },
     {
-      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.6-Optional-Builder.zip",
-      "sha256": "b6661f50aa4c9644499f490e66ce5aceb8b38206c058c9c47e7d6c72aa6732fe",
-      "bytes": 1536483
+      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.7-Optional-Builder.zip",
+      "sha256": "1ca17c6d7b141af5f78baa86abd3aa87ed1a38ede83cbdc252eca421c9efcbc4",
+      "bytes": 1536583
     },
     {
-      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.6-Optional-Builder-SHA256.txt",
-      "sha256": "875d278076016ae6648fefe7a8a1ba49cff226e0c5157c1da1f8d81555ffb34e",
+      "name": "OOT-Hero-Mode-Without-Stamina-v0.1.0-beta.7-Optional-Builder-SHA256.txt",
+      "sha256": "45faad7084c1d90376f6bccaccd79d10b20ff76813f5992f73e03beea3448f33",
       "bytes": 132
     },
     {
-      "name": "OOT-Manual-Shield-v0.1.4-Prepared-Addon.zip",
-      "sha256": "991caa82ec87973d7d49d8b621655dfe50f3083498bad0bb29d1d7bdb6023b9e",
-      "bytes": 79978079
+      "name": "OOT-Manual-Shield-v0.1.5-Prepared-Addon.zip",
+      "sha256": "0b2062760b76b67e899d1c97a8cf78c8596bb23727cda6e7ec85ccc916208469",
+      "bytes": 79978083
     },
     {
-      "name": "OOT-Manual-Shield-v0.1.4-Prepared-Addon-SHA256.txt",
-      "sha256": "9fb3dbd19cdeb81d7a29f66690d884c3a2374e0a072b893aeb4a997d6a1b0924",
+      "name": "OOT-Manual-Shield-v0.1.5-Prepared-Addon-SHA256.txt",
+      "sha256": "5744c7d8f617687f23f9ed7824b3319392877cf9326107c98adae4500e2b6aeb",
       "bytes": 111
     },
     {
-      "name": "OOT-Manual-Shield-v0.1.4-Optional-Builder.zip",
-      "sha256": "b16fe994f2092ae95347fc3880db3fcc1cbfc44f3ce189b2dccefd14883d1bb5",
-      "bytes": 1432469
+      "name": "OOT-Manual-Shield-v0.1.5-Optional-Builder.zip",
+      "sha256": "b5a92cacf94508646aa5a866b6ae7c6d6ef1c384ed3aee2c16e244e958c400a4",
+      "bytes": 1432569
     },
     {
-      "name": "OOT-Manual-Shield-v0.1.4-Optional-Builder-SHA256.txt",
-      "sha256": "cc5374547ee1551337907a2c33694b429fef505d7c80399201448849ae4dbe53",
+      "name": "OOT-Manual-Shield-v0.1.5-Optional-Builder-SHA256.txt",
+      "sha256": "48e90458e29311a10030ed5085e22cd2781afc94742d4dd4dcee72579916fc73",
       "bytes": 113
     }
   ],
@@ -108,28 +108,28 @@
     "installer_reconstruction": [
       {
         "variant": "hero-with-stamina",
-        "version": "0.1.0-beta.8",
+        "version": "0.1.0-beta.9",
         "files_verified": 204,
         "reconstructed_bytes_match": true,
         "experimental_asb_absent": true
       },
       {
         "variant": "hero-without-stamina",
-        "version": "0.1.0-beta.6",
+        "version": "0.1.0-beta.7",
         "files_verified": 203,
         "reconstructed_bytes_match": true,
         "experimental_asb_absent": true
       },
       {
         "variant": "manual-shield",
-        "version": "0.1.4",
+        "version": "0.1.5",
         "files_verified": 26,
         "reconstructed_bytes_match": true,
         "experimental_asb_absent": true
       }
     ],
     "hud_merge": {
-      "zip": "work\\november-hud-merge-1794162280074784600.zip",
+      "zip": "work\\november-hud-merge-1794162930132869800.zip",
       "verified": true,
       "original_inputs_unchanged": true
     }

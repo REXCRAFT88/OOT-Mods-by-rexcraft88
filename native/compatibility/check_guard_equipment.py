@@ -13,6 +13,6 @@ for variant in ['hero-with-stamina','hero-without-stamina','manual-shield']:
   if at==base+sy['as_int']:uc.reg_write(UC_ARM64_REG_X0,weapon);uc.reg_write(UC_ARM64_REG_PC,uc.reg_read(UC_ARM64_REG_X30))
   elif at==base+sy['native_draw_equipment']:calls.append((uc.reg_read(UC_ARM64_REG_X0),uc.reg_read(UC_ARM64_REG_X1)));uc.reg_write(UC_ARM64_REG_PC,uc.reg_read(UC_ARM64_REG_X30))
  u.hook_add(UC_HOOK_CODE,hook)
- for interface,weapon,want in [(0x100000,0,4),(0x100000,1,4),(0x100000,2,0),(0x100000,3,4),(0x100000,4,4),(0,2,4)]:
-  u.mem_write(base+sy['player_as_interface'],struct.pack('<Q',interface));u.reg_write(UC_ARM64_REG_SP,0x208000);u.reg_write(UC_ARM64_REG_X0,0x100123);u.reg_write(UC_ARM64_REG_X1,4);u.reg_write(UC_ARM64_REG_X30,0x300000);u.emu_start(base+sy['hero_guard_draw'],0x300000,count=1000);assert calls[-1]==(0x100123,want),(variant,weapon,calls)
- print('PASS',variant,'two-handed sword slot0; other weapons shield slot4; null-interface passthrough')
+ for interface,weapon,want in [(0x100000,0,4),(0x100000,1,4),(0x100000,2,None),(0x100000,3,4),(0x100000,4,4),(0,2,4)]:
+  calls.clear();u.mem_write(base+sy['player_as_interface'],struct.pack('<Q',interface));u.reg_write(UC_ARM64_REG_SP,0x208000);u.reg_write(UC_ARM64_REG_X0,0x100123);u.reg_write(UC_ARM64_REG_X1,4);u.reg_write(UC_ARM64_REG_X30,0x300000);u.emu_start(base+sy['hero_guard_draw'],0x300000,count=1000);assert calls==([] if want is None else [(0x100123,want)]),(variant,weapon,calls)
+ print('PASS',variant,'two-handed no forced draw (including hammer held); other weapons shield slot4; null-interface passthrough')
