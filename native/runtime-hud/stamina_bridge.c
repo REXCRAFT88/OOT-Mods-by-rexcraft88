@@ -50,12 +50,25 @@ static u32 near_enemy(U64 node,U64 player){
   const char* name=(const char*)ptr(actor,0x20);
   if(!name||*(const u32*)name!=0x6d656e45||*(const unsigned short*)(name+4)!=0x5f79)continue;
   if(*(const u32*)(name+6)==0x75726353&&name[12]=='B')continue; /* friendly business scrub */
+  /* Drop actors share Enemy_ names but cannot engage the player. */
+  u32 drop=0;for(u32 i=0;i<64&&name[i];++i)if(name[i]=='D'&&name[i+1]=='r'&&name[i+2]=='o'&&name[i+3]=='p'){drop=1;break;}
+  if(drop)continue;
+  if(*(const U64*)(name+6)==0x6c75746c6c756b53ull&&name[14]=='a'&&name[15]=='_'&&name[16]=='G')continue; /* collectible gold skulltula */
   float x=*(float*)(actor+0x31c)-*(float*)(player+0x31c);
   float y=*(float*)(actor+0x320)-*(float*)(player+0x320);
   float z=*(float*)(actor+0x324)-*(float*)(player+0x324);
   if(x*x+y*y+z*z<144)return 1;
  }
  return near_enemy(ptr(node,8),player);
+}
+/* The periodic proximity scan can miss brief attacks between its 16-frame
+   samples. Recheck only on attack entry so combat gating sees the real target. */
+static u32 action_near_enemy(NativeHero* r){
+ U64 holder=actor_manager_slot,mgr=holder?ptr(holder,0):0;
+ U64 actor=r->player?ptr(r->player,0x18):0;if(!mgr||!actor)return 0;
+ actor_lock((void*)mgr);u32 near=near_enemy(ptr(mgr,0x38),actor);actor_unlock((void*)mgr);
+ r->combat_bool=near;
+ return near;
 }
 extern unsigned char hero_control_state[];
 /* Accepted AS requests, rather than button presses or aiming, identify releases.
@@ -147,6 +160,10 @@ void hero_native_action(u32 kind,u32 entering){
  NativeHero* r=&hero_runtime;
  if(!entering){r->active_mask&=~(1u<<kind);return;}
  if(!r->state.initialized)return;
+ if(kind==0||kind==5||kind==6){
+  action_near_enemy(r);
+  if(!r->combat_bool&&!hero_native_combat())r->state.in_combat=0;
+ }
  if(r->combat_bool&&(kind==0||kind==5||kind==6)){r->combat_grace=5;r->state.in_combat=1;}
  r->active_mask|=1u<<kind;r->last_kind=kind;
  u32 action=(kind==1||kind==4)?HERO_ROLL:kind==2?HERO_BACKFLIP:kind==3?HERO_SIDESTEP:HERO_ATTACK;

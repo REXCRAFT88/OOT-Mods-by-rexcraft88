@@ -13,16 +13,38 @@ wheel_bind_entry:
  b bind_entry_resume
 wheel_bind_item:
  stp x16,x17,[sp,#-16]!
+ stp x9,x10,[sp,#-32]!
+ str x11,[sp,#16]
  ldr w17,[x20]
  cmp w17,#64
  b.hs 1f
  adrp x16,wheel_cache
  add x16,x16,:lo12:wheel_cache
- str w17,[x16,#36]
+ cbnz w17,2f
+ /* Index zero starts a fresh binding pass, including same-address reloads. */
+ str xzr,[x16,#48]
+ mov w9,#1
+ str w9,[x16,#36]
+ add x10,x16,#256
+ mov w11,#64
+3:
+ stp xzr,xzr,[x10],#16
+ subs w11,w11,#1
+ b.ne 3b
+ b 4f
+2:
+ ldr w9,[x16,#36]
+ add w10,w17,#1
+ cmp w9,w10
+ csel w9,w9,w10,hi
+ str w9,[x16,#36]
+4:
  add x16,x16,#256
  add x16,x16,x17,lsl #4
  stp x21,x19,[x16]
 1:
+ ldr x11,[sp,#16]
+ ldp x9,x10,[sp],#32
  ldp x16,x17,[sp],#16
  mov x0,x21
  b bind_item_resume

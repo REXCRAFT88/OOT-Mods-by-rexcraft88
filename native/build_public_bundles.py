@@ -10,6 +10,8 @@ if '--manual' in sys.argv:variants=[('manual-shield','Manual Shield','work/publi
 if '--compatibility' in sys.argv:
  variants=[(key,name,'work/compatibility-candidates/'+key) for key,name in [('hero-with-stamina','Hero Mode with Stamina'),('hero-without-stamina','Hero Mode without Stamina'),('manual-shield','Manual Shield'),('item-wheel','Item Wheel')]]
 if '--controller-options' in sys.argv:variants=[(key,name,'work/controller-options-candidates/'+key) for key,name in [('hero-with-stamina','Hero Mode with Stamina'),('hero-without-stamina','Hero Mode without Stamina'),('manual-shield','Manual Shield')]]
+if '--regression' in sys.argv:
+ variants=[(key,name,'work/mod-regression-lab/candidates/'+key) for key,name in [('hero-with-stamina','Hero Mode with Stamina'),('hero-without-stamina','Hero Mode without Stamina'),('manual-shield','Manual Shield'),('item-wheel','Item Wheel')]]
 if '--wheel-only' in sys.argv:variants=[v for v in variants if v[0]=='item-wheel']
 for key,name,folder in variants:
  root=Path(folder);out=repo/'patches'/key;out.mkdir(parents=True,exist_ok=True);files=[]
@@ -18,7 +20,8 @@ for key,name,folder in variants:
   path=f.relative_to(root).as_posix()
   if not path.startswith(('exefs/','romfs/')):continue
   target=f.read_bytes();number=len(files);patchname=f'{number:03d}.patch'
-  kind='raw' if path.endswith('.ips') else 'nso' if path.startswith('exefs/') else 'binary' if path.endswith('.ainb') else 'zstd'
+  if path in ['exefs/rtld','exefs/subsdk0','exefs/sdk'] and target==original(path):continue
+  kind='raw' if path.endswith('.ips') or path=='exefs/subsdk1' else 'nso' if path.startswith('exefs/') else 'binary' if path.endswith('.ainb') else 'zstd'
   if kind=='raw':
    patch=target;entry={'path':path,'kind':kind,'target_sha256':install.sha(target),'patch':patchname}
   elif kind=='binary':
@@ -54,6 +57,7 @@ for key,name,folder in variants:
    entry={'path':path,'kind':kind,'source_sha256':sh,'target_sha256':th,'dictionary':ident,'patch':patchname}
   (out/patchname).write_bytes(patch);files.append(entry)
  versions={'hero-with-stamina':'0.1.0-beta.9','hero-without-stamina':'0.1.0-beta.7','manual-shield':'0.1.5'} if '--controller-options' in sys.argv else {}
+ if '--regression' in sys.argv:versions={'hero-with-stamina':'0.1.0-beta.11','hero-without-stamina':'0.1.0-beta.8','manual-shield':'0.1.6','item-wheel':'0.1.5'}
  m={'name':name,'version':versions.get(key,{'hero-with-stamina':'0.1.0-beta.6','hero-without-stamina':'0.1.0-beta.4','item-wheel':'0.1.4','manual-shield':'0.1.2'}[key]),'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};
  if key=='hero-with-stamina':
   from stamina_settings import DEFAULTS

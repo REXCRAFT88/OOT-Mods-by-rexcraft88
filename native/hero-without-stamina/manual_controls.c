@@ -5,13 +5,57 @@ typedef unsigned u32;
 typedef unsigned char u8;
 
 /* Full-controller Npad state records: 40-byte stride, buttons at +8. */
-extern u8 hero_control_state[];
 extern u64 hero_cache[];
 extern u8 hero_runtime[];
+extern u8 wheel_cache[];
+extern u8 hero_control_state[];
 extern u64 get_guard_component(void *actor);
 typedef void (*set_native_bool)(void *, u32, u32);
 extern void native_draw_equipment(void *, u32);
 extern u32 as_int(void *,u32);
+extern u32 as_bool(void *,u32);
+static u64 current_guard_interface(u64 actor) {
+    u64 table=*(u64 *)(actor+0x270);if(!table)return 0;
+    u64 anim=*(u64 *)(table+0x40);if(!anim)return 0;
+    u64 p=*(u64 *)(anim+0x18);if(!p)return 0;
+    p=*(u64 *)(p+0x18);if(!p)return 0;
+    return *(u64 *)(p+0x40);
+}
+__attribute__((noinline)) u32 hero_player_carrying(u64 actor) {
+    if(!actor)return 0;
+    u64 table=*(u64 *)(actor+0x270);if(!table)return 0;
+    u64 lifter=*(u64 *)(table+0x2c8);if(!lifter)return 0;
+    return *(u32 *)(lifter+0x2b0)!=0;
+}
+__attribute__((noinline)) u32 hero_input_guard_active(u64 buttons) {
+    return (buttons & 0x100u) != 0 && !hero_control_state[5];
+}
+
+static u32 guard_action_busy(u64 player_state) {
+    if(!player_state)return 0;
+    for(u32 i=0;i<2;i++){
+        const u8* name=(const u8 *)*(u64 *)(player_state+0x238+i*0xd8);
+        if(!name)continue;
+        u64 first=*(const u64 *)name;
+        if(first==0x6d657449646c6f48ull || *(const u32 *)name==0x7466694c ||
+           *(const u32 *)name==0x62617247 || first==0x6772616843776f42ull ||
+           first==0x746f6f6853776f42ull || first==0x616f4c6552776f42ull ||
+           first==0x746f68736b6f6f48ull || first==0x6e6172656d6f6f42ull ||
+           first==0x6573726f486d6941ull) return 1;
+    }
+    return 0;
+}
+__attribute__((noinline)) u32 hero_guard_busy(u64 interface,u64 player_state) {
+    return interface && (hero_control_state[5] || (*(u32 *)(wheel_cache+120)!=0) || guard_action_busy(player_state) ||
+        as_bool((void *)interface,62) ||
+        as_bool((void *)interface,86) ||
+        as_int((void *)interface,1)==2);
+}
+__attribute__((noinline)) u32 hero_guard_should_apply(u64 interface,u64 player_state,u32 held,u32 initialized,
+                                                       u32 alive,u32 combat,float cap,float stamina) {
+    return interface && held && !hero_guard_busy(interface,player_state) && initialized && alive && cap>0.0f &&
+           (!combat || stamina>0.0f);
+}
 extern void wheel_raw(u64 *, u32);
 extern void native_request_as_original(void *,u32,void *,u32,u32);
 
@@ -37,7 +81,7 @@ void hero_controls_raw(u64 *records, u32 count) {
         u64 *buttons = &records[i * 5 + 1];
         u64 bits = *buttons;
         if (i == 0) {
-            held_guard = (bits & 0x100u) != 0;   /* L2 / native ZL */
+            held_guard = hero_input_guard_active(bits); /* L2 / native ZL */
             held_l = (bits & 0x40u) != 0;       /* L1 / native L */
             held_rstick = (bits & 0x20u) != 0;  /* R3 camera reset */
         }
@@ -64,10 +108,15 @@ void hero_all_input(u64 *records, u32 count) {
 }
 
 void hero_guard_frame(void) {
+    *(u64 *)(hero_control_state + 0x70) = 0;
+    *(u64 *)(hero_control_state + 0x78) = 0;
+    hero_control_state[4] = 0;
+    hero_control_state[5] = 0;
     u64 player_state = hero_cache[0];
     if (!player_state) return;
     u64 actor = *(u64 *)(player_state + 0x18);
     if (!actor) return;
+    hero_control_state[5] = (u8)hero_player_carrying(actor);
     u64 component = get_guard_component((void *)actor);
     if (!component) return;
 
@@ -77,7 +126,13 @@ void hero_guard_frame(void) {
     u32 initialized = *(u32 *)(hero_runtime + 20);
     u32 alive = *(u32 *)(hero_runtime + 32);
     u32 in_combat = *(u32 *)(hero_runtime + 36);
-    u32 allowed = held && initialized && alive && cap > 0.0f && (!in_combat || stamina > 0.0f);
+    u64 interface = *(u64 *)(hero_runtime + 0x80);
+    if (!interface || interface != current_guard_interface(actor)) interface=0;
+    u64 table=*(u64 *)(actor+0x270);
+    u64 equipment=table?*(u64 *)(table+0x200):0;
+    if(interface) *(u64 *)(hero_control_state+0x70)=actor;
+    if(interface&&equipment) *(u64 *)(hero_control_state+0x78)=equipment;
+    u32 allowed = interface && hero_guard_should_apply(interface,player_state,held,initialized,alive,in_combat,cap,stamina);
     hero_control_state[4] = (u8)allowed;
     /* Apply held guard policy; native input handles locomotion and camera. */
     u32 *state_flags=(u32 *)(player_state+0xe50);
@@ -87,7 +142,6 @@ void hero_guard_frame(void) {
     if (allowed) *flags |= 0x20u;
     else *flags &= ~0x20u;
 
-    u64 interface = *(u64 *)(hero_runtime + 0x80);
     if (interface) {
         u64 vtable = *(u64 *)interface;
         set_native_bool setter = (set_native_bool)*(u64 *)(vtable + 0x88);
@@ -96,8 +150,6 @@ void hero_guard_frame(void) {
 
     /* Draw only the shield: targeting must not make our hook draw the sword. */
     if (allowed && !hero_control_state[3]) {
-        u64 table=*(u64 *)(actor+0x270);
-        u64 equipment=table?*(u64 *)(table+0x200):0;
         if(equipment&&(!interface||as_int((void *)interface,1)!=2))native_draw_equipment((void *)equipment,4);
     }
     hero_control_state[3] = (u8)allowed;
@@ -105,12 +157,13 @@ void hero_guard_frame(void) {
 
 extern void *resolve_player(void *);
 void manual_frame(void *ai) {
+ *(u64 *)(hero_control_state+0x70)=0;*(u64 *)(hero_control_state+0x78)=0;hero_control_state[4]=0;hero_control_state[5]=0;*(u64 *)(hero_runtime+0x80)=0;
  u64 state=(u64)resolve_player(ai);if(!state)return;
  hero_cache[0]=state;u64 actor=*(u64 *)(state+0x18);if(!actor)return;
- u64 table=*(u64 *)(actor+0x270);if(!table)return;
- u64 anim=*(u64 *)(table+0x40);if(!anim)return;
- u64 p=*(u64 *)(anim+0x18);if(!p)return;
- p=*(u64 *)(p+0x18);if(!p)return;
+ u64 table=*(u64 *)(actor+0x270);if(!table){hero_guard_frame();return;}
+ u64 anim=*(u64 *)(table+0x40);if(!anim){hero_guard_frame();return;}
+ u64 p=*(u64 *)(anim+0x18);if(!p){hero_guard_frame();return;}
+ p=*(u64 *)(p+0x18);if(!p){hero_guard_frame();return;}
  *(u64 *)(hero_runtime+0x80)=*(u64 *)(p+0x40);
  *(float *)hero_runtime=100;*(float *)(hero_runtime+4)=100;
  *(u32 *)(hero_runtime+20)=1;*(u32 *)(hero_runtime+32)=1;

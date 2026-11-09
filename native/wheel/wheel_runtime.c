@@ -43,13 +43,20 @@ void wheel_update(void* controller){
  if(!owner||!screen||*((u8*)owner+0x3a)!=2||*((u8*)screen+0x1a6)!=2)return;
  if(*(signed char*)((u8*)screen+0x1a5)<0)return;
  unsigned n=count(list),best=0;
- if(!n||n>64)return;
+ /* Binding populates the widget cache incrementally. Refuse to draw/select
+    until the current list has been completely rebound after a reload. */
+ if(!n||n>64||*(u32*)(wheel_cache+36)!=n)return;
  unsigned g=groups(n);u8* map=wheel_cache+1536;
  void* root=*(void**)pad_global;
  if(!root)return;
  void* pad=ptr(root,0xc0);
  if(!pad)return;
- float x=*(float*)((u8*)pad+0x120),y=*(float*)((u8*)pad+0x124);
+ /* Native pad state stores the right stick immediately after the left pair. */
+ float x=*(float*)((u8*)pad+0x128),y=*(float*)((u8*)pad+0x12c);
+ /* Both sticks contribute equally; opposing directions cancel without a side preference. */
+ float lx=*(float*)((u8*)pad+0x120),ly=*(float*)((u8*)pad+0x124);
+ if(x*x+y*y<.1225f){x=0;y=0;}
+ if(lx*lx+ly*ly>=.1225f){x+=lx;y+=ly;}
  if(x*x+y*y<.1225f)return;
  float score=-1e10f;
  for(unsigned i=0;i<g;i++){
@@ -68,7 +75,7 @@ void wheel_update(void* controller){
 void wheel_draw(void* list){
  if(list!=ptr(wheel_cache,16))return;
  unsigned n=count(list);
- if(!n||n>64)return;
+ if(!n||n>64||*(u32*)(wheel_cache+36)!=n)return;
  unsigned g=groups(n);u8* map=wheel_cache+1536;
  float radius=280+40*g;
  if(radius>800)radius=800;
@@ -112,7 +119,8 @@ void wheel_tick(void){
   *(u32*)(wheel_cache+112)=0;
   void* c=ptr(wheel_cache,48);void* list=ptr(wheel_cache,16);
   if(c&&list){
-   unsigned n=count(list),old=*(u32*)((u8*)list+0x4c),next=old;
+   unsigned n=count(list),selected=*(u32*)((u8*)list+0x4c),old=selected,next=selected;
+   if(!n||n>64||selected>=n||*(u32*)(wheel_cache+36)!=n)return;
    if(event==2){*(u32*)(wheel_cache+116)=old+1;return;}
    unsigned remembered=*(u32*)(wheel_cache+116);
    if(remembered&&remembered<=n&&key(remembered-1)==key(old))old=remembered-1;
@@ -121,7 +129,7 @@ void wheel_tick(void){
     if(key(i)==key(old)){next=i;break;}
    }
    *(u32*)(wheel_cache+116)=next+1;
-   if(next!=old){set_index(list,next,0,0,1);equip_index(c,next);commit_item(c,0);}
+   if(next!=old){set_index(list,next,0,0,1);change_focus(c,selected,next);equip_index(c,next);commit_item(c,0);}
   }
  }
 }
