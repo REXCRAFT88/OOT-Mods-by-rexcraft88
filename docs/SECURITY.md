@@ -25,3 +25,5 @@ No release is uploaded to a third-party scanning service as part of these local 
 Latest evidence: [security report](security-reports/latest.json).
 
 The optional `stamina_settings.py` tool uses only the Python standard library and edits a compatible Add-on ZIP into a new ZIP. It changes only the bounded96-byte stamina configuration block, settings receipt and checksum; it does not run code from the ZIP or read/write the game or saves. It rejects incompatible config formats, unsafe archive paths, non-finite/out-of-range values and existing output files. The125%/150% preset archives preserve the same executable code as the default release.
+
+Hero with Stamina beta.10 also includes `exefs/subsdk1`, our own freestanding AArch64 HUD helper module. Its C/assembly and minimal NSO emitter are in `native/runtime-hud`. The source rebuild was checked byte-for-byte against the shipped helper. Prepared ZIPs still contain no Windows executables or installer scripts. See the beta.10 dated scan report for current evidence; earlier reports apply to their listed older hashes.

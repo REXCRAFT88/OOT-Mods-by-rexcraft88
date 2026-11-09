@@ -38,3 +38,7 @@ Import the generated folder containing `exefs/` and `romfs/` through **Import Mo
 Requires title **0400486024DEC000**, update **131072**, main build **E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348**. Other executable updates are unsupported. Full NUP RomFS support was verified on [Lichii build95 (download tag build-94)](https://github.com/zortos293/Lichii/releases/tag/build-94). Fast accuracy and async shaders were used in testing; the mod does not change emulator settings.
 
 Disable the Add-on and restart to uninstall. No saves or additional save slots are distributed. See [features](FEATURES.md) and [security checks](SECURITY.md).
+
+## Hero with Stamina beta.10 and HUD mods
+
+Remove the previous Hero copy before importing. Keep the installed folder name beginning `00-OOT-Hero`; install the entire ExeFS folder including `subsdk1` and the IPS file. DualSense UI can be a separate addon. See [HUD compatibility](HUD-COMPATIBILITY.md) for font allocation, tested priority and remaining conflicts. No HUD assets or game NUP are bundled.

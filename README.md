@@ -4,7 +4,7 @@ Mods for Project Eglantine / Ocarina of Time, title **0400486024DEC000**, update
 
 Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases), then use **Configure Game > Add-ons > Import Mod from ZIP**. No commands or builder step are needed. Use an emulator with full NUP RomFS and IPS support; the current test setup uses Fritchii v4.1.
 
-**Upgrading from an older `heromode.nup`? Use your original unmodified NUP with the new Prepared Add-on.** Current releases keep Lichii’s built-in FPS timing fix working through an IPS sidecar; do not stack them onto a previously patched game. See the [illustrated guide](docs/INSTALLATION.md).
+**Upgrading from an older `heromode.nup`? Use your original unmodified NUP with the new Prepared Add-on.** Current releases keep Lichiiâ€™s built-in FPS timing fix working through an IPS sidecar; do not stack them onto a previously patched game. See the [illustrated guide](docs/INSTALLATION.md).
 
 | Download | Included |
 | --- | --- |
@@ -27,4 +27,6 @@ Hero Mode with Stamina includes [stamina/HUD configuration](docs/STAMINA-SETTING
 
 Controller settings updates: [Hold/Toggle targeting and bumper/trigger layouts](docs/CONTROLLER-SETTINGS.md).
 
-Latest update: combat-only stamina detection, a 100–300 stamina curve, heavier Biggoron/hammer costs, small ranged-item costs, separate targeting/shield settings, and an R1-only Hero wheel. [HUD compatibility](docs/HUD-COMPATIBILITY.md).
+Latest update: combat-only stamina detection, a 100â€“300 stamina curve, heavier Biggoron/hammer costs, small ranged-item costs, separate targeting/shield settings, and an R1-only Hero wheel. [HUD compatibility](docs/HUD-COMPATIBILITY.md).
+
+Hero with Stamina **beta.10** adds a private runtime HUD: no Common HUD archive replacement, a half-height yellow bar, and a wheel cache fix for menu visits. The full DualSense UI mod was tested separately. Keep the addon folder prefix `00-OOT-Hero` for size-table priority. Read [HUD compatibility](docs/HUD-COMPATIBILITY.md).

@@ -1,0 +1,72 @@
+{
+  "release": "Hero Mode with Stamina 0.1.0-beta.10",
+  "checked_at_utc": "2026-11-09T04:55:02.335602+00:00",
+  "defender": {
+    "custom_scan": "completed successfully for outputs/Runtime-HUD-beta10",
+    "matching_threat_detections": 0,
+    "engine": "1.1.26100.4",
+    "signature": "1.463.199.0"
+  },
+  "bandit": {
+    "high": 0,
+    "medium": 0,
+    "low": 240,
+    "errors": [],
+    "scope": "Python source only; developer subprocess/assert/temp-path findings are not a native-code audit"
+  },
+  "native_checks": [
+    "source rebuild produces byte-identical helper NSO",
+    "AArch64 resource edits tested at nonzero ASLR base",
+    "wheel binding cache/register/stack check passed",
+    "optional installer reconstructs all 203 files byte-for-byte",
+    "original main text extent and FPS caves preserved"
+  ],
+  "assets": [
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.10-Prepared-Addon.zip",
+      "sha256": "0c4fea97bde05e70258c010a4bcbabd1c67ed1224bd16608df9792fe32746b52",
+      "bytes": 94148712
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.10-Prepared-Addon-SHA256.txt",
+      "sha256": "3bcceac5cd70ab1caccbff8651c0967a9c5d81dbebbe2c3540b942ab2da4ff2c",
+      "bytes": 128
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.10-125pct-Prepared-Addon.zip",
+      "sha256": "91b441a49764579aaab82f08a7a597a63e3cb4aae9486b3cabdff503fabb36b6",
+      "bytes": 94148719
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.10-125pct-Prepared-Addon-SHA256.txt",
+      "sha256": "1ef4c05ea32571d3e7236925fe8e3b4415b42cd32188d24c8c3c7b4711a73b56",
+      "bytes": 135
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.10-150pct-Prepared-Addon.zip",
+      "sha256": "aab64398265ee7570eeb354d435b2d121122342c4e3f326f53aa0de9ef787b72",
+      "bytes": 94148722
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.10-150pct-Prepared-Addon-SHA256.txt",
+      "sha256": "da47d442929f5aee723084213653520ac89db386f75d14d813c7ffae1cf6b749",
+      "bytes": 135
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.10-Optional-Builder.zip",
+      "sha256": "38b5e80390514cc17a9293d0d975b0b03bbf70a26e3fca4040b925bddc237d34",
+      "bytes": 1605457
+    },
+    {
+      "name": "OOT-Hero-Mode-With-Stamina-v0.1.0-beta.10-Optional-Builder-SHA256.txt",
+      "sha256": "94ae780d68fa457df9cff9c4727372e9645ee5d27af63851b30de380f00e5577",
+      "bytes": 130
+    }
+  ],
+  "limits": [
+    "Not an independent safety certification",
+    "No third-party online scanner upload",
+    "No new dependency vulnerability audit in this pass",
+    "No broad HUD skin/ultrawide/long-session qualification"
+  ]
+}

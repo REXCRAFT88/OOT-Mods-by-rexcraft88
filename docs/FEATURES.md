@@ -81,6 +81,10 @@ Hero Mode with Stamina now has a configuration block for capacity, regeneration,
 
 The settings-capable Hero and Manual Shield updates use **System > Options > Target / Shield Controls** for Hold/Toggle targeting and left bumper/trigger swapping. See [the controller settings guide](CONTROLLER-SETTINGS.md) for the four choices, saved settings and downgrade instructions. The standalone wheel remains right-bumper-only and keeps native targeting/shielding.
 
-Biggoron Sword: guarding no longer draws the shield onto Link’s arm. This does not add sword blocking or a new blocking pose; the unsuccessful experimental pose is excluded.
+Biggoron Sword: guarding no longer draws the shield onto Linkâ€™s arm. This does not add sword blocking or a new blocking pose; the unsuccessful experimental pose is excluded.
 
 Classic HUD Hearts v1.0.1 replaces the same texture archive as stamina. Do not enable both separate texture archives. See [HUD compatibility](HUD-COMPATIBILITY.md) for the optional merge tool.
+
+## Hero with Stamina beta.10
+
+Stamina is full width and half height with clearance below magic. Native private HUD metadata replaces the previous Common archive overrides. The wheel list cache survives pause/menu creation. The full DualSense font/texture addon was tested separately, with Hero size-table priority and a 16 KiB font allocation. Core stamina, enemy and shield behavior stays as documented above. Other variants have not received this runtime HUD conversion.

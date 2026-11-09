@@ -8,15 +8,22 @@ def pack_addon(folder, destination):
     folder, destination = pathlib.Path(folder), pathlib.Path(destination)
     if destination.exists():
         raise ValueError('Choose a new ZIP filename; the destination already exists')
+    addon_name = folder.name
+    info_file = folder/'mod-info.json'
+    if info_file.exists():
+        import json
+        info = json.loads(info_file.read_text())
+        if info.get('name') == 'Hero Mode with Stamina' and any(entry.get('path') == 'exefs/subsdk1' for entry in info.get('files', [])):
+            addon_name = '00-OOT-Hero-Mode-With-Stamina-v' + info['version']
     files = [p for section in ('exefs', 'romfs') for p in (folder / section).rglob('*') if p.is_file()]
     if not files:
         raise ValueError('No generated ExeFS/RomFS mod files found')
     with zipfile.ZipFile(destination, 'x', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for p in files:
-            archive.write(p, folder.name + '/' + p.relative_to(folder).as_posix())
+            archive.write(p, addon_name + '/' + p.relative_to(folder).as_posix())
         for name in ('mod-info.json','stamina-settings.json'):
             if (folder/name).is_file():
-                archive.write(folder/name,folder.name+'/'+name)
+                archive.write(folder/name,addon_name+'/'+name)
 
 
 def main():

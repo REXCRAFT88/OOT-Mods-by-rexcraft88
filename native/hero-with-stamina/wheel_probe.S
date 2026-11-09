@@ -4,7 +4,7 @@ wheel_bind_entry:
  stp x16,x17,[sp,#-16]!
  adrp x16,wheel_cache
  add x16,x16,:lo12:wheel_cache
- stp x0,x1,[x16]
+ str x0,[x16,#16] // Specific item binding owns the wheel-list cache.
  ldr w17,[x16,#32]
  add w17,w17,#1
  str w17,[x16,#32]
@@ -27,12 +27,7 @@ wheel_bind_item:
  mov x0,x21
  b bind_item_resume
 wheel_list_ctor:
- stp x16,x17,[sp,#-16]!
- adrp x16,wheel_cache
- add x16,x16,:lo12:wheel_cache
- str x0,[x16,#16]
- str x2,[x16,#24]
- ldp x16,x17,[sp],#16
+ // Generic UI lists must not overwrite the item wheel list.
  pacibsp
  b list_ctor_resume
 

@@ -1,6 +1,6 @@
 {
   "name": "Hero Mode with Stamina",
-  "version": "0.1.0-beta.9",
+  "version": "0.1.0-beta.10",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
@@ -8,35 +8,35 @@
     {
       "path": "exefs/E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348.ips",
       "kind": "raw",
-      "target_sha256": "6e88db6abaec41933c40baf89a44052cf6bce9228bfcc587a232338351717f20",
+      "target_sha256": "8435a0ca25012ba1698d2325a212abd50180fc1ecbc9419a75b4ed2542862708",
       "patch": "000.patch"
     },
     {
       "path": "exefs/main",
       "kind": "nso",
       "source_sha256": "7db9ddfda088c22d219ef13496decd7077c68cd67d4b37f53f4ac46a082768f2",
-      "target_sha256": "2d1563877f0e5e21f4f8c09f2d71faab8182b606de77aff092c0ecd8eecf6950",
+      "target_sha256": "e9901c70a5532e54e97d80f07817284632a9ab17f8683e69a73c93b35515c614",
       "patch": "001.patch"
     },
     {
       "path": "exefs/rtld",
       "kind": "nso",
       "source_sha256": "219f25ef4a64a704e86dacfeb25d9e8977045f2145e629268b94baf34d5e0bbe",
-      "target_sha256": "ff587dae8bacb018032a17fc278ca5e4e061a5733eed6a97acf0f0530e35ff8d",
+      "target_sha256": "b2393e4f0602732d559ac45fa782355ad400a0b651cb21eac620d5f5b5fa61df",
       "patch": "002.patch"
     },
     {
       "path": "exefs/sdk",
       "kind": "nso",
       "source_sha256": "3ae3cd4cf340d72bdaba9e6f66016a74c1eae13737a5f7299375ed6654b9b1c5",
-      "target_sha256": "ee9620b09b2f4e32a1f8b4054c974d9916050e55d14025948a278a3de282a61f",
+      "target_sha256": "03acd8e4bbb1e606a9cdb8f7a4575d08f510c811c1763e861fb6f89ab1b44b51",
       "patch": "003.patch"
     },
     {
       "path": "exefs/subsdk0",
       "kind": "nso",
       "source_sha256": "0d32c4bdbcfcfa1c4110c37eff18eaf70061a55090b7fedc741a2e37224065ba",
-      "target_sha256": "4f5634a3e76ddc8ad92ecf1c6f10f03dd916ad2fbddacae7e6dc257093b48bff",
+      "target_sha256": "e4543dacfcc1845722bedfb71decc04dbb9ce3811c29e2275dde8e54e64eaaca",
       "patch": "004.patch"
     },
     {
@@ -1608,25 +1608,15 @@
       "path": "romfs/System/Resource/ResourceSizeTable.Product.111.Nin_Ounce_NVN2.rsizetable.zs",
       "kind": "zstd",
       "source_sha256": "7bf29d025abf55fc95743433e4369fb745e9b3480561b37d3596e367215da326",
-      "target_sha256": "50f2343bff2e03d4225aa1ae6f1b69596ab2008d8fc0eb3460260db82f80670c",
+      "target_sha256": "d6878e39aeb6c3245664ded7911321679fda2c90576744716cd74f4a19998714",
       "dictionary": 0,
       "patch": "201.patch"
     },
     {
-      "path": "romfs/UI/Layout2Archive/Common.Product.100.Nin_Ounce_NVN2.blarc.zs",
-      "kind": "zstd",
-      "source_sha256": "500635f34cb1c044407fd9fca7fad5ea4f4a43b4dac8455f50fbe243bbaa7788",
-      "target_sha256": "1d52a3c9db59ca32cb9d7578fc12aa92f191aef227254c34cfdb0c40b99457f0",
-      "dictionary": 1,
-      "patch": "202.patch"
-    },
-    {
-      "path": "romfs/UI/Layout2Archive/Common.Product.100.Nin_Ounce_NVN2.bntx.zs",
-      "kind": "zstd-blocks",
-      "source_sha256": "814cebde1c7609ccfcd00a1185a37a4c96a0f1d16dea971ff166c49a103e0585",
-      "target_sha256": "45d9a772b09baa1daa22021ed4d8472f11b452be57bff79613227b31b1404e55",
-      "dictionary": 1,
-      "patch": "203.patch"
+      "path": "exefs/subsdk1",
+      "kind": "raw",
+      "target_sha256": "8401d2973096c8d5c7e0d0631187f4e23fec6847729e1fed287e433b444c5b87",
+      "patch": "runtime-hud-module.patch"
     }
   ],
   "stamina_settings": {
