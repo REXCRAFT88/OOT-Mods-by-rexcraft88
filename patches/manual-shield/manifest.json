@@ -1,6 +1,6 @@
 {
   "name": "Manual Shield",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
@@ -187,7 +187,7 @@
       "path": "romfs/System/Resource/ResourceSizeTable.Product.111.Nin_Ounce_NVN2.rsizetable.zs",
       "kind": "zstd",
       "source_sha256": "7bf29d025abf55fc95743433e4369fb745e9b3480561b37d3596e367215da326",
-      "target_sha256": "96f18f3d416c164f09466acf4f4cb4e489efba63feb0c243e6f3ba25a7886435",
+      "target_sha256": "4b9fb203e4e90e66de4e2bbc95ffa1aaedd15c8b43fb729e17c5fe36df8407a7",
       "dictionary": 0,
       "patch": "023.patch"
     }

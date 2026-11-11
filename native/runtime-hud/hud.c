@@ -62,7 +62,16 @@ static struct{void*handle;B config[0x100];}calls[64];static W call_count;
 void*hud_prepare(void*handle,B*config){
  hud_debug[0]++; B*r=(B*)q(config,0);if(!r||w(r,0)!=0x004c4955)return config;
  const char*asset=(char*)q(r,0x18),*instance=(char*)q(handle,0x30);hud_debug[1]=(U)asset;hud_debug[2]=(U)instance;
- W kind=eq(asset,"PlayerStatus_00")?1:eq(instance,stamina)?2:eq(asset,"PaShortCutSlideList_00")?3:eq(asset,"ShortCut_01")?4:0;if(!kind)return config;
+#ifdef WHEEL_UI_ONLY
+ W kind=eq(asset,"PaShortCutSlideList_00")?3:eq(asset,"ShortCut_01")?4:0;
+#else
+ W kind=eq(asset,"PlayerStatus_00")?1:eq(instance,stamina)?2:
+#ifndef HERO_CORE_ONLY
+ eq(asset,"PaShortCutSlideList_00")?3:eq(asset,"ShortCut_01")?4:
+#endif
+ 0;
+#endif
+ if(!kind)return config;
  hud_debug[16]=(U)r;hud_debug[17]=(U)handle;hud_debug[18]=(U)config; B*replacement=0;W i;for(i=0;i<resource_count;i++)if(resources[i].source==r&&resources[i].kind==kind){replacement=resources[i].copy;break;}
  if(i==resource_count){if(resource_count==24)return config;replacement=kind==1?rootclone(r):kind==2?gaugeclone(r):wheelclone(r,kind);if(!replacement)return config;resources[i].source=r;resources[i].copy=replacement;resources[i].kind=kind;resource_count++;}
  for(i=0;i<call_count;i++)if(calls[i].handle==handle)break;
