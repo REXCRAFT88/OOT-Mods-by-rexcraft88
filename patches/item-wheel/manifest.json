@@ -1,6 +1,6 @@
 {
   "name": "Item Wheel",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "title_id": "0400486024DEC000",
   "update_version": 131072,
   "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
@@ -9,35 +9,187 @@
       "path": "exefs/main",
       "kind": "nso",
       "source_sha256": "7db9ddfda088c22d219ef13496decd7077c68cd67d4b37f53f4ac46a082768f2",
-      "target_sha256": "e71e58588b1d05c8d4c9bc8980ca1a4f6c0c6dee9ffb18e8578f963c2a51fc15",
+      "target_sha256": "ceb49f90f826233b6517ed7b93cf6478b609c0918c812a8807ec90d5a9fd55f3",
       "patch": "000.patch"
     },
     {
       "path": "exefs/subsdk1",
       "kind": "raw",
-      "target_sha256": "1fa359a425f819d30af2cb95dd6685c7ef927a4784a7c689817c1a323f9f12a9",
+      "target_sha256": "7b7ff5df44c398344242f52b0b2ab8a917ebdf35653dc866016c67d1da1ed091",
       "patch": "001.patch"
+    },
+    {
+      "path": "romfs/GameData/GameDataList.Product.110.byml.zs",
+      "kind": "zstd",
+      "source_sha256": "a704d680e7e1ac249c13d7407d6ae5bebabeb672e51dcc6d11be4dec6f553c99",
+      "target_sha256": "ef62c6b4d9a092823da5c6507b546802b594edc295733a14071a20ee58a81e02",
+      "dictionary": 1,
+      "patch": "002.patch"
+    },
+    {
+      "path": "romfs/Mals/CNzh.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "853b3433f8c8b66cba6349736bfe8c6e6918a2cb4ca72423bca9465f68bfcd99",
+      "target_sha256": "6945ad2b6f08f345c6405909951887fb6be482dc1de0164eb23dc6dc74f5961e",
+      "dictionary": 1,
+      "patch": "003.patch"
+    },
+    {
+      "path": "romfs/Mals/EUde.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "cc646554ad3278c31bcb99758e7c0c181ea0bc188720e4f78fad6345ba7d88b5",
+      "target_sha256": "9907d3ceca4d9e730adca7151d4b24045ca3c9854e3a983850352822ab8b0eeb",
+      "dictionary": 1,
+      "patch": "004.patch"
+    },
+    {
+      "path": "romfs/Mals/EUen.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "4f2256f9809df4ee055c21942b351b25cac2bb38bd4ff0fc3209949e92dfa62f",
+      "target_sha256": "bc3615b5c82d6bb4a4b27ad7f16484943d46b61cd3f8832804c48b463025352a",
+      "dictionary": 1,
+      "patch": "005.patch"
+    },
+    {
+      "path": "romfs/Mals/EUes.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "e9c1810e5ff471cca3e15f4c11d16290bd40a4b80c909657401904fbd984c0a3",
+      "target_sha256": "7dc4359beae4dea2501aaebd074003e394a1d33f47ef92d2efb39914193113d1",
+      "dictionary": 1,
+      "patch": "006.patch"
+    },
+    {
+      "path": "romfs/Mals/EUfr.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "8090de22d60a0d0e68047c7605ad396559ea6ad0766b65069e6d8f2c456b99de",
+      "target_sha256": "0b3fba7e05a55185c00c0c01e8afbcd6eef6d8f2dff1ff166da2f8ee98d5e330",
+      "dictionary": 1,
+      "patch": "007.patch"
+    },
+    {
+      "path": "romfs/Mals/EUit.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "b1352e1a993d4796826118ed88e862ef1fcc4544f40ddc52202826b43b06072f",
+      "target_sha256": "d74471a601b01dec00b4519f2d2a01a56299cda061f7729d9ed605730ef0b6e6",
+      "dictionary": 1,
+      "patch": "008.patch"
+    },
+    {
+      "path": "romfs/Mals/EUnl.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "c3c15b0f79aecc5bb38f81f46c47b78ae57a7b5ca206151332b926bd372f3940",
+      "target_sha256": "4b6d927da28ad39a8d31807dd73ddb7549f76d1d6d4462c666270eb2def6c93d",
+      "dictionary": 1,
+      "patch": "009.patch"
+    },
+    {
+      "path": "romfs/Mals/EUpl.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "0011f52e2642d00b9b5ec6f0889969d65b1cab4f399fe68a2060a3ed58d7c6a5",
+      "target_sha256": "c6ae0be4e7613f2a3dc6cbe08b31cc7c541a461e43732a844a40068212d6d016",
+      "dictionary": 1,
+      "patch": "010.patch"
+    },
+    {
+      "path": "romfs/Mals/EUru.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "cbe62c1a88f40efb270b4e8621c4f95bec98b7afebb6bb77c641c2447ae0f48f",
+      "target_sha256": "85128fdbdf30a407a0747628891d4526c463edd029376fc3d801cdca9138f013",
+      "dictionary": 1,
+      "patch": "011.patch"
+    },
+    {
+      "path": "romfs/Mals/JPja.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "d029220ddd96e6a843a2aac8c9c4c73f72cfb90be630729797dd1b2a6f62c790",
+      "target_sha256": "24eb66646030a26c6cf5721c3c4c7296f2b569ca0077d4af3cad7c888916edfd",
+      "dictionary": 1,
+      "patch": "012.patch"
+    },
+    {
+      "path": "romfs/Mals/KRko.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "17454be933e09dbcf3ec5f35b216aa497cdd26f5f5d19db889809acbca9a5db1",
+      "target_sha256": "df36dcdfa773f3a83edd61b4f15f8a0c67c4917fdcbb37302f617c014c300798",
+      "dictionary": 1,
+      "patch": "013.patch"
+    },
+    {
+      "path": "romfs/Mals/TWzh.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "10bd9a6739fa2fa774ee0097c6132fa6e85671fa91869f51c434d22399723c2d",
+      "target_sha256": "9dd518350e68a1d327e600804586f28f011068c6f9d6a4380a52ed1f756d1d6f",
+      "dictionary": 1,
+      "patch": "014.patch"
+    },
+    {
+      "path": "romfs/Mals/USen.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "3a0ebe63ebb4f1538746216f1b53a0dc1366fbe70b1628c735fb9a04a1c48d0d",
+      "target_sha256": "768a72edd00f44192844f0ff602387b2009a645f9f30ccbdc88eb6cae746bdb0",
+      "dictionary": 1,
+      "patch": "015.patch"
+    },
+    {
+      "path": "romfs/Mals/USes.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "977e369d9aaea3d63e48df9272750ccd95befc386a0dbb2c4a79d32f01b507bc",
+      "target_sha256": "8f414be4af78748bea086fe9def6e7733fa881be35d46214610c31100326baad",
+      "dictionary": 1,
+      "patch": "016.patch"
+    },
+    {
+      "path": "romfs/Mals/USfr.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "a0519f363daf4ec835edb6a79c2ff316570c8165fafe42bf28044b7058c9ead1",
+      "target_sha256": "5d5de86bd20cd377f6ae54e5fa9f52fa7e62f50b4edbc8369eaf1db81435189e",
+      "dictionary": 1,
+      "patch": "017.patch"
+    },
+    {
+      "path": "romfs/Mals/USpt.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "5da16cb3c19ecc65c3aff5e09a4ceb936d781c2f87b719e7a168d7287e618acf",
+      "target_sha256": "6bb642ef0058cfed2fd1daead48783536a5bbdb0271ac7ef20124b0e91ba0ef6",
+      "dictionary": 1,
+      "patch": "018.patch"
+    },
+    {
+      "path": "romfs/Pack/Bootup.Nin_Ounce_NVN2.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "928c65bbeb117797e070a12b838ac427d6083d163072a1137c07f81905cc41e9",
+      "target_sha256": "0212fe5ddc542532083b3675a667d0ca5a34e7a85ad14fb08159b7c9e3fc8758",
+      "dictionary": 1,
+      "patch": "019.patch"
     },
     {
       "path": "romfs/Sequence/Event.module.ainb",
       "kind": "binary",
       "source_sha256": "7fc67299fac2fd52655c785f26ffb4f577f049a3ac23f0a00afb75c042ab5f85",
       "target_sha256": "708b28ed30336f09efaa22e1d4e7a65a41e19f39a2859e3fcfb5915bd0c72119",
-      "patch": "002.patch"
+      "patch": "020.patch"
     },
     {
       "path": "romfs/Sequence/ShortCut.module.ainb",
       "kind": "binary",
       "source_sha256": "6febde37b8527c9b1950f022ae33156f3e7721074df48dbf4abef53c2d8a3d8a",
       "target_sha256": "68d7c0a9b4fb1380e3a6567fac5d3b5cae7c2a8ad13e2e17b25eb0d2b7eef9b7",
-      "patch": "003.patch"
+      "patch": "021.patch"
     },
     {
       "path": "romfs/Sequence/UpdateShortCutOpenHoldFrameCounter.module.ainb",
       "kind": "binary",
       "source_sha256": "78b3841fc50a15d2f6b73fe0a75f4bbcbaea2bbdaaa521e70559985928d6ee60",
       "target_sha256": "e5f35011cc17a0e21dd584e9b5dd322229e3937aa0c3b235bd15df38cd8a74db",
-      "patch": "004.patch"
+      "patch": "022.patch"
+    },
+    {
+      "path": "romfs/System/Resource/ResourceSizeTable.Product.111.Nin_Ounce_NVN2.rsizetable.zs",
+      "kind": "zstd",
+      "source_sha256": "7bf29d025abf55fc95743433e4369fb745e9b3480561b37d3596e367215da326",
+      "target_sha256": "b1cf59bf11c1187be62c32977be9d05872d333f0f110b2980b4555195e23ee6c",
+      "dictionary": 0,
+      "patch": "023.patch"
     }
   ]
 }

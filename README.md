@@ -4,7 +4,7 @@ Mods for Project Eglantine / Ocarina of Time, title **0400486024DEC000**, update
 
 Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases), then use **Configure Game > Add-ons > Import Mod from ZIP**. No commands or builder step are needed. Use an emulator with full NUP RomFS and IPS support; the current regression test setup uses Fritchii v5.5.
 
-November 11 compatibility update: Hero without Stamina **beta.9**, Manual Shield **0.1.7**, Item Wheel **0.1.6**, plus new **Hero Core beta.1** and **Wheel + Shield beta.1** packages. Hero with Stamina remains **beta.11**. See [compatibility, combinations and testing](docs/COMPATIBILITY-2026-11-11.md). The new wheel/difficulty/drop options are a separate follow-up.
+November 11 update: Item Wheel **0.1.7** adds a saved **Wheel Bumper: Right / Left / Both** setting in System → Options. Right is the default. See [wheel settings](docs/ITEM-WHEEL-SETTINGS.md). Hero without Stamina remains **beta.9**, Manual Shield **0.1.7**, Hero Core **beta.1**, Wheel + Shield **beta.1**, and Hero with Stamina **beta.11**. See [compatibility, combinations and testing](docs/COMPATIBILITY-2026-11-11.md). Hero difficulty and recovery-drop options are still in development.
 
 **Upgrading from an older `heromode.nup`? Use your original unmodified NUP with the new Prepared Add-on.** Current releases keep Lichii’s built-in FPS timing fix working through an IPS sidecar; do not stack them onto a previously patched game. See the [illustrated guide](docs/INSTALLATION.md).
 

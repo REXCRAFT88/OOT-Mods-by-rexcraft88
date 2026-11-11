@@ -19,3 +19,9 @@ full_hid_return = 0x3489670;
 main_scheduler_vtable = 0x4b25318;
 frame_resume = 0x2b50de4;
 sdk_full = 0x3c62800;
+
+/* GameData access for the persisted bumper choice and custom menu row. */
+game_data_singleton = 0x4ea42a8;
+/* Includes the GameData pending-write queue before consulting committed data. */
+read_enum = 0x424760;
+option_menu_resume = 0x32ff890;
