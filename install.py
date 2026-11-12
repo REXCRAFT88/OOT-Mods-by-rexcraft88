@@ -99,7 +99,7 @@ def build(source,manifest_path,destination):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--source',required=True,help='Your original NUP, or extracted game folder containing exefs/romfs')
-    p.add_argument('--variant',choices=['hero-with-stamina','hero-without-stamina','hero-core','manual-shield','item-wheel','wheel-and-shield'],default=None)
+    p.add_argument('--variant',choices=['hero-with-stamina','hero-without-stamina','hero-core','hero-unified','manual-shield','item-wheel','wheel-and-shield'],default=None)
     p.add_argument('--output',required=True,help='New empty mod folder; never your source game')
     p.add_argument('--patched-nup',help='Also build an independent playable NUP copy (needed for Lichii NUP loading)')
     a=p.parse_args(); variants=list((ROOT/'patches').glob('*/manifest.json'))

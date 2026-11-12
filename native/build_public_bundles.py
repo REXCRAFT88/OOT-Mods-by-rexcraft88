@@ -14,6 +14,7 @@ if '--regression' in sys.argv:
  variants=[(key,name,'work/mod-regression-lab/candidates/'+key) for key,name in [('hero-with-stamina','Hero Mode with Stamina'),('hero-without-stamina','Hero Mode without Stamina'),('manual-shield','Manual Shield'),('item-wheel','Item Wheel')]]
 if '--wheel-only' in sys.argv:variants=[v for v in variants if v[0]=='item-wheel']
 if '--wheel-options' in sys.argv:variants=[('item-wheel','Item Wheel','work/mod-regression-lab/candidates/item-wheel-options')]
+if '--unified' in sys.argv:variants=[('hero-unified','Hero Mode Unified Beta','work/mod-regression-lab/candidates/hero-unified')]
 if '--core' in sys.argv:variants=[('hero-core','Hero Core (Stamina and Enemy Tuning)','work/mod-regression-lab/candidates/hero-core')]
 if '--combined' in sys.argv:variants=[('wheel-and-shield','Item Wheel and Manual Shield','work/mod-regression-lab/candidates/wheel-and-shield')]
 if '--compat-nov11' in sys.argv:
@@ -66,8 +67,9 @@ for key,name,folder in variants:
  if '--core' in sys.argv or '--combined' in sys.argv:versions={key:'0.1.0-beta.1'}
  if '--compat-nov11' in sys.argv:versions={'hero-without-stamina':'0.1.0-beta.9','manual-shield':'0.1.7','item-wheel':'0.1.6','wheel-and-shield':'0.1.0-beta.1'}
  if '--wheel-options' in sys.argv:versions={'item-wheel':'0.1.7'}
+ if '--unified' in sys.argv:versions={'hero-unified':'0.1.0-beta.12'}
  m={'name':name,'version':versions.get(key,{'hero-with-stamina':'0.1.0-beta.6','hero-without-stamina':'0.1.0-beta.4','item-wheel':'0.1.4','manual-shield':'0.1.2'}.get(key,'0.1.0-beta.1')),'title_id':'0400486024DEC000','update_version':131072,'build_id':'E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348','files':files};
- if key in ['hero-with-stamina','hero-core']:
+ if key in ['hero-with-stamina','hero-core','hero-unified']:
   from stamina_settings import DEFAULTS
   m['stamina_settings']=DEFAULTS
  (out/'manifest.json').write_text(json.dumps(m,indent=2));print(key,len(files),'files',sum(p.stat().st_size for p in out.iterdir()),'patch bytes',flush=True)

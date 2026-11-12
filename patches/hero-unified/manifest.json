@@ -1,0 +1,1610 @@
+{
+  "name": "Hero Mode Unified Beta",
+  "version": "0.1.0-beta.12",
+  "title_id": "0400486024DEC000",
+  "update_version": 131072,
+  "build_id": "E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348",
+  "files": [
+    {
+      "path": "exefs/E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348.ips",
+      "kind": "raw",
+      "target_sha256": "aaa77ca480d44aa4fa6e34c91c6a4ef72bd7eefd60b003ecd1bd27dafb79b1fb",
+      "patch": "000.patch"
+    },
+    {
+      "path": "exefs/main",
+      "kind": "nso",
+      "source_sha256": "7db9ddfda088c22d219ef13496decd7077c68cd67d4b37f53f4ac46a082768f2",
+      "target_sha256": "932b3ce2bffa1c40c6681cea20a9da51c73996e80091b5f7d23009838fcdd5c3",
+      "patch": "001.patch"
+    },
+    {
+      "path": "exefs/subsdk1",
+      "kind": "raw",
+      "target_sha256": "45ed3335110a70a258c42c628b28c2dc24166eb939719186d4933c97584469c4",
+      "patch": "002.patch"
+    },
+    {
+      "path": "romfs/GameData/GameDataList.Product.110.byml.zs",
+      "kind": "zstd",
+      "source_sha256": "a704d680e7e1ac249c13d7407d6ae5bebabeb672e51dcc6d11be4dec6f553c99",
+      "target_sha256": "4a50bfafb6c4bc1bf4935831f87645b7b791219c09c83ca36b74d1ea0c5ed360",
+      "dictionary": 1,
+      "patch": "003.patch"
+    },
+    {
+      "path": "romfs/Mals/CNzh.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "853b3433f8c8b66cba6349736bfe8c6e6918a2cb4ca72423bca9465f68bfcd99",
+      "target_sha256": "b42d9918386e9655499e173c39f9f723b317f34ae68ae6444e680becd635e004",
+      "dictionary": 1,
+      "patch": "004.patch"
+    },
+    {
+      "path": "romfs/Mals/EUde.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "cc646554ad3278c31bcb99758e7c0c181ea0bc188720e4f78fad6345ba7d88b5",
+      "target_sha256": "d53869d06a7002f731272edeb7f69a72f1e32ea3befd4fe7b9baefe84e8c4006",
+      "dictionary": 1,
+      "patch": "005.patch"
+    },
+    {
+      "path": "romfs/Mals/EUen.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "4f2256f9809df4ee055c21942b351b25cac2bb38bd4ff0fc3209949e92dfa62f",
+      "target_sha256": "1bb452ef10de762a598c12f53e2dd60b97dfd4096fe2e18f5ff600b6827af21f",
+      "dictionary": 1,
+      "patch": "006.patch"
+    },
+    {
+      "path": "romfs/Mals/EUes.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "e9c1810e5ff471cca3e15f4c11d16290bd40a4b80c909657401904fbd984c0a3",
+      "target_sha256": "50afaf68be7057ff600087121361436a534c7d5a1673f5df052ad82a8b92a57a",
+      "dictionary": 1,
+      "patch": "007.patch"
+    },
+    {
+      "path": "romfs/Mals/EUfr.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "8090de22d60a0d0e68047c7605ad396559ea6ad0766b65069e6d8f2c456b99de",
+      "target_sha256": "6a4ec0089484da0de3ac387732011eca68f51a3934f4ca6e67a982827cc2346a",
+      "dictionary": 1,
+      "patch": "008.patch"
+    },
+    {
+      "path": "romfs/Mals/EUit.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "b1352e1a993d4796826118ed88e862ef1fcc4544f40ddc52202826b43b06072f",
+      "target_sha256": "e12ad0e45cf1967904f9b4c19e5d668f401af3d83e96bac8a3bd2e54130ed707",
+      "dictionary": 1,
+      "patch": "009.patch"
+    },
+    {
+      "path": "romfs/Mals/EUnl.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "c3c15b0f79aecc5bb38f81f46c47b78ae57a7b5ca206151332b926bd372f3940",
+      "target_sha256": "3d1c2d2c74f663c99a07e50994b3021a057a4350f7cd897c2dfb5fe177ed2ee8",
+      "dictionary": 1,
+      "patch": "010.patch"
+    },
+    {
+      "path": "romfs/Mals/EUpl.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "0011f52e2642d00b9b5ec6f0889969d65b1cab4f399fe68a2060a3ed58d7c6a5",
+      "target_sha256": "46b52b7500ca4df2d205b3a557d1d8be3132c85a1665824a20091e72447b385c",
+      "dictionary": 1,
+      "patch": "011.patch"
+    },
+    {
+      "path": "romfs/Mals/EUru.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "cbe62c1a88f40efb270b4e8621c4f95bec98b7afebb6bb77c641c2447ae0f48f",
+      "target_sha256": "51d145b6e26d519dd57317936179ed2319209b24187c308858f211716fa73715",
+      "dictionary": 1,
+      "patch": "012.patch"
+    },
+    {
+      "path": "romfs/Mals/JPja.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "d029220ddd96e6a843a2aac8c9c4c73f72cfb90be630729797dd1b2a6f62c790",
+      "target_sha256": "4cfb775bc7d091b70495db354bf66930c3a192b30af6b24f78e9ff6e3130a365",
+      "dictionary": 1,
+      "patch": "013.patch"
+    },
+    {
+      "path": "romfs/Mals/KRko.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "17454be933e09dbcf3ec5f35b216aa497cdd26f5f5d19db889809acbca9a5db1",
+      "target_sha256": "ae93c0d62c15103b76600bb52d42b1dbe789a713a953a6af7962463946c06e31",
+      "dictionary": 1,
+      "patch": "014.patch"
+    },
+    {
+      "path": "romfs/Mals/TWzh.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "10bd9a6739fa2fa774ee0097c6132fa6e85671fa91869f51c434d22399723c2d",
+      "target_sha256": "a6fd586ff49c6ac37c8421a2ca0feadfaf320fe2b42f0a089c6033c32fb200be",
+      "dictionary": 1,
+      "patch": "015.patch"
+    },
+    {
+      "path": "romfs/Mals/USen.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "3a0ebe63ebb4f1538746216f1b53a0dc1366fbe70b1628c735fb9a04a1c48d0d",
+      "target_sha256": "8c9845df17d1dc14910bb670280ccce4ed351997c987194e10ab2d910d0859eb",
+      "dictionary": 1,
+      "patch": "016.patch"
+    },
+    {
+      "path": "romfs/Mals/USes.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "977e369d9aaea3d63e48df9272750ccd95befc386a0dbb2c4a79d32f01b507bc",
+      "target_sha256": "d6444b7297457ff9d340f6b9bf0f2edefd0f849276549359b0118b96b3a95a99",
+      "dictionary": 1,
+      "patch": "017.patch"
+    },
+    {
+      "path": "romfs/Mals/USfr.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "a0519f363daf4ec835edb6a79c2ff316570c8165fafe42bf28044b7058c9ead1",
+      "target_sha256": "d1f93e27bee5f678396be18a62a7e268f06922865a1fdee6e5e1425d349ab5d5",
+      "dictionary": 1,
+      "patch": "018.patch"
+    },
+    {
+      "path": "romfs/Mals/USpt.Product.110.sarc.zs",
+      "kind": "zstd",
+      "source_sha256": "5da16cb3c19ecc65c3aff5e09a4ceb936d781c2f87b719e7a168d7287e618acf",
+      "target_sha256": "3789acf4d8168f3ea046f2cc208668a0ea26cbceea9431dff0ec326941e12373",
+      "dictionary": 1,
+      "patch": "019.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/BeamosBeam.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "66760c81b399032d944ae9945d2e3d461080ff56205033b9babbbcb0d6fadd9d",
+      "target_sha256": "d8f83c523bced96bf29eb107f947afe84afdb73cf03080b5c2790b4955313b1e",
+      "dictionary": 4,
+      "patch": "020.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Bubble_Green_Bullet_Aura.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ffe3da065bf2b51f2cc682b6f48a09f502f4c1ffdf6c7dacd4077f51e52a9308",
+      "target_sha256": "06a7d46bbbf135117975c61e195331c51cea25ee45388a2736a9bb8a89b61ee8",
+      "dictionary": 4,
+      "patch": "021.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Dodongo_Bullet_Fire.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "5f6667e56c5fe638760e1206ae11df481ad33d50793ae59f2de3c30f26e8d4c7",
+      "target_sha256": "6116d2ece8cfd04c919fcaa1cd0f400df53931129c33ac5118619a69c0cdf9e3",
+      "dictionary": 4,
+      "patch": "022.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossDodongo_Bullet_Fire.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "fb62095dd081e5eb7a8c73a15c4ce70992cd8ae01fca6a6a5db2462e06ea71e4",
+      "target_sha256": "ca18ae45f7f18feda1fa0f75b1c0838dfe2fe37e002a9b3d0e505fef2e7843a5",
+      "dictionary": 4,
+      "patch": "023.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossDodongo_Bullet_StrongFire.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9c298eb98bff2800cf0e36ccab8c6a07ca36b1cd71ac6708883c1463128e61d6",
+      "target_sha256": "cc11129c62d8267ec149137a2a7092aa89fd20c32140593ee7a83e7ceb3ae9b9",
+      "dictionary": 4,
+      "patch": "024.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossGanon_Bullet_ShockWave.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "6068ca9cc1ff6efef4a5a2e1312fe69cf0f7b22047a22ceea1e94ecc65a394f0",
+      "target_sha256": "a84e6ce4adedb078d9ff3d6da8b9be3ee407be57d1c3b23ed2b96c98ead6c79b",
+      "dictionary": 4,
+      "patch": "025.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossGanondrof_Bullet_ChargeLightBall.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "b53eb4e31a0a44d5634fc0e49bcedcb67d15b5fe31be5742b539a0e8f2b66606",
+      "target_sha256": "fe2510c4d0c62000bfa4d35fb101fdec9a0d6620ac3f37a0fb8097ec139fc409",
+      "dictionary": 4,
+      "patch": "026.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossGanondrof_Bullet_LightBall.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ca90df8716839dc9eb050e6d653a63474c8b3f7bf6b7989a3b63a2220d288bbd",
+      "target_sha256": "05e415c26c8218f3fbc3a60f9e35730689a4cb0f658f181d572fb395cd8ffd33",
+      "dictionary": 4,
+      "patch": "027.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossGanondrof_Bullet_ShockWave.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "8d638f95ead10c13d1eabaef1682f91847c85224a9736f96d221115ebae0881d",
+      "target_sha256": "9b23284353900013a450c142e0f890896ade1a5220abb95db6ad87483ab3ef25",
+      "dictionary": 4,
+      "patch": "028.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossGanondrof_Bullet_StrongShockWave.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "3c4bfd08f0a97a985fadb131bcc1fd03eb532369233f43317dbe7efd90a16e26",
+      "target_sha256": "a6a892b582c1bfcb082dd4094d0dd0c9d5f2d06abf6743483b70107dba5f4f0c",
+      "dictionary": 4,
+      "patch": "029.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossPhantomGanon_Bullet_LightBall.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "0fc0e5553e6a76c3e684e87fac9a52d80152d50ec5f723a00d60027a80e3dd90",
+      "target_sha256": "8868854ac0c71f5341b0dff0429595451572f197272833921c5801a653914334",
+      "dictionary": 4,
+      "patch": "030.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossVolvagia_FireBreath.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "352fafebf39f08a89c01bf537f38b532e0e712f476d02f569e2592c3e5dc19ab",
+      "target_sha256": "8e22e4f8236424c58d849a0a0446d27683922fefea9e6618ad9318c37afef76a",
+      "dictionary": 4,
+      "patch": "031.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/DungeonBossVolvagia_FireBreathField.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9a148ce10d9eec1da5938630dd2371982cbbed04f3c548b09fe06be850f118e5",
+      "target_sha256": "76b8e9536972af14e48965b421405795dd3ad9690fc97add9a80088023d4e885",
+      "dictionary": 4,
+      "patch": "032.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Amos.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "19de7025aabb7d82e45dfbfb73e5db9cc470c25ac0e1bcb34b7772e7007f3c59",
+      "target_sha256": "d371ccba4651887368a81695d14105bcfb67537172cd0d4ec9d6565102e0ffa1",
+      "dictionary": 4,
+      "patch": "033.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Amos_AlwaysRespawn.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "7ab722b191449e3fbfe732f3a0d537703592b5850da5c610956b4dc51a8ea3d5",
+      "target_sha256": "9524907ee9444b8c3e8f313e4a26ae5ad2400033b381ca9d1f1af0c26c94c0b5",
+      "dictionary": 4,
+      "patch": "034.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Anubis.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "75895482520d135fa0b6b03d1e60d80bbcd0e25056e56e8d10b997fe0ae9314c",
+      "target_sha256": "aaa67d79de91542163cac7a071a385943e928ede1b8ea92d61598ab7dde42a9e",
+      "dictionary": 4,
+      "patch": "035.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Anubis_MagicField.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "d0bc744c3d3d783de658db6af2c24f4bc26f71a4d08bbec0c3bde219e94225f4",
+      "target_sha256": "c2c5fb558569cff48281e3f50a21e3e3139769f886e79d3b7e8c9b7241048ce0",
+      "dictionary": 4,
+      "patch": "036.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_BabyDodongo.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "6615c054ce1493ec8cc48e600157ce61448d2a850a051598ee4d02a38a4b8eeb",
+      "target_sha256": "5d3570df45efd32a0dbec4afd4e31d3d6122abf1120e9debf5fed6d7c33edab7",
+      "dictionary": 4,
+      "patch": "037.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Bari.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "a327a506942436eaf98d4e7338399f60b2c785d9acf2fd3bc66249aa8492d67b",
+      "target_sha256": "ee5654b386fbeb105631b16b321aead66e1dc00d40b9779e163e02121d02f084",
+      "dictionary": 4,
+      "patch": "038.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Beamos.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "20621a1f7043f10daf085d4396df2d1147aa5dec83d5ffdbdca04d604412edfe",
+      "target_sha256": "d1e6fbad68b4faf619f891a566148914ee1571af7e5382d1cf76380527d435c1",
+      "dictionary": 4,
+      "patch": "039.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Beamos_For_High_Place.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "11eaf6e4fa18461091a411fd52b50caa403af047abbbe7851001e29f5d2ce725",
+      "target_sha256": "ec860cfd60bb6fd616ea47dc353d68469a4e056ff4fe4b00d19e910eb28f2964",
+      "dictionary": 4,
+      "patch": "040.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Biri.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "912c09d303fdde5754d1600809d13c914af5ceb0cf14b96e72da3da8b5e07ca3",
+      "target_sha256": "905b39d02fd886eb26d192ec0795bef71b5b99b8f5b1b508b2f297c5a19db927",
+      "dictionary": 4,
+      "patch": "041.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Bubble_Blue.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "45a1f3a75159682815eb40f5744ba8b01bbed964fe56b353f7e865e0d9c188bb",
+      "target_sha256": "fac0f2535ba25c7d0c9ee051ef4bfdd8d6e12b6befc8b6883c5d8c3e255d27b0",
+      "dictionary": 4,
+      "patch": "042.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Bubble_Green.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "86cd64176a73c4a28ec2a995715ea7048a914fd7f39535a1fef7de91c64c865d",
+      "target_sha256": "b77eb31f8d95240d9fa82a16495a9ec42f29fc14807b0c0cb0567a7040731e1d",
+      "dictionary": 4,
+      "patch": "043.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Bubble_Green_Big.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "58f4d7c63803921899e453721eb50e202d78c873a69e62b596f815f51376a461",
+      "target_sha256": "110bde17dd7e4a283c92dd94b02f453671c01e8419d1f976c752fe6c41fdf000",
+      "dictionary": 4,
+      "patch": "044.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Bubble_Red.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "01da96022e9f7c48bbc343fef82c5ec8aa6018ea8d2c9d2e3ec6412715a39deb",
+      "target_sha256": "cabc0a18b3c7d337979bb7990031a95bfd5eaa42d1c76ef6f9eb56db2a14ef5f",
+      "dictionary": 4,
+      "patch": "045.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Bubble_White.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "78728a109642c3a1412bb703ff93ab85548162051c37a76020fb937d95ba8ac3",
+      "target_sha256": "d3c5ea31c7b297546e36e7b75885d534a538cf1406bd8821ed71b65979a61ac6",
+      "dictionary": 4,
+      "patch": "046.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_CrazyFloorTile.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ea04bdac4369fb0b0826c67b4edddb2c7974900496cf5e9b8ccfdb18ab00fe28",
+      "target_sha256": "023f0ac55c328c63e5fe076b468c3d644d028c486d27bb7baa18fc748c2462cc",
+      "dictionary": 4,
+      "patch": "047.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DeadHand.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c66d7d9f6e0bd2759cca08d01469fd9889bf93db76636648738163b0e49126ec",
+      "target_sha256": "70c07cd9c2ffbfb5a4f94487db76755b96739ff58b7f6abb3bb11d1710640d38",
+      "dictionary": 4,
+      "patch": "048.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DeadHand_Hand.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "df2cd3c18bfd20aecb637db45176a3c46a4c23fcbb4374ad73cdcf1200e4bc93",
+      "target_sha256": "df5927527c6c1059ca47fa5ef81cf43240ad471b5b379ef1fd0bf9235c51a14d",
+      "dictionary": 4,
+      "patch": "049.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Dekubaba.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "3eb0bb3410d32f6a482e13cd5ecaead32268bc78565393fab4ef76f8f08027ba",
+      "target_sha256": "a8de3d1d11a20a11aee32a7abf766944291670324974603ee6da36438ec14d81",
+      "dictionary": 4,
+      "patch": "050.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Dekubaba_Withered.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "dacdec317361f704cf1007de74240c170cc9688565084d00fce39a081e497479",
+      "target_sha256": "b24a0cf9d4146dac1cf3ee77a7e9f23fc9e039fd9eadbb37e5293a2af893d9da",
+      "dictionary": 4,
+      "patch": "051.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Dinolfos.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "3a229dd412b79de329db29bba7ea5ca60703678ec8b29a59577678f47f885037",
+      "target_sha256": "daa70b1da414707a645a6f28657b37b005a44a85a547cc3f918d6f9462f6a655",
+      "dictionary": 4,
+      "patch": "052.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Dodongo.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "b1909cdf1234e0a270e3d7b8676abdb7f118ab2febd7076a042d3993abbf1057",
+      "target_sha256": "b5080da7f09870c99e0a48c3d731cba904719242f2d3404be9667d965bf9c239",
+      "dictionary": 4,
+      "patch": "053.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Barinade.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "70adb57a9deb29818148f1c2f41bee37cc30757c04474cb098c6c89979113aa3",
+      "target_sha256": "e6580d3386fec3d74ab1d6775fc11dbdd772974e31f6a898ec8a138ac3772372",
+      "dictionary": 4,
+      "patch": "054.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Barinade_Beam.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "d2bd54b73765d77b6234e2b4093738f0a47f01b212ef48bf135d86e1ee12cdf5",
+      "target_sha256": "aa1b21005d848771465a35f8a6d349ccc34b03fa53df47c7e4845c70bd3223f2",
+      "dictionary": 4,
+      "patch": "055.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Barinade_Jellyfish.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9001229fb7d76b892ed215794007bf33c0c35c3db5d82800dd6f9a6f54c9ef52",
+      "target_sha256": "05c25e19a04d4934788a1a3bbe3713f1977acaaa900ee92049af2f1eb68baca6",
+      "dictionary": 4,
+      "patch": "056.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_BongoBongo.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "e29a55f3d5537088c59380fcda6135ad0b53d08bf5f9abc45d7f25be5ec947eb",
+      "target_sha256": "d3e60cb112a2462e68660dc1a4543c35202175780329e314441eaaf0336dc261",
+      "dictionary": 4,
+      "patch": "057.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_BongoBongo_LeftHand.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "d040ca550d03377c418a65797693d6f5d5e992a890e4d760dd59f03d9a3baa9a",
+      "target_sha256": "8c38d2d8ca78afd96fda0843cdd8b9cf9e858412b831ae8e560b4c5096c9aa7e",
+      "dictionary": 4,
+      "patch": "058.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_BongoBongo_RightHand.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "a954e81716349e4e1e86608cfdfad73108303b03e5ca031e55d43a814f1d2690",
+      "target_sha256": "08d09a27eb3b818a54011a60c7be274dac4aa333450734c2bdbedd136d86ccc7",
+      "dictionary": 4,
+      "patch": "059.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Dodongo.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ee79572ed5f0147247e9b9937c2595f430a7960507f7e9a68cb6dc2fb01e4e52",
+      "target_sha256": "cea8d4f0322875653f5b2f0913eff9c85c9025ccbedbf30b3ac7d3051b64fc5c",
+      "dictionary": 4,
+      "patch": "060.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Dodongo_SpawnBabyDodongo.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "5108cb04592b6124e722bb3714bd3cb9e7ca0931f28bf1fa097ee810ed4e44d1",
+      "target_sha256": "1e75ef3dce16e070c55f0057adf0bffeab0789a9672392c37c0b53530c1b8d8e",
+      "dictionary": 4,
+      "patch": "061.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Ganon.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "5f7ce86d353159fa06fb7d0ca02e0a4dd8ea87b94bca3958a61ccf7a891d3b92",
+      "target_sha256": "20de8aedd52899c7d1a44c8f762b4e9e3e71c841125b2360a8638dcf330ffed7",
+      "dictionary": 4,
+      "patch": "062.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Ganon_SecondHalfBattle.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "e8ffe1c2e0c6daffbc5da2c8e20294370ab666bd771baa9c68d11aa18652a981",
+      "target_sha256": "c307c4951157731fd05dc473a9f77d6b509838a5fbd47d17b8740a588dbdf310",
+      "dictionary": 4,
+      "patch": "063.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Ganondorf.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9f05cd417151711150df74d72f0f7b9cbc948ac11201efbf892350ffd7da8b86",
+      "target_sha256": "e99f476c3c4bbbb853c6dc5fe84e2948292fc1aa5d332941153926dc7db0c263",
+      "dictionary": 4,
+      "patch": "064.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Gohma.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "1583c0f0595967739d0f8fdc1213029b5cc7a6a05a681ef9846b61d83d3c7441",
+      "target_sha256": "45eccb0ea858c0432bbd1ccf3e5d24d75a8d7557e23bcddf8766d99c4a85482c",
+      "dictionary": 4,
+      "patch": "065.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Gohma_Egg.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "b6b03d05463077491ca7d1b3fc6d5ba1abd1e3a781ff0ceec1feeaef36714089",
+      "target_sha256": "fe5f76f9823d3652a38c9006551291fa8b6b5f4da312570bba41811e0e34311e",
+      "dictionary": 4,
+      "patch": "066.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Kotake.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c6181b7b56b597b2af2aa638a5c9d8715bd5880e4cebbe1819d3175cccca86c9",
+      "target_sha256": "8ce4b6374934a9656f6b0fce8394dfa502e95c17ff229eed48bdd97111a6a1d1",
+      "dictionary": 4,
+      "patch": "067.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Koume.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "95001729ec4bd65d855e93baccb7fb01c1f92f365283df041b38b777ac40b181",
+      "target_sha256": "5b896e7a1b6c5f823822e78cf3f4e5247502b3dcd1861794a04277b8bb85edf5",
+      "dictionary": 4,
+      "patch": "068.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Morpha.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "2f2bc2a36d36cd9a266e5672b63a1fe8030fe52021a2834cc5ca4e9aad0725dd",
+      "target_sha256": "b2212adfc0076e6f33427774ab5b58601e3048a0f2e74dcc03b434566c75f5f5",
+      "dictionary": 4,
+      "patch": "069.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Morpha_Tentacle.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "4f2fc773ded4cb8ba494c785722960d93e1aaaa16bdf7380403b8d9d2f66ce24",
+      "target_sha256": "0594a51c97693f3ad68fab00f0602375a3c6c1b916c76defafe5b4f2f6a3b443",
+      "dictionary": 4,
+      "patch": "070.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_PhantomGanon.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "b850d2a7fa07b985e39178392f92872b0beefeacb4e8203f32df77ea0e718952",
+      "target_sha256": "64feb685f654ae41c93a488129dc776371ee0de93941390c211c2db2fcd050ab",
+      "dictionary": 4,
+      "patch": "071.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Twinrova.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c626ab3ca26bb547bb1a1808b7feb6c1ea8972adce0daa705cab461ac4e7e1a8",
+      "target_sha256": "68154e5664f5885aea548c2df0b7617f9e9fdcbcd00b846aca8092613c106c12",
+      "dictionary": 4,
+      "patch": "072.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_DungeonBoss_Volvagia.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "f189dafda0835d9c689f5f6716c8a838c1bf71b2d3dc34192a65ff9fe49947bc",
+      "target_sha256": "03b3f3665c66c910eaac7d63ce9eb9d584e3fc69a68ec3dbfaa0c70750f48f6e",
+      "dictionary": 4,
+      "patch": "073.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Floormaster.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "0a1765cd5cbecd676edb833aaed5405031c6595723e7e4fa5b1319007192f378",
+      "target_sha256": "e405ccb1d13c3077f91feb55e7b4819b36b51fe2a084083bc93e069bfb2de4e8",
+      "dictionary": 4,
+      "patch": "074.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Floormaster_Little.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "8137ca9db3b31c19c4e221f9458485f3f6e25c9f2917f2e08540ddab6ccb5306",
+      "target_sha256": "6ebc3aab18eff8d8d70426d7f15011b9e4f1ca31430d7b46e699e2b2083d178b",
+      "dictionary": 4,
+      "patch": "075.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Floormaster_Little_Truth.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ad7c37264b35dcacfed26068e45b500e2fb52bf247e31aa760117306c4445093",
+      "target_sha256": "7b1b6d323cd6e117f48aae928a04e9a0e3d6a78c38ab89750b7ce1248ee41396",
+      "dictionary": 4,
+      "patch": "076.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Floormaster_Truth.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c0eff1a9076e5512503b398696df647e3d494cc48adedf2f214d29346e6dcfe4",
+      "target_sha256": "480a02a21ea9ea9ecc136f103b22f1070839d9d39ac1dd91624e0d7dac0908d2",
+      "dictionary": 4,
+      "patch": "077.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_FlyingPot.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "54fc2e34488e92ab10aee533199bb110dcd5b9d5067dfaa2b159da80612b2a0a",
+      "target_sha256": "4a6828452050a0738a52c085c3eb1c6562969804486d1b28fbef13fa9dde9d46",
+      "dictionary": 4,
+      "patch": "078.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_FlyingPot_IceCavern.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9ac0745f9d036425a57b88b4b8f424d84ac4f8557937eb87eebbe19d603a7c54",
+      "target_sha256": "9326b00c2e9d02229fde827c7af0febf2b515067267b9f87b7d82891575ebe3a",
+      "dictionary": 4,
+      "patch": "079.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_FlyingPot_ShadowTemple.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "4036b8ed2a37ed6dcacea224dd2523833e222129a1a68e404338ddec539c99bd",
+      "target_sha256": "fe130f9ac772533fe9dedefce3740abf6d90b33bfd61cbdee0dd1b25cf1fac89",
+      "dictionary": 4,
+      "patch": "080.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_FlyingPot_SpiritTemple.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "42c14064b0e412e1f5d170b42c8c52f54b60931036c20be9bd0a814593aec9bc",
+      "target_sha256": "19d6945010098dfffc124db60650614be2a79fa96d194242948f6fd96e907162",
+      "dictionary": 4,
+      "patch": "081.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Freezard.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "d77431e41ecc29b6be91b990783f601de21406aa2e4b2879dee9334ce3bf0181",
+      "target_sha256": "a5bfcd5e69a34ced73d2c57752d63a965593e891edae03b1679afa41535cc98f",
+      "dictionary": 4,
+      "patch": "082.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Freezard_Fixed.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "b0bcad4a8a8aee1fe5ae525d1fef2f7c64ebd60b4daef14e82689a1438e69300",
+      "target_sha256": "26b3a1d2ef92040892c2b4c0d611c0a0b6fed505649ae3f92427883909a2d7ec",
+      "dictionary": 4,
+      "patch": "083.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Gibdo.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "213c77f9aefe39c2c90c6b326e9a1c953e5bc78d48baeddd0850062738b587c7",
+      "target_sha256": "be11d83827cce216b1fd8298f70a965371076774631167f827d4a97e04535b9d",
+      "dictionary": 4,
+      "patch": "084.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Gohma_Egg.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "4da92043b83e37dbde66fcd3037ddb5b324922dccb040c17f947626200eccd76",
+      "target_sha256": "6e9e7f9b88342163b5412053902f9831fb143a91fa806a678814cfb6a887b369",
+      "dictionary": 4,
+      "patch": "085.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Gohma_Larva.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "5729839852fd96e7196ca2360ad49e433da21f9fa0adb80ed1aaac8291e18660",
+      "target_sha256": "2c0a9ac1878b0d29407d090251845c1fb266458ec1aa00285a666b000ac4dcfc",
+      "dictionary": 4,
+      "patch": "086.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Guay.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "7f9d91431c93d9be602ed0d80248be1285e652aaae3714f4be4abde3fb1a42b8",
+      "target_sha256": "803cf19bf7825f224aad3789c3de7ffb573f2c23eef55de679b0580c6e2f02de",
+      "dictionary": 4,
+      "patch": "087.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Guay_Boss.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "03b2ba825ea403ba07747c40352e0d2e4ae751a75aa54fd535ad45f0fb385832",
+      "target_sha256": "bba2f2539d4f3ee88a3d614ba37d1eb4a13ab71ccb9c68cd33d8dc6c9dd1faff",
+      "dictionary": 4,
+      "patch": "088.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Guay_Fixed.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "8d0994f035f4e1909ad9ae2664ffa54b723aa5859508c9120d63f19ff847a1f4",
+      "target_sha256": "4f8a51193befa4dbc5f641a0b78f9cf36fbc1c54641c8ed35b52e159c9cf3eb5",
+      "dictionary": 4,
+      "patch": "089.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Guay_Flock.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "03c0d3043139e78ff3eae66388b43a12a3515bc2105a9a0ef28b5ad677f9fa82",
+      "target_sha256": "c3d49246691a7819428a4f3b8e2a6c2785ee3904ffb842979e3528558597f7f7",
+      "dictionary": 4,
+      "patch": "090.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_IronKnuckle_Black.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c4364ea15daf2d2ef21ad22070cdfff1fc6433ad4c9ee175a3ae85dab6f47532",
+      "target_sha256": "a79237c38701e7054ba58f63d77abe1d3a648482c8d2fd7d5539ea6e3033204a",
+      "dictionary": 4,
+      "patch": "091.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_IronKnuckle_Silver.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "35624465c6f0cede0f69de4b24be948806abafe766bcdba5bf316e6a39991cdc",
+      "target_sha256": "eb7a31fe0bdc61ce6759c7af793a1b095780f3c4b4a080d5f3e7ec49d87d6a03",
+      "dictionary": 4,
+      "patch": "092.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_IronKnuckle_White.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "75b5867b30eeb3dde945b6bb7d27f40af2626db2f2b86f043054988dfb7a8a43",
+      "target_sha256": "0855485919ea5626b7ee60c62205036706c2da5ec5489f2577268f2813bc0c2b",
+      "dictionary": 4,
+      "patch": "093.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Keese.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "305de781624fcde3c15cb5f5aa342a966047b877b9990f8ff6892458696a72e8",
+      "target_sha256": "5516bce911158dfc66233d2c5a43150cb3e305f20ba14551dfb3e9660a93ab0e",
+      "dictionary": 4,
+      "patch": "094.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Keese_Fire.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "099737853ad2d30c208ee103483676a56e3cb71b6d3ab36745804026dad02754",
+      "target_sha256": "cb9fe7dea695f5ed5ef5935863467c6b7b6348c4833a0bd10f038eb049b4627e",
+      "dictionary": 4,
+      "patch": "095.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Keese_Ice.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "245014325ce24f86584010090764b9e1a8445b05e5d80283c8df4d6a30a26406",
+      "target_sha256": "cba877e21e6aaf69d1b060dd82c97ebab14ac736a1881a598ba21ed77aa83558",
+      "dictionary": 4,
+      "patch": "096.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Keese_Truth.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "3036049c52002d36160724e2dbbb7fddb0998f585f16913b5678225d2dd7c1e7",
+      "target_sha256": "29d57b6811db37ecc07efcea8973d88548af6ab2bf5d059e348983e8e2f6255d",
+      "dictionary": 4,
+      "patch": "097.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Leever.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "d8451aba43d059af7916c7f61eaba68421211f0188d6835d547c1737f8f1f376",
+      "target_sha256": "1c5e1aea7d0a56e2ef0e2d838cab621c75e9bd0d9e447c8835c9257880f6709f",
+      "dictionary": 4,
+      "patch": "098.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Leever_Big.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "fa03211f8403ca9bb5212407c692fc1edfb40b3c68b7fcb9b129ad60873929d0",
+      "target_sha256": "65e976fec1acc98ab0fb8b26e4d3371180792e605dcad5bf0fd57b156d775bdd",
+      "dictionary": 4,
+      "patch": "099.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Leever_Fixed.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "8abb37c4183dd2f26f0a125a2f3a3e68b8574e7d870f98c7682b5cd090ae5139",
+      "target_sha256": "3a208ef08500e68ea50523557fe51a07803fb07c0c398d7955aa11cb9013331c",
+      "dictionary": 4,
+      "patch": "100.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_LikeLike.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ae817cbcf19960c1ea83b90d5c256cc9f35f3c6287738e0b67583ebe4446868c",
+      "target_sha256": "8f1781d28bc5dd2a899a17be1629b0f84077df74d78439a9a87eb4d30eb2a0de",
+      "dictionary": 4,
+      "patch": "101.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Lizalfos.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "7c5c8f9607e6506018cf78550dc6327ef3d7150fa3877df7a5d94257d9f6b9d8",
+      "target_sha256": "28e552ec71c30d25ecb277bd8141b3f217a33c24e9cc331bf5eb09ae0649f5f1",
+      "dictionary": 4,
+      "patch": "102.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_BigOcto.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c7558ef29e227fdaab8fe6a42e7b38fcf31cd8b6057637151da70f0e93c55d71",
+      "target_sha256": "695d07ace93e9c9b2ef01b338b2c370ecc35ed28a1656c712b6f8ae8f68b6b85",
+      "dictionary": 4,
+      "patch": "103.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_DarkLink.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "7a795fe565ce09abc8b1b5a462b24b9c06410fe59458a303c988d7b8c45a5d8b",
+      "target_sha256": "d7f5aca2aed6d318775404427215e674d248836082a4b615952d0a9e42f1916a",
+      "dictionary": 4,
+      "patch": "104.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_FlareDancer.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "cae6eb58569c3e62623ad0d00f6d4314f175a6a1fcfd9e1b518127aecc31da4c",
+      "target_sha256": "1f89fdaa1fb3b78a24c4cdbd5f9774121a1d15574ba1cfe606616f4084cc9e65",
+      "dictionary": 4,
+      "patch": "105.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_FlareDancer_FireBody.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "e2baf38892d29f783b416ff4c583d182c295fd92a03d4c6338b918044aeb1aaa",
+      "target_sha256": "d5cd6803214beada07d54d7a75cdb1a8e22519e13f38efd8867fab3bb19d16b0",
+      "dictionary": 4,
+      "patch": "106.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_GerudoThief.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "2735bd8ff439f00c90fc88f9d27eab3cebc6afecb99f20569dc47723d84d9d1c",
+      "target_sha256": "fd8124401be4da6bb7a8b38cf62f661637f566b08c752ec0b6cf9d99cd30ddd3",
+      "dictionary": 4,
+      "patch": "107.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_GerudoThief_02.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "441fdc5ed5e9eb46acd595d7c172841c5ba52364519af22d8dbc82d83de1ff63",
+      "target_sha256": "2a9ac6efbf65b39a4d58be1e9af826fcc107fac3c33edff2f3418262e0bc6434",
+      "dictionary": 4,
+      "patch": "108.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_GerudoThief_03.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "156cf4ac3410bb028c381a22f7985517f510a22ae0cedc590cbeaaa98d961966",
+      "target_sha256": "a2475bbae7c0fe338b1602cdd6df9f867565e262f9f41d2dce92b25660a0ef65",
+      "dictionary": 4,
+      "patch": "109.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_GerudoThief_04.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "fea54f4e855b148fbb03713fa6463155d96020f9bd5945ac59faf92ca8fbcb84",
+      "target_sha256": "ff5ba80ac3069551bc74ff6591139c1ca2a8253bf25e0df7e9911ac81ab79e80",
+      "dictionary": 4,
+      "patch": "110.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_IronKnuckle_Nabooru.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "b0ad0579d51e46576c5ca688d884c2dd06f5d2f4e43851bc0894891264c9c836",
+      "target_sha256": "fb82415a61cab7d6af9d5afced54b8c68e2a32369fcaffb7202e35bf23c34880",
+      "dictionary": 4,
+      "patch": "111.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_Lizalfos.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "3153829926330b96697120eac4cb6e5b020c96b3e9b1c2924b61643354b08b4e",
+      "target_sha256": "bb9eecb7d35779d60bd6c4c4b565ed7d005baebd00598ad2ee1589d3c3213928",
+      "dictionary": 4,
+      "patch": "112.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_Poe_Meg.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9f83e894033204f15748a5ada735df64866562e7630ce99ffd5d103a24d68d86",
+      "target_sha256": "711f4bee38ec7bc21d9d71291cda327afc624a5b42a8dda102ba9498dddf6468",
+      "dictionary": 4,
+      "patch": "113.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MiddleBoss_Poe_Meg_Dummy.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "56c685b5e82fc0bf53d9cb83e5496c8c610bfea22e6073514e729fa64c89bcc9",
+      "target_sha256": "f6f935a3de528d6de2e9b5bf751f2f880c72e02db10bfdd030e9af0fd8ed197a",
+      "dictionary": 4,
+      "patch": "114.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Moblin.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "cc4830816fb09ce753198340ca5d80c2191dfcca05ce909957c30c522102309d",
+      "target_sha256": "f87f5845c2aa7076a9b3145bf8005948799632d2559b70bbee9e677117bf19d2",
+      "dictionary": 4,
+      "patch": "115.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Moblin_Club.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "8b8ee19878c830ffc0ad8652399c910a9ca3729483d2df21ee17e8dbdd748e23",
+      "target_sha256": "4cee8569a614c06055cfd53f0168468a00e8757194292de52b115d5bb22ca16e",
+      "dictionary": 4,
+      "patch": "116.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_MoblinClub_ShockWave.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "1a046773d9ab6062bd96983ac626913afd77b3a15d77d1612ae25465b53484da",
+      "target_sha256": "ae388810b488e217df5bd173922efcbcdba0215e22b15be3c6a79a3b00932ad5",
+      "dictionary": 4,
+      "patch": "117.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Octorok.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9e7fa2ec386651d0bb1d44f3832da4dc3bc316a12ed433b5c99d8f1e2578d7c9",
+      "target_sha256": "17d189d5ffc55948224f69c31cd8bf4356c12ab9407cee1846ebb0dd25f74275",
+      "dictionary": 4,
+      "patch": "118.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Peahat.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "7446a53a244f05d88c14f805be3226436b33984eab454ce97290090da9835bc6",
+      "target_sha256": "b4164b31dcecda4b2318f3db6c5ebe039bf62270794a928a12bc46b5aed943cb",
+      "dictionary": 4,
+      "patch": "119.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Peahat_AircraftCarrier.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9be5207f95d877260bcc80a1394c8180e78662f028143ae8f4a2552e7f35b419",
+      "target_sha256": "366d0eaf0281cf40aad60fca3108ad86f54bdc65340529058f0f8e0a79c54b52",
+      "dictionary": 4,
+      "patch": "120.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Peahat_Larva.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ea08228df92b2367a5a87bb4536b249f2ff5d0caad47ae584aac5c0c321d0538",
+      "target_sha256": "46e1ba0afcc2e611c55b3dbeb3aa308e2e863df61bd9cbeb2b7f8d5f463d578d",
+      "dictionary": 4,
+      "patch": "121.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Peahat_Larva_Independent.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "6e00fe7766d03752337e7b246c81417b442720c0b305dcd762aa9e4bca500626",
+      "target_sha256": "698a3fff1a00d5960f7f073f940847db99aa1480e728a71616f8098fc3e41339",
+      "dictionary": 4,
+      "patch": "122.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "2979c483f2ae6b631eb53d34adc09ff7fa1d4499cb53f93975072dfe3520dc0a",
+      "target_sha256": "71342693f58301347b2228ef389fdfafd965c66b8f809d27f7bc2dfe3afb277e",
+      "dictionary": 4,
+      "patch": "123.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_Amy.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "91a45e525a603f8fe3fa82b009be59f81db8a3be2338dc8c03b8eb67857e9471",
+      "target_sha256": "1668588f4a2e2dee8dd9740410ed6d21df8ab93bb46a06c969abe9a71d20908e",
+      "dictionary": 4,
+      "patch": "124.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_Base.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "508362c8c1c446e561f5abe611bde0f95bcf53f59255f6bf3e91f29ef58a6fc8",
+      "target_sha256": "e0aabe47ab2e4d062ba0a22e21e20c8910d4d89e4807502f05818c58df33ce7a",
+      "dictionary": 4,
+      "patch": "125.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_Beth.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "f3bb5c89c9f3a995bea8e77202cc9e25c8a27ea369f2d61a4816f8788ba42ead",
+      "target_sha256": "61cea382f2c2020e4a8b270cde8f43fc8eab5f08e21ce390b47a2da6842a6014",
+      "dictionary": 4,
+      "patch": "126.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_Big.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "103f592d650edad8925b0efe3767e81cdf179da47f93c8f4c2564ed839cbeb52",
+      "target_sha256": "5a44aa5f05584df00662e127081db9e15f192e9447dbfe308d5a168612506851",
+      "dictionary": 4,
+      "patch": "127.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_Flat.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "22e1a629d93d6366e9c4d9d5f7a9f9b292a117498fa66b4f5b4cd0a170728d19",
+      "target_sha256": "b9c0242e30a22f00e6818dc685baf1ab3941329ff75009e96d015a46fbce6f15",
+      "dictionary": 4,
+      "patch": "128.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_Hyrule.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "6f5d18ffbd7bb2a382d358e98725065646b04a2e2cd7a0db516bf4051b617c71",
+      "target_sha256": "64f839abebea5a6fa4bf26f60d19d7a82d07713568610fc3d298135725d8f39e",
+      "dictionary": 4,
+      "patch": "129.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_Joelle.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "7c63a592dfdf8881a4903e9dcc7872e829174fae71867dfea471f7d4cf4a9ccf",
+      "target_sha256": "a14ef81e31a9ae66dc452c5986aab9b501a0a37f3945ebfba7222a27643be76a",
+      "dictionary": 4,
+      "patch": "130.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_Sharp.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "15138cdab7990cc292a638786b0e4128611088f52bbc4da75fee4f3b2de5380a",
+      "target_sha256": "6c874c691ffba4d4bc794ab67226b4206eeb41df609545b09636b392dc0ba675",
+      "dictionary": 4,
+      "patch": "131.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Poe_SistersBase.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c95912f06bc0c95d33830a103239868e42f7d60da6fdc5b4ed04edb13748e7f6",
+      "target_sha256": "7780bbf3d8ca348b06fa3408c102af12fdab567ffe6ae3484910ea1d0feebfd0",
+      "dictionary": 4,
+      "patch": "132.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_ReDead.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "322cf939441b7f4b814e22c43d5b6a91119f9483e558dae5dbbbc2fe158d725a",
+      "target_sha256": "6cab806b9f597dd5125db2e2e754adc64efa9cc3852f41a59acdf9a5c30feb70",
+      "dictionary": 4,
+      "patch": "133.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_ReDead_AlwaysRespawn.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "285f421ba9de5ac60f31d4c440e6f7a696c0d8a09d5ca068c646bb23af876a35",
+      "target_sha256": "1117cb6643cdf1cf75fc1e88cc964c8e0684659e69881c40aa4671c0edaa1ecd",
+      "dictionary": 4,
+      "patch": "134.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_ReDead_ClimaxOnly.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ec7883e84d4899cb7f157c08883a3630d11be17c66f2f77ab8a92d8cc1fccd9a",
+      "target_sha256": "12db76fa1d89022bb94396df28c2c0245e04624f4cc325c16d6ab682a2a0faeb",
+      "dictionary": 4,
+      "patch": "135.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Scrub_Business.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "44354bde9f83d32dc814c1a860584941ee6ee3ef6ff9dd030476ae871283f950",
+      "target_sha256": "6549a86580d1f8b8304ab28d1da409e4e19637bcb199eef5f5b740aab5abae45",
+      "dictionary": 4,
+      "patch": "136.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Scrub_Business_Seed.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "1b78aa753cd5e9a00e489f5584702ad84a03b11152c878873744737b7aacb238",
+      "target_sha256": "a6d29025acd5c7df9837b71f074db3610adf8b4e26777352032c4930688876ec",
+      "dictionary": 4,
+      "patch": "137.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Scrub_Deku.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "387ff5f3cba4bb0071051e5fcf0a9558263b291894f28f16075a687079146589",
+      "target_sha256": "4975dd4b45af26d8df4d121288dbed80c5052fa4fded11d6c7110df6a4f2e1fe",
+      "dictionary": 4,
+      "patch": "138.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Scrub_Deku_Brothers.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "64aed7ac501eadc05d216a5555578d30e493fea92f808fc0c0809c8ec2a4db9d",
+      "target_sha256": "0756f703e878009d9533019923e695d36687c1f244a6c5565ee577422dda4929",
+      "dictionary": 4,
+      "patch": "139.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Scrub_Mad.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "78b63b076dc676155d58a59b407143dfd4128f7ad8077a0b9cdf4ba59458391d",
+      "target_sha256": "5f55836b0aebece4d24f668d5f6f07e0918df6052d06fcad4926391c32b82bf0",
+      "dictionary": 4,
+      "patch": "140.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Shabom.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "e915ca6bdfc72b00ee45e13b1e24c71731956f15f45b718c8f7c083dd1511b74",
+      "target_sha256": "4d0867a694a3b4f67848d328c1509bbf4982d8d3b59055737b814aaf1acc160c",
+      "dictionary": 4,
+      "patch": "141.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Shabom_AlwaysRespawn.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c2b6a0a9cf96921a818d6d65468b596c1a591d25563ed2b9795d61e3059e1df0",
+      "target_sha256": "7b1ea6f432bbb22eb38753582743a106ba5634f34ff1c9a5c95d08cddcc7cc41",
+      "dictionary": 4,
+      "patch": "142.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Shabom_BigOctoChild.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "65dda6c051a61e8b920182df70cd9c1719854339a312d6273d351c95db7c945c",
+      "target_sha256": "856e3feaf9b76cbe2ae94e6d4d2fd0bd73528fef212e9f29d4f84614764c537a",
+      "dictionary": 4,
+      "patch": "143.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_ShellBlade.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "748967ce6981708d1b8d7ad1024f15b5392d08b4cb70368aec4daafb8c744707",
+      "target_sha256": "de6be6274ca4c5024cc773231eb760017b57323a3e747f20b7f38838a50a53a8",
+      "dictionary": 4,
+      "patch": "144.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_SkullKid.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "7e17cd6ed43e06a92d10aeefe40662b98221f0a6cd96147b2e63ede7ef963e21",
+      "target_sha256": "00faaaf2d1646eb4e6f702fea7094bb5c8a9ebc7a0824de183fefe50599ae105",
+      "dictionary": 4,
+      "patch": "145.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Skulltula.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ef9acbd4e9550b49c6ac320debf3364dbdcb1c7c2ca75707440afc0c05c8174b",
+      "target_sha256": "f1e18b9c6068268ac192e299e8c77c228667f68381e42fe377910dc761495dd6",
+      "dictionary": 4,
+      "patch": "146.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Skulltula_Gold.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "4232e2b97df12d586ec1c771c212c5d65a18a2855c3750cffbb4fca9643fbb18",
+      "target_sha256": "55df6c1a018b19156912bda783bba58afdae25ef02871309efd4d421df963603",
+      "dictionary": 4,
+      "patch": "147.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Skulltula_Truth.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "bae5ac05bc7e5cac442288460394ace32c168ba41fb68460543dfd42a634d112",
+      "target_sha256": "51fda3525a7c5b65b1f869e8e845e2d3a943942441b2130750a21c1e0aca6979",
+      "dictionary": 4,
+      "patch": "148.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Skullwalltula.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "560dfa6c518f024bdce1a838107b3e00473efc30152b5bd2d12a4150e57f137d",
+      "target_sha256": "5e9435634b8c66d1f7f850f6176eee8829efa59a7dee51d57b3abcfbad63b963",
+      "dictionary": 4,
+      "patch": "149.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Spike.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "bc3256c7f3cff8113f69446e0777de7d421a9cf76fb0f64c8ec2ca670b56dbb8",
+      "target_sha256": "78191e6b3957a8cc76857dd6a2fa0d991aef9a6a5e912bc6e8bf86452b32d5cc",
+      "dictionary": 4,
+      "patch": "150.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Stalchild.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "69a8ebb01edff451986b3601927db7cc3a01353f4dd4f7c049b9611f615b0e53",
+      "target_sha256": "87807182fcc67e2c8407d87fffc4647fbb9a25524496b5a1da73d9bf56163dd0",
+      "dictionary": 4,
+      "patch": "151.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Stalchild_Big.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "96789e5989b273d265a3a2e5b3ee163bfd8e70de067660b9b2e3764bfd702e57",
+      "target_sha256": "6984c53c838e508aedc91b9a3eb6c5cbdfc06fb6469d40f42819234799d1d64b",
+      "dictionary": 4,
+      "patch": "152.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Stalfos.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "f3140a956a58c24baeb014fac92900782d896c351df8d18179797f7cb2228784",
+      "target_sha256": "3b0016946fdb74a0b2fbddcf4e292e3ab4d04645335b24459d4a0c88d94ae658",
+      "dictionary": 4,
+      "patch": "153.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Stalfos_AlwaysRespawn.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "1f34f6eafbcf1acc24cb0b101bdacaa5d7b82dda4a34921f9a8d3295402d9b7e",
+      "target_sha256": "e2cadbcd7a268d8d2114ec0c2ab1a66a7cd89fe15053a18b8819b14a3897ca29",
+      "dictionary": 4,
+      "patch": "154.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Stalfos_ForChild.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "9a902579a33a17a12bd547b8ef2566ef653394c2265b3202b3055145c8fb667f",
+      "target_sha256": "ae75c7d248fe71add4f18a9c4c5f681fde33b6fa645c7fb539d330e6d5011602",
+      "dictionary": 4,
+      "patch": "155.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Stalfos_Weak.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "80e83c3d8c918dbbe696169c1a03448642746c9969737ab7066b079abcabe8b4",
+      "target_sha256": "ab3ef7cd31e5fb5c477b87ed1f70f07ad2b6942e122b6d5ed7041768be52770f",
+      "dictionary": 4,
+      "patch": "156.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Stinger.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "825bb0bdd9e79352ae95a0711dd66f26145e8676ff5c2a9b0cb939f2b62ebb4e",
+      "target_sha256": "243563b14cc6b4a168911e6d20c2dc020cbd63066d53a688f325edb48e620b8b",
+      "dictionary": 4,
+      "patch": "157.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Stinger_UnderWater.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "8f72fce4b17ad87fe40ce71ff9dd4072a30bb2a415b053928a0924ecb5395b65",
+      "target_sha256": "05bc4542eabab03337efd3f2e81381cfcdbb023cf597e23e83181973aeaf29dd",
+      "dictionary": 4,
+      "patch": "158.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Tailpasaran.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "c11047971ac2239e4c2ce9949fa34409e02e76f6560c83e6a91c6f85daa462b0",
+      "target_sha256": "fb09d713ef39774f5df0792ceeecce0ec8e67160b63c69747e6f4c4fb2495d85",
+      "dictionary": 4,
+      "patch": "159.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Tektite_Blue.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "dda7d235f64e449bb98b7fb39773adfd82be7b2229b326eaebe40f2e69c39d97",
+      "target_sha256": "d99637cb4277e9d7940c00b33e27bd91b31ee6c80ffe71e6057e85764995c237",
+      "dictionary": 4,
+      "patch": "160.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Tektite_Red.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "d45a16e7b2058c67735c91a44a75a6f1a759075fdeacc64b9b1d359c670072e5",
+      "target_sha256": "897708f2949b5ca86ef31a7df98a587ff4327f82cb8b271b5bb5b9c02eb96524",
+      "dictionary": 4,
+      "patch": "161.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Tentacle_Blue.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "4961868848f3f1313af95f374a483878673211d48c4b89fb6cf2f842f46512bc",
+      "target_sha256": "d4323ce7d92651bec5892108dddd642fcc6f209c1b3ccac874953ce4c45730b6",
+      "dictionary": 4,
+      "patch": "162.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Tentacle_Green.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "2616302965a573a0f88845d002c3c1aa97b429a5da2b93561fa1cad3cc581f9f",
+      "target_sha256": "3687b704804b35abfe033c14afcda65aa0a4df9b2eba7adc3e32ed385568eb61",
+      "dictionary": 4,
+      "patch": "163.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Tentacle_Red.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "36b3fe25a72e1c0e2cfdc209fd283eab4cf0174d6a9a0b1844df497f7392cf90",
+      "target_sha256": "d08627b4631a304103af7a4f60e8d8bf3705f5913568576c9174ad4b46f06467",
+      "dictionary": 4,
+      "patch": "164.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_TorchSlug.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "0734802585cd7771f07c65c3dec0349bf7f8a29a8a6919221f2954164904b9dd",
+      "target_sha256": "91e1d83a77f29697c9de3c253da1986462efd390f97e739cb23d8eb570163e57",
+      "dictionary": 4,
+      "patch": "165.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_TrickyDoor.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "3a0bd270c1d195c5a2f2b63cefeb243d5cee2847d15284fe95688fc06ee27bb9",
+      "target_sha256": "0ce0db42145a508cfbc3dcdd2000fb856404cb8bf5eef0b14ea50bc815b1eb1b",
+      "dictionary": 4,
+      "patch": "166.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_TrickyDoor_SpiritTemple.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ff96ea4c1d7e5f15944b110e90772c3540c1dabc8d4d40f283efeba921909157",
+      "target_sha256": "300b71334cc947260e49b959db29d9b254fd45f3057293a9a699cfaea012345e",
+      "dictionary": 4,
+      "patch": "167.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Wallmaster.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "64476373b998005fd677c4f87bc5ac9c9bb9191f02a2262b0edbe509572b9caa",
+      "target_sha256": "720d11ae630c3c022813da320565171cc0e649caa55ba2dc5672291195da0c8c",
+      "dictionary": 4,
+      "patch": "168.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Wolfos.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "520f015927863bf6d311a1886253daa6e0932d422eae9282533de5908c9e621a",
+      "target_sha256": "c0dbfa7ebb4c4b7d8e134888b4f4715c3fc366f99b96094d45541ef0231780aa",
+      "dictionary": 4,
+      "patch": "169.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Enemy_Wolfos_White.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "02b3414ecf7e6cfd9e708bf6e5898617bb8641eb1939fab4845fd34b79cb1160",
+      "target_sha256": "949a1f36f2d06590a0cc518383ee39f3cad355e0e97baf773f9a82290ea9f125",
+      "dictionary": 4,
+      "patch": "170.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/FlareDancer_Bullet_FireBall.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ed6df513da515da127449be1f6ee2ec655b3cb88983c7a76f17e1762813cd57c",
+      "target_sha256": "b16752b3cf055cdc3947805e38051f4765e6001ce5ceb128f69f3516c607c62b",
+      "dictionary": 4,
+      "patch": "171.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/FlareDancer_Bullet_FireDanceBall.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "8e9f0bac2de6486ab4a71d5fa1facadcaf69a1306c2ff109d39700d23a47487f",
+      "target_sha256": "481e6f357bd938d0c8a3c998c8cdc8f115f88c4c183f8d196eaf95072c7beed3",
+      "dictionary": 4,
+      "patch": "172.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Ganon_Bullet_ShockSquirt.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ff28be96076bcfa88edd7ec0c9dde0435d6e81d2e5f5aa87f41af789c8093a9f",
+      "target_sha256": "09461fb9726affcc4f954c3239199fe6d48d5ee81054b15369189030eca60586",
+      "dictionary": 4,
+      "patch": "173.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Ganon_Bullet_ShockSquirt_Weak.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "de7bbfda97b8db47c7a871c8ffc4b1c72aa1fa706e48c28284ee6c3b74b7c1c0",
+      "target_sha256": "b3cb0e925c8c7dfe7cda4bfd8804de883ba4add94c154b8197f2bc237d821d6c",
+      "dictionary": 4,
+      "patch": "174.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Ganon_Bullet_StrongShockSquirt.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "e1b77bd9c15b4c11e468ab0fb45b44fd37f7b4c91030ee082de133d27e88d768",
+      "target_sha256": "ac2c76c5c9ea27375ffcf6505cac21dcb2ce258575f4ba6ccb3d70baf20e73fb",
+      "dictionary": 4,
+      "patch": "175.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Ganon_Bullet_Thunder.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "e54e48e5453702a08aa42dd11c2132c47679c53c37b3ac3c350f511056c514e1",
+      "target_sha256": "17285744313ea070025cc870b76636de831515d4704471fcc74a246e7d5d9ba8",
+      "dictionary": 4,
+      "patch": "176.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Ganondorf_Bullet_Thunder_Shockwave.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "d7e67cd57638445f41ab14cb25340140737c33d37903ccb9e632bcdd982b4713",
+      "target_sha256": "4e4ada31042d6ff06cb2873e67536dbe0a83ab44e98ca937591460b350fa69d6",
+      "dictionary": 4,
+      "patch": "177.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/KotakeKoumeTwinrova_Bullet_GuardBreakFire.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "5bd5aaa1a50a329950cefeee6de28671863de35dec226f1656a2bd54ec51d39d",
+      "target_sha256": "7a8dbaa70b2dcefe94f5d3a9c92d8483003577c7b422968d9b5859a773e864e6",
+      "dictionary": 4,
+      "patch": "178.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/KotakeKoumeTwinrova_Bullet_GuardBreakIce.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ac558820f48a0b5d622ec8c11a8243e6446bb7a03cf1286b6975049be39b32b7",
+      "target_sha256": "a6a6d8d33ed5dcfa237435ba596b807871013f90bf60f6b9c46546f67ab20c88",
+      "dictionary": 4,
+      "patch": "179.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Octorok_Bullet.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "e3de198f69e18269efc449b88aa86c8fb75df2ecb963a048ee19dfeb97ff2365",
+      "target_sha256": "9367364a37365c01cdea2885f15f0e49b0ac0cac74b49396105fad08ab7def0c",
+      "dictionary": 4,
+      "patch": "180.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/PhantomGanon_Bullet_Thunder.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "b4ef2d98c99ec5c9a1958b7e92bc9161d84ee1416d6cc7e9931a5813e67336a4",
+      "target_sha256": "9c6ba74128ae2a47caf9ef7b88e74cf1a0bafeda88b91502f9abf3b7f9cac7ba",
+      "dictionary": 4,
+      "patch": "181.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/PhantomGanon_Bullet_Thunder_Shockwave.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ad9e1c5b492d74949e9a87954d391f0c9848ed921d7ceeac7bf957a4a5840b7a",
+      "target_sha256": "ca12dbea598689235dd67c9087b81edd4a90a2e5455aa7260a3d4ac1876f0ed5",
+      "dictionary": 4,
+      "patch": "182.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/PoeHyrule_Bullet_FireBall.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "581d922b069463b7759379c0569291636dcc3b505c5afcf7c9de824a22200a0d",
+      "target_sha256": "e8ec9e7065a256fcb33fac39fc7b7e3e5022236830a36154ad9caeca460da88b",
+      "dictionary": 4,
+      "patch": "183.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/ScrubDeku_DekuNut.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "594632e85311f8c8f82b0d9dc51b66b8bd42238727054baf2d0f6adf87235f3a",
+      "target_sha256": "8d4787f7e0e023618ff64e93065718226c18aee9ca2156f4013297741f305b24",
+      "dictionary": 4,
+      "patch": "184.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/SkullKid_Bullet.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "a8a3e754f3f6b56994a126c206cb614fb414bdd9cacefe8b440fd7d875a5a0ea",
+      "target_sha256": "15090fa50a333de45cfe345891a6beb4023316264c3c8e0797c1374a20060512",
+      "dictionary": 4,
+      "patch": "185.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Twinrova_Bullet_FireBeam.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "dd75eb0ce8b845e5addd38e0cdc271673fca083bed1968dba29908638fb597a7",
+      "target_sha256": "fe989468c89c62ab1c5cb699f896c3c0ed2591f8658e7faacc9e838f8a841691",
+      "dictionary": 4,
+      "patch": "186.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Twinrova_Bullet_FireBullet.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "908b7d3598c1ed096230ffa52b70bd7f02b088b08c2938fe5aa93e0ac76aeaa5",
+      "target_sha256": "946ec498984dd863749c587aa64ff7c81151708b073716aedd58db417d0b29ed",
+      "dictionary": 4,
+      "patch": "187.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Twinrova_Bullet_FireField.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "39b8108cbfa60fbaa57ca97db5d0128e2a1e4e32b42af992c112cf04b960c23e",
+      "target_sha256": "d345aa170825607cfe12440b70b57d5c4711ae1b62f4edb00ffb31e7e273e7bc",
+      "dictionary": 4,
+      "patch": "188.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Twinrova_Bullet_GuardBreakFire.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "1e0aa51138828530759ff9570b692f079b9ed7fc1bc75a46c5a211c1537ea7cd",
+      "target_sha256": "f4fad5f9063c49a000f393de9fbad356f4b1409e001571362be2df7d7c74c0f7",
+      "dictionary": 4,
+      "patch": "189.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Twinrova_Bullet_GuardBreakIce.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "f3580030c3b2611c43fa82ff607bb14100e3025c5b0a54f7a400874910448a72",
+      "target_sha256": "0370d4b65d22cdeec2849c2417a301fc28b75c196154e58b3a8264f503795372",
+      "dictionary": 4,
+      "patch": "190.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Twinrova_Bullet_IceBeam.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "516fd44de2b511b28dca46aad11052c90497dadbfd0469513bfeee266e95caae",
+      "target_sha256": "2f38a3b1d35a8b8082dbc4a24197fee36d82b1cdc43009558472274b9ff2b33e",
+      "dictionary": 4,
+      "patch": "191.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Twinrova_Bullet_IceBullet.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "a26a80b9d34e760cb085895fbe47709d57a627f1b861daaae770230ae1b91b41",
+      "target_sha256": "69745507a36471d85000bf2291016c319ea8bebd729a222ad714b5b6772d3079",
+      "dictionary": 4,
+      "patch": "192.patch"
+    },
+    {
+      "path": "romfs/Pack/Actor/Twinrova_Bullet_IceField.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "ba1f79223be5ef1cc225953cefc4efc1e0c73669c499c61e9c781886bfea0de3",
+      "target_sha256": "388776cc97418c092f49dc9f358a088a378b0a77e1fd2315ce752f340491a7f9",
+      "dictionary": 4,
+      "patch": "193.patch"
+    },
+    {
+      "path": "romfs/Pack/AI.Global.Product.111.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "16e6f07a042bbc15ab4c5d9c848c4b58f102a4ae58829c55563a0583ff09691a",
+      "target_sha256": "2f53eedf95d2332fdffaf9e33ada649015bdb67ecfdb73f5f165fe1f33275352",
+      "dictionary": 4,
+      "patch": "194.patch"
+    },
+    {
+      "path": "romfs/Pack/Bootup.Nin_Ounce_NVN2.pack.zs",
+      "kind": "zstd",
+      "source_sha256": "928c65bbeb117797e070a12b838ac427d6083d163072a1137c07f81905cc41e9",
+      "target_sha256": "46342d65b6eb3448dc5cba14c3603bf9a809fd23c2e2f8491f6b749e3529e90c",
+      "dictionary": 1,
+      "patch": "195.patch"
+    },
+    {
+      "path": "romfs/Sequence/Event.module.ainb",
+      "kind": "binary",
+      "source_sha256": "7fc67299fac2fd52655c785f26ffb4f577f049a3ac23f0a00afb75c042ab5f85",
+      "target_sha256": "7fc67299fac2fd52655c785f26ffb4f577f049a3ac23f0a00afb75c042ab5f85",
+      "patch": "196.patch"
+    },
+    {
+      "path": "romfs/Sequence/ShortCut.module.ainb",
+      "kind": "binary",
+      "source_sha256": "6febde37b8527c9b1950f022ae33156f3e7721074df48dbf4abef53c2d8a3d8a",
+      "target_sha256": "6febde37b8527c9b1950f022ae33156f3e7721074df48dbf4abef53c2d8a3d8a",
+      "patch": "197.patch"
+    },
+    {
+      "path": "romfs/Sequence/UpdateShortCutOpenHoldFrameCounter.module.ainb",
+      "kind": "binary",
+      "source_sha256": "78b3841fc50a15d2f6b73fe0a75f4bbcbaea2bbdaaa521e70559985928d6ee60",
+      "target_sha256": "78b3841fc50a15d2f6b73fe0a75f4bbcbaea2bbdaaa521e70559985928d6ee60",
+      "patch": "198.patch"
+    },
+    {
+      "path": "romfs/System/Resource/ResourceSizeTable.Product.111.Nin_Ounce_NVN2.rsizetable.zs",
+      "kind": "zstd",
+      "source_sha256": "7bf29d025abf55fc95743433e4369fb745e9b3480561b37d3596e367215da326",
+      "target_sha256": "e42c56c853cb2c809b053a9a4f742a029d0a2fb9514edfbb738775376f99f231",
+      "dictionary": 0,
+      "patch": "199.patch"
+    }
+  ],
+  "stamina_settings": {
+    "schema_version": 1,
+    "capacity_percent": 100,
+    "regeneration_percent": 100,
+    "cost_percent": 100,
+    "regeneration_delay": 1.25,
+    "hud_offset_x": 0,
+    "hud_offset_y": 24
+  }
+}

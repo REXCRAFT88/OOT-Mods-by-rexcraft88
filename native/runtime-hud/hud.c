@@ -1,4 +1,7 @@
 typedef unsigned long long U; typedef unsigned int W; typedef unsigned char B;
+#ifdef HERO_UNIFIED
+#include "settings.h"
+#endif
 __attribute__((section(".telemetry"))) volatile U hud_debug[32];
 static B pool[0x50000] __attribute__((aligned(16))); static W used;
 static const char stamina[]="Pa_StaminaGauge_00";
@@ -58,6 +61,30 @@ static B* wheelclone(B*r,W kind){
 }
 /* Resource variants are cached independently, including each HUD skin's input. */
 static struct{B*source,*copy;W kind;}resources[24];static W resource_count;
+#ifdef HERO_UNIFIED
+/* Layouts outlive Options changes. Select the original or private values on
+   their live panes, rather than relying on another resource construction. */
+void hud_selector_layout(void*frame,W enabled){
+ B*layout=(B*)q(frame,0x80);if(!layout)return;
+ B*r=(B*)q(layout,0xf8),*source=0,*copy=0;
+ for(W i=0;i<resource_count;i++)if(resources[i].kind==3&&
+    (resources[i].copy==r||resources[i].source==r)){
+  source=resources[i].source;copy=resources[i].copy;break;
+ }
+ if(!source||!copy)return;
+ B*panes=(B*)q(layout,0x100);W n=w(source,0x38);if(!panes||n>512)return;
+ U*original=(U*)q(source,0x28),*modified=(U*)q(copy,0x28);
+ U*names=(U*)q(source,0x20);
+ for(W i=0;i<n;i++){
+  /* Restore only the label's proven transform. Clipping/list extents have
+     native runtime ownership and must keep the qualified radial allocation. */
+  if(original[i]==modified[i]||!eq((char*)names[i],"T_Text_00"))continue;
+  B*a=(B*)original[i],*b=(B*)modified[i],*pane=panes+i*0xb0;
+  if(w(a,32)!=w(b,32))*(W*)(pane+0x70)=w(enabled?b:a,32);
+  *(W*)pane|=0x6f;
+ }
+}
+#endif
 static struct{void*handle;B config[0x100];}calls[64];static W call_count;
 void*hud_prepare(void*handle,B*config){
  hud_debug[0]++; B*r=(B*)q(config,0);if(!r||w(r,0)!=0x004c4955)return config;
@@ -70,6 +97,9 @@ void*hud_prepare(void*handle,B*config){
  eq(asset,"PaShortCutSlideList_00")?3:eq(asset,"ShortCut_01")?4:
 #endif
  0;
+#endif
+#ifdef HERO_UNIFIED
+ if(kind>=3&&!hero_wheel_enabled())return config;
 #endif
  if(!kind)return config;
  hud_debug[16]=(U)r;hud_debug[17]=(U)handle;hud_debug[18]=(U)config; B*replacement=0;W i;for(i=0;i<resource_count;i++)if(resources[i].source==r&&resources[i].kind==kind){replacement=resources[i].copy;break;}

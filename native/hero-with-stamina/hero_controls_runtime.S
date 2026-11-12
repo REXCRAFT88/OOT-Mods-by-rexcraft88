@@ -19,6 +19,11 @@ hero_guard_impact_entry:
 hero_setter_hook:
  /* Preserve the original high-bit early return exactly. */
  tbnz w1,#31,2f
+#ifdef HERO_UNIFIED
+ adrp x9,hero_settings_bits
+ ldr w9,[x9,:lo12:hero_settings_bits]
+ tbnz w9,#1,1f
+#endif
  adrp x9,player_as_interface
  add x9,x9,:lo12:player_as_interface
  ldr x9,[x9]
@@ -57,6 +62,11 @@ native_request_as_original:
 
 hero_target_guard_flags:
  stp x16,x17,[sp,#-16]!
+#ifdef HERO_UNIFIED
+ adrp x16,hero_settings_bits
+ ldr w17,[x16,:lo12:hero_settings_bits]
+ tbnz w17,#1,.Lguard_flags_native
+#endif
  adrp x16,hero_cache
  ldr x16,[x16,:lo12:hero_cache]
  cmp x20,x16
@@ -67,6 +77,12 @@ hero_target_guard_flags:
  cbnz w17,1f
  bic w9,w9,#0x80000
  bic w8,w8,#0x80000
+#ifdef HERO_UNIFIED
+ b .Lguard_flags_restore
+.Lguard_flags_native:
+#endif
+ b .Lguard_flags_restore
+.Lguard_flags_restore:
 1:
  ldp x16,x17,[sp],#16
  orr w8,w8,w9
@@ -75,6 +91,11 @@ hero_target_guard_flags:
 .global hero_target_guard_update
 hero_target_guard_update:
  stp x16,x17,[sp,#-16]!
+#ifdef HERO_UNIFIED
+ adrp x16,hero_settings_bits
+ ldr w17,[x16,:lo12:hero_settings_bits]
+ tbnz w17,#1,.Lguard_update_native
+#endif
  adrp x16,hero_cache
  ldr x16,[x16,:lo12:hero_cache]
  cmp x21,x16
@@ -87,6 +108,46 @@ hero_target_guard_update:
  b 2f
 1:
  orr w9,w9,#0x80000
+#ifdef HERO_UNIFIED
+ b .Lguard_update_restore
+.Lguard_update_native:
+ orr w9,w9,#0x80000
+#endif
+ b .Lguard_update_restore
+.Lguard_update_restore:
 2:
  ldp x16,x17,[sp],#16
  b original_guard_update_resume
+
+#ifdef HERO_UNIFIED
+/* Patch 0x574e1c's native swap-option BEQ conditionally. With manual shield
+   enabled it retains the published NOP behavior; when disabled it executes
+   the original compare/branch semantics using the live w8/w9 values. */
+.global hero_controller_toggle_gate
+hero_controller_toggle_gate:
+ str x16,[sp,#-16]!
+ adrp x16,hero_settings_bits
+ ldr w16,[x16,:lo12:hero_settings_bits]
+ tbnz w16,#1,.Ltoggle_native
+ ldr x16,[sp],#16
+ b original_controller_toggle_resume
+.Ltoggle_native:
+ ldr x16,[sp],#16
+ b.ne .Ltoggle_resume
+ b original_controller_toggle_target
+.Ltoggle_resume:
+ b original_controller_toggle_resume
+
+/* Patch 0x279d640's original prologue conditionally. The published manual
+   behavior returns false; native mode runs the untouched function body. */
+.global hero_controller_query_gate
+hero_controller_query_gate:
+ pacibsp
+ adrp x9,hero_settings_bits
+ ldr w9,[x9,:lo12:hero_settings_bits]
+ tbnz w9,#1,.Lquery_native
+ mov w0,wzr
+ .inst 0xd65f0fff /* RETAB; keep assembly independent of -march pauth. */
+.Lquery_native:
+ b original_controller_query_body
+#endif

@@ -1,3 +1,6 @@
+#ifdef HERO_UNIFIED
+#include "settings.h"
+#endif
 typedef unsigned long long u64;
 typedef unsigned u32;
 typedef unsigned char u8;
@@ -6,6 +9,10 @@ extern void set_index(void*,unsigned,unsigned,unsigned,unsigned);
 extern void change_focus(void*,unsigned,unsigned);
 extern void equip_index(void*,unsigned);
 extern void commit_item(void*,unsigned);
+#ifdef HERO_UNIFIED
+extern void native_stock_wheel_update(void*);
+extern void hud_selector_layout(void*,unsigned);
+#endif
 static void* ptr(void* p,unsigned off){return *(void**)((u8*)p+off);}
 /* Small periodic approximation; no libc or new graphics allocations. */
 static float sine(float t){
@@ -36,6 +43,14 @@ static unsigned groups(unsigned n){
  return g;
 }
 void wheel_update(void* controller){
+#ifdef HERO_UNIFIED
+ if(!hero_wheel_enabled()){
+  if(ptr(controller,0x68)==ptr(wheel_cache,16))
+   *(void**)(wheel_cache+48)=controller;
+  native_stock_wheel_update(controller);
+  return;
+ }
+#endif
  void* list=ptr(controller,0x68);
  if(list!=ptr(wheel_cache,16))return;
  *(void**)(wheel_cache+48)=controller;
@@ -73,6 +88,13 @@ void wheel_update(void* controller){
  equip_index(controller,best);
 }
 void wheel_draw(void* list){
+#ifdef HERO_UNIFIED
+ if(list==ptr(wheel_cache,16)){
+  void* frame=ptr(list,0x20);
+  if(frame)hud_selector_layout(frame,hero_wheel_enabled());
+ }
+ if(!hero_wheel_enabled())return;
+#endif
  if(list!=ptr(wheel_cache,16))return;
  unsigned n=count(list);
  if(!n||n>64||*(u32*)(wheel_cache+36)!=n)return;
@@ -116,6 +138,9 @@ void wheel_draw(void* list){
 extern void hero_guard_frame(void);
 void wheel_tick(void){
  hero_guard_frame();
+#ifdef HERO_UNIFIED
+ if(!hero_wheel_enabled()){*(u32*)(wheel_cache+112)=0;return;}
+#endif
  if(*(u32*)(wheel_cache+112)){
   unsigned event=*(u32*)(wheel_cache+112);
   *(u32*)(wheel_cache+112)=0;

@@ -1,4 +1,8 @@
 #include "hero_core.h"
+#ifdef HERO_UNIFIED
+#include "settings.h"
+#include "combat_bridge.h"
+#endif
 typedef unsigned long long U64;
 typedef struct {
  HeroState state;HeroConfig config;
@@ -74,6 +78,9 @@ extern unsigned char hero_control_state[];
 /* Accepted AS requests, rather than button presses or aiming, identify releases.
    Union both body slots so a single action cannot charge twice. */
 __attribute__((noinline)) void hero_item_tick(NativeHero* r){
+#ifdef HERO_UNIFIED
+ if(!hero_stamina_enabled()){r->item_latch=0;return;}
+#endif
  u32 mask=0;
  for(u32 i=0;i<2;i++){
   const unsigned char* n=(const unsigned char*)ptr(r->player,0x238+i*0xd8);
@@ -121,6 +128,10 @@ static void bar_update(NativeHero* r){
 }
 void hero_native_frame(void* ai,void* update){
  NativeHero* r=&hero_runtime;U64 s=(U64)resolve_player(ai);if(!s)return;hero_cache[0]=s;
+#ifdef HERO_UNIFIED
+ hero_settings_refresh();
+ hero_difficulty_tick();
+#endif
  U64 actor=ptr(s,0x18),table=ptr(actor,0x270);if(!table)return;
  U64 life=ptr(table,0x2b8);if(!life)return;
  U64 cur=ptr(life,0x1c10),max=ptr(life,0x1c18);
@@ -128,6 +139,10 @@ void hero_native_frame(void* ai,void* update){
  u32 maximum=word(max,8);if(!maximum||maximum>80)return;
  if(r->player!=s){r->state.initialized=0;r->active_mask=0;r->fatigue_applied=0;r->target_bool=0;r->combat_grace=0;r->combat_bool=0;r->item_latch=0;r->player=s;}
  if(!r->state.initialized)copy_config(&r->config,&hero_user_options.config);
+#ifdef HERO_UNIFIED
+ /* Always scale the immutable user baseline, never last frame's capacity. */
+ r->config.units_per_heart=hero_user_options.config.units_per_heart*hero_stamina_amount();
+#endif
  U64 anim=ptr(table,0x40);U64 a=ptr(anim,0x18);a=ptr(a,0x18);a=ptr(a,0x40);r->interface=a;
  /* The port's custom encounters can omit native battle/music publication.
     Proximity qualifies activity, but must never start combat on its own. */
@@ -149,6 +164,11 @@ void hero_native_frame(void* ai,void* update){
  else if(r->combat_grace>0)r->combat_grace-=in.dt_seconds;
  in.in_combat=hero_native_combat()||(r->combat_bool&&r->combat_grace>0);
  if(r->debug_combat_override)in.in_combat=r->debug_combat_override==1;
+#ifdef HERO_UNIFIED
+ if(!hero_stamina_enabled()){
+  in.in_combat=0;r->combat_grace=0;r->damage_scale=1;r->speed_scale=1;
+ }
+#endif
  hero_tick(&r->state,&r->config,&in);
  hero_item_tick(r);
  u32 tired=in.attacking&&r->state.in_combat&&r->speed_scale>0&&r->speed_scale<1;
@@ -159,6 +179,11 @@ void hero_native_frame(void* ai,void* update){
 void hero_native_action(u32 kind,u32 entering){
  NativeHero* r=&hero_runtime;
  if(!entering){r->active_mask&=~(1u<<kind);return;}
+#ifdef HERO_UNIFIED
+ if(!hero_stamina_enabled()){
+  r->damage_scale=1;r->speed_scale=1;return;
+ }
+#endif
  if(!r->state.initialized)return;
  if(kind==0||kind==5||kind==6){
   action_near_enemy(r);
@@ -175,6 +200,9 @@ void hero_native_action(u32 kind,u32 entering){
  r->last_spent=result.spent;r->damage_scale=result.damage_scale;r->speed_scale=result.speed_scale;
 }
 u32 hero_native_allow(u32 kind){
+#ifdef HERO_UNIFIED
+ if(!hero_stamina_enabled())return 1;
+#endif
  NativeHero* r=&hero_runtime;if(!r->state.initialized||!r->state.in_combat)return 1;
  float cost=(kind==1||kind==4)?r->config.roll_cost:kind==2?r->config.backflip_cost:r->config.sidestep_cost;
  return r->state.stamina>=cost*r->state.drain_multiplier;

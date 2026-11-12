@@ -1,4 +1,10 @@
 .text
+#ifdef HERO_UNIFIED
+.global native_stock_wheel_update
+native_stock_wheel_update:
+ pacibsp
+ b native_stock_wheel_update_body
+#endif
 .global wheel_bind_entry,wheel_bind_item,wheel_list_ctor
 wheel_bind_entry:
  stp x16,x17,[sp,#-16]!

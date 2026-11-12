@@ -1,6 +1,9 @@
 typedef unsigned long long u64;
 typedef unsigned u32;
 typedef unsigned char u8;
+#ifdef HERO_UNIFIED
+#include "settings.h"
+#endif
 
 /* Full-controller Npad state records: 40-byte stride, buttons at +8. */
 extern u8 hero_control_state[];
@@ -37,7 +40,15 @@ __attribute__((noinline)) u32 hero_input_guard_active(u64 buttons) {
 /* ExecutePlayerReactionGuard Enter: native code has accepted a real block.
    Never charge merely for raising the shield or for a different actor. */
 void hero_guard_impact(void *action) {
-    if((u64)resolve_player(action)!=hero_cache[0]||!hero_control_state[4])return;
+    if((u64)resolve_player(action)!=hero_cache[0])return;
+#ifdef HERO_UNIFIED
+    /* This hook runs only after native accepted a real block. In unified mode
+       that must drain stamina for native blocks too, even when manual shield
+       input is disabled; stamina-off suppresses the custom cost entirely. */
+    if (!hero_stamina_enabled()) return;
+#else
+    if (!hero_control_state[4]) return;
+#endif
     if(!*(u32 *)(hero_runtime+20)||!*(u32 *)(hero_runtime+32)||
        !*(u32 *)(hero_runtime+36))return;
     float stamina=*(float *)hero_runtime;
@@ -55,6 +66,18 @@ void hero_guard_impact(void *action) {
 void hero_controls_raw(u64 *records, u32 count) {
     if (!records || count == 0 || count > 64) return;
     u32 ticks = *(u32 *)(hero_runtime + 136);
+#ifdef HERO_UNIFIED
+    if (!hero_manual_shield_enabled()) {
+        /* Keep the control stream native while manual shield is disabled. */
+        *(u32 *)(hero_control_state + 8) = ticks;
+        *(u32 *)(hero_control_state + 12) = 0;
+        hero_control_state[0] = (u8)((records[1] & 0x40u) != 0);
+        hero_control_state[1] = 0;
+        hero_control_state[2] = 0;
+        hero_control_state[3] = 0;
+        return;
+    }
+#endif
     u32 last_ticks = *(u32 *)(hero_control_state + 8);
     u32 stale_reads = *(u32 *)(hero_control_state + 12);
     if (ticks == last_ticks) ++stale_reads;
@@ -103,6 +126,7 @@ void hero_all_input(u64 *records, u32 count) {
 void hero_guard_frame(void) {
     *(u64 *)(hero_control_state + 0x70) = 0;
     *(u64 *)(hero_control_state + 0x78) = 0;
+    u32 was_allowed = hero_control_state[4] != 0;
     hero_control_state[4] = 0;
     hero_control_state[5] = 0;
     u64 player_state = hero_cache[0];
@@ -125,15 +149,47 @@ void hero_guard_frame(void) {
     u64 equipment=table?*(u64 *)(table+0x200):0;
     if(interface) *(u64 *)(hero_control_state+0x70)=actor;
     if(interface&&equipment) *(u64 *)(hero_control_state+0x78)=equipment;
+#ifdef HERO_UNIFIED
+    if (!hero_manual_shield_enabled()) {
+        /* Undo only the manual bits from an active guard, then let native
+           setters, input and LockOn flag code own the next update. */
+        if (was_allowed && hero_control_state[0x82]) {
+            u32 *state_flags=(u32 *)(player_state+0xe50);
+            u32 *flags=(u32 *)(component+0x24);
+            *flags = (*flags & ~0x20u) | (hero_control_state[0x80] ? 0x20u : 0u);
+            *state_flags = (*state_flags & ~0x80100u) | (*(u32 *)(hero_control_state+0x84) & 0x80100u);
+            if (interface) {
+                u64 vtable = *(u64 *)interface;
+                set_native_bool setter = (set_native_bool)*(u64 *)(vtable + 0x88);
+                setter((void *)interface, 14, hero_control_state[0x81] != 0);
+            }
+        }
+        hero_control_state[0x82] = 0;
+        hero_control_state[2] = 0;
+        hero_control_state[3] = 0;
+        return;
+    }
+#endif
     /* Let native item/AS ownership keep both hands during aiming, carrying,
        block movement, hammer use, and ocarina playback. */
     u32 allowed = interface && hero_guard_should_apply(interface,player_state,held,initialized,alive,in_combat,cap,stamina);
     hero_control_state[4] = (u8)allowed;
     /* Match the native mobile guard flag without requesting target/camera. */
     u32 *state_flags=(u32 *)(player_state+0xe50);
+#ifdef HERO_UNIFIED
+    u32 *flags = (u32 *)(component + 0x24);
+    if (allowed && !was_allowed) {
+        hero_control_state[0x80] = (u8)((*flags & 0x20u) != 0);
+        *(u32 *)(hero_control_state+0x84) = *state_flags & 0x80100u;
+        hero_control_state[0x81] = (u8)(as_bool((void *)interface, 14) != 0);
+        hero_control_state[0x82] = 1;
+    }
+#endif
     if(allowed)*state_flags|=0x80100u;
     else *state_flags&=~0x80000u;
+#ifndef HERO_UNIFIED
     u32 *flags = (u32 *)(component + 0x24);
+#endif
     if (allowed) *flags |= 0x20u;
     else *flags &= ~0x20u;
 
@@ -142,6 +198,9 @@ void hero_guard_frame(void) {
         set_native_bool setter = (set_native_bool)*(u64 *)(vtable + 0x88);
         setter((void *)interface, 14, allowed);
     }
+#ifdef HERO_UNIFIED
+    if (!allowed && was_allowed) hero_control_state[0x82] = 0;
+#endif
 
     /* Draw only the shield: targeting must not make our hook draw the sword. */
     if (allowed && !hero_control_state[3]) {

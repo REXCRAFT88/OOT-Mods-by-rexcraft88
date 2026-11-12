@@ -2,22 +2,20 @@
 
 Mods for Project Eglantine / Ocarina of Time, title **0400486024DEC000**, update **131072**, executable build **E0F3CCFAF50065AE4EA01EB5AEB13B1A45DA3348**.
 
-Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases), then use **Configure Game > Add-ons > Import Mod from ZIP**. No commands or builder step are needed. Use an emulator with full NUP RomFS and IPS support; the current regression test setup uses Fritchii v5.5.
+Download **`*-Prepared-Addon.zip`** from [Releases](https://github.com/REXCRAFT88/OOT-Mods-by-rexcraft88/releases), then use **Configure Game > Add-ons > Import Mod from ZIP**. No commands or builder step are needed. Use an emulator with full NUP RomFS and IPS support; the current regression test setup uses Fritchii v5.8.
 
-November 11 update: Item Wheel **0.1.7** adds a saved **Wheel Bumper: Right / Left / Both** setting in System → Options. Right is the default. See [wheel settings](docs/ITEM-WHEEL-SETTINGS.md). Hero without Stamina remains **beta.9**, Manual Shield **0.1.7**, Hero Core **beta.1**, Wheel + Shield **beta.1**, and Hero with Stamina **beta.11**. See [compatibility, combinations and testing](docs/COMPATIBILITY-2026-11-11.md). Hero difficulty and recovery-drop options are still in development.
+November 12 update: **Hero Mode Unified beta.12 — Early Access** replaces the separate Hero variants. One addon has Options for stamina On/Off and Half/Full/Double, manual shield, targeting and swap, wheel and bumper choice, four difficulty tiers, and recovery-drop suppression. [Installation, settings, controls and test limits](docs/HERO-UNIFIED.md). Standalone Item Wheel **0.1.7** and Manual Shield **0.1.7** remain separate choices for users who do not want Hero tuning.
 
 **Upgrading from an older `heromode.nup`? Use your original unmodified NUP with the new Prepared Add-on.** Current releases keep Lichii’s built-in FPS timing fix working through an IPS sidecar; do not stack them onto a previously patched game. See the [illustrated guide](docs/INSTALLATION.md).
 
 | Download | Included |
 | --- | --- |
-| Hero Mode with Stamina — Beta / Early Access | Item wheel, manual shield and toggle targeting, enemy balance/behavior changes, combat stamina and HUD |
-| Hero Mode without Stamina — Beta / Early Access | The same wheel, shield, enemy changes, with no stamina system or stamina HUD |
-| Hero Core — Beta / Early Access | Enemy tuning and combat stamina; original item selector, shield and controller behavior |
+| Hero Mode Unified — Beta / Early Access | All Hero features in one addon; disable stamina, wheel or manual controls independently in Options |
 | Item Wheel + Manual Shield — Beta | Both input/UI features in one native package; no enemy tuning or stamina |
 | Manual Shield | Only manual guard and associated target/input policy; no wheel, stamina, enemy or texture changes |
 | Item Wheel | Standalone wheel with hold selection, tap variant cycling, outline/glow, installer and source |
 
-**Choose one complete mod.** Hero Mode already includes the wheel and shield. Do not stack its native files with separate wheel/shield/stamina mods. Both Hero Mode variants are early-access betas.
+**Choose one complete mod.** Hero Unified includes the wheel and shield. Do not stack it with separate native wheel/shield/stamina mods or older Hero variants. For Core behavior, turn Item Wheel and Manual Shield Off in Unified Options.
 
 To use the standalone wheel and shield features together, choose **Wheel + Shield**. Checking the two separate packages does not merge their `main`/`subsdk1` replacements and can remove L1 targeting. [Hero Core details](docs/HERO-CORE.md).
 
@@ -29,10 +27,8 @@ See [Download verification and security checks](docs/SECURITY.md) for checksums,
 
 The game/version above is required. These are Eglantine patches, not N64 ROM patches, Ship of Harkinian mods, or Zelda64Recomp mods. Other executable updates are not supported by these exact offsets.
 
-Hero Mode with Stamina includes [stamina/HUD configuration](docs/STAMINA-SETTINGS.md).
+Hero Unified has in-game stamina settings. Advanced base configuration remains documented in [stamina/HUD configuration](docs/STAMINA-SETTINGS.md).
 
 Controller settings updates: [Hold/Toggle targeting and bumper/trigger layouts](docs/CONTROLLER-SETTINGS.md).
 
-Latest update: combat-only stamina detection, a 100–300 stamina curve, heavier Biggoron/hammer costs, small ranged-item costs, separate targeting/shield settings, and an R1-only Hero wheel. [HUD compatibility](docs/HUD-COMPATIBILITY.md).
-
-Hero with Stamina **beta.10** adds a private runtime HUD: no Common HUD archive replacement, a half-height yellow bar, and a wheel cache fix for menu visits. The full DualSense UI mod was tested separately. Keep the addon folder prefix `00-OOT-Hero` for size-table priority. Read [HUD compatibility](docs/HUD-COMPATIBILITY.md).
+The private runtime HUD avoids replacing the Common HUD archive and uses a half-height yellow stamina gauge. Keep the addon folder prefix `00-OOT-Hero` for size-table priority. Read [HUD compatibility](docs/HUD-COMPATIBILITY.md) and the [AI development disclosure](docs/AI-DISCLOSURE.md).

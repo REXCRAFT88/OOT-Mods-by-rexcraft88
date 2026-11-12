@@ -1,5 +1,8 @@
 typedef unsigned long long U64;
 typedef unsigned U32;
+#ifdef HERO_UNIFIED
+#include "settings.h"
+#endif
 extern unsigned char hero_control_state[];
 extern void *game_data_singleton;
 extern U32 read_enum(void *, U32 *, void *, U32);
@@ -42,6 +45,17 @@ static U32 setting(U32 field, U32 boolean) {
 
 void controller_options_raw(U64 *records, U32 count) {
     if (!records || !count || count > 64) return;
+#ifdef HERO_UNIFIED
+    if (!hero_manual_shield_enabled()) {
+        /* Preserve the game's physical bindings while the unified add-on's
+           manual shield is off; bypass all custom swap/hold normalization. */
+        hero_control_state[0]=0;
+        hero_control_state[1]=0;
+        *(U32 *)(hero_control_state+20)=0xffffffffu;
+        native_controls(records,count);
+        return;
+    }
+#endif
     U32 value = setting(0xc713c7dau,0);
     U32 swapped = setting(0x916ac217u,1)!=0;
     if (*(U32 *)(hero_control_state+20) != (value ^ swapped)) {
